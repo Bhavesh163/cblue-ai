@@ -1,0 +1,75 @@
+(function() {
+    const API_URL = 'http://localhost:8010';
+    
+    const chatbotHTML = `
+        <div id="cblue-chatbot-container" style="position:fixed;bottom:20px;right:20px;z-index:10000">
+            <button id="cblue-chat-button" style="width:60px;height:60px;border-radius:30px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);border:none;box-shadow:0 4px 12px rgba(0,0,0,0.15);cursor:pointer;transition:transform 0.3s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                <svg viewBox="0 0 24 24" style="width:28px;height:28px;fill:white"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
+            </button>
+            <div id="cblue-chat-window" style="display:none;position:fixed;bottom:90px;right:20px;width:380px;height:600px;background:white;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,0.15);flex-direction:column">
+                <div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:16px 20px;display:flex;justify-content:space-between;border-radius:16px 16px 0 0">
+                    <div style="display:flex;align-items:center;gap:12px">
+                        <div style="width:36px;height:36px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center">🤖</div>
+                        <div><h3 style="margin:0;font-size:16px">Cblue AI Assistant</h3><small style="opacity:0.9">ออนไลน์</small></div>
+                    </div>
+                    <button id="cblue-chat-close" style="background:none;border:none;color:white;cursor:pointer;font-size:28px;line-height:1">×</button>
+                </div>
+                <div id="cblue-chat-messages" style="flex:1;overflow-y:auto;padding:20px;background:#f7f8fa"></div>
+                <div style="padding:16px;background:white;border-radius:0 0 16px 16px">
+                    <form id="cblue-chat-input-form" style="display:flex;gap:8px">
+                        <input type="text" id="cblue-chat-input" placeholder="พิมพ์ข้อความของคุณ..." style="flex:1;padding:12px 16px;border:1px solid #e0e0e0;border-radius:24px;outline:none;font-size:14px"/>
+                        <button type="submit" style="width:44px;height:44px;border-radius:50%;background:#667eea;border:none;cursor:pointer;transition:background 0.3s" onmouseover="this.style.background='#5568d3'" onmouseout="this.style.background='#667eea'">
+                            <svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:white"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    `;
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        document.body.insertAdjacentHTML('beforeend', chatbotHTML);
+        
+        const btn = document.getElementById('cblue-chat-button');
+        const win = document.getElementById('cblue-chat-window');
+        const close = document.getElementById('cblue-chat-close');
+        const form = document.getElementById('cblue-chat-input-form');
+        const input = document.getElementById('cblue-chat-input');
+        const msgs = document.getElementById('cblue-chat-messages');
+        
+        btn.onclick = () => { win.style.display = 'flex'; input.focus(); };
+        close.onclick = () => win.style.display = 'none';
+        
+        form.onsubmit = async (e) => {
+            e.preventDefault();
+            const msg = input.value.trim();
+            if (!msg) return;
+            input.value = '';
+            
+            msgs.innerHTML += '<div style="margin-bottom:16px;display:flex;flex-direction:row-reverse;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#667eea;color:white;display:flex;align-items:center;justify-content:center;flex-shrink:0">👤</div><div style="padding:10px 14px;border-radius:16px;background:#667eea;color:white;max-width:260px;word-wrap:break-word;font-size:16px">' + msg + '</div></div>';
+            msgs.scrollTop = msgs.scrollHeight;
+            
+            const loadingId = 'loading-' + Date.now();
+            msgs.innerHTML += '<div id="' + loadingId + '" style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;color:#667eea;display:flex;align-items:center;justify-content:center;flex-shrink:0">🤖</div><div style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:260px;font-size:13px">กำลังคิด...</div></div>';
+            msgs.scrollTop = msgs.scrollHeight;
+            
+            try {
+                const r = await fetch(API_URL + '/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: msg })
+                });
+                const d = await r.json();
+                document.getElementById(loadingId).remove();
+                const responseText = d.message || 'ขออภัย ไม่ได้รับการตอบกลับ กรุณาติดต่อ: cblue.thailand@gmail.com';
+                msgs.innerHTML += '<div style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;color:#667eea;display:flex;align-items:center;justify-content:center;flex-shrink:0">🤖</div><div style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:260px;word-wrap:break-word;font-size:13px;white-space:pre-line">' + responseText + '</div></div>';
+                msgs.scrollTop = msgs.scrollHeight;
+            } catch (err) {
+                console.error(err);
+                document.getElementById(loadingId).remove();
+                msgs.innerHTML += '<div style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;color:#667eea;display:flex;align-items:center;justify-content:center;flex-shrink:0">🤖</div><div style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:260px;font-size:13px">เกิดข้อผิดพลาด กรุณาติดต่อ: cblue.thailand@gmail.com</div></div>';
+                msgs.scrollTop = msgs.scrollHeight;
+            }
+        };
+    });
+})();
