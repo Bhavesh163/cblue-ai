@@ -3,21 +3,23 @@
 KNOWLEDGE_BASE = {
     "services_overview": {
         "keywords": ["your services", "what services", "what do you do", "your solutions", "what solutions", "what are you doing"],
-        "content": """Cblue Thailand Services
+        "content": """Cblue Thailand offers a comprehensive suite of services focused on construction, engineering, and sustainable technology solutions.
 
-We provide comprehensive solutions for sustainable and smart buildings:
+The services can be grouped into several key areas:
 
-• Solar Solutions & EV Chargers
-• Green Architecture & Green Construction
-• HVAC, MEP, Retrofit
-• Controls, Automation, BAS & Smart Building
-• Environmental Services & Energy Saving
-• Security System & Access Control
-• Smart Home & Smart Farming
-• Website Development
-• AI Chatbot Development
-• Software Development
-• Machine Learning"""
+• Consulting & Strategy: Market research, economic evaluations, feasibility studies, and project management.
+
+• Design & Engineering: Full architectural, interior, landscape, and detailed engineering design.
+
+• Construction & Specialized Trades: General construction, fit-outs, HVAC, MEP systems, retrofitting, and green building (including vertical gardens).
+
+• Smart Technology & Automation: Building Management Systems (BMS), smart building controls, automation, and energy-saving solutions.
+
+• Specialized Fabrication: Metal sheet, steel structure, aluminium, and glass work.
+
+• Renewable Energy & EV Solutions: Solar power, wind turbines, and EV charging stations.
+
+• Digital Solutions: AI chatbot development, software development, and machine learning."""
     },
     "ai_general": {
         "keywords": ["what is ai", "ai คือ", "artificial intelligence"],

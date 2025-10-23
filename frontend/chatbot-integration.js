@@ -9,7 +9,7 @@
             <div id="cblue-chat-window" style="display:none;position:fixed;bottom:90px;right:20px;width:380px;height:600px;background:white;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,0.15);flex-direction:column">
                 <div style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:16px 20px;display:flex;justify-content:space-between;border-radius:16px 16px 0 0">
                     <div style="display:flex;align-items:center;gap:12px">
-                        <div style="width:36px;height:36px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center">🤖</div>
+                        <div style="width:36px;height:36px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;overflow:hidden"><img src="Customer Support Emoji.png" style="width:100%;height:100%;object-fit:cover" alt="AI"></div>
                         <div><h3 style="margin:0;font-size:16px">Cblue AI Assistant</h3><small style="opacity:0.9">ออนไลน์</small></div>
                     </div>
                     <button id="cblue-chat-close" style="background:none;border:none;color:white;cursor:pointer;font-size:28px;line-height:1">×</button>
@@ -50,7 +50,7 @@
             msgs.scrollTop = msgs.scrollHeight;
             
             const loadingId = 'loading-' + Date.now();
-            msgs.innerHTML += '<div id="' + loadingId + '" style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;color:#667eea;display:flex;align-items:center;justify-content:center;flex-shrink:0">🤖</div><div style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:260px;font-size:13px">กำลังคิด...</div></div>';
+            msgs.innerHTML += '<div id="' + loadingId + '" style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden"><img src="Customer Support Emoji.png" style="width:100%;height:100%;object-fit:cover" alt="AI"></div><div style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:260px;font-size:13px">กำลังคิด...</div></div>';
             msgs.scrollTop = msgs.scrollHeight;
             
             try {
@@ -62,12 +62,12 @@
                 const d = await r.json();
                 document.getElementById(loadingId).remove();
                 const responseText = d.message || 'ขออภัย ไม่ได้รับการตอบกลับ กรุณาติดต่อ: cblue.thailand@gmail.com';
-                msgs.innerHTML += '<div style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;color:#667eea;display:flex;align-items:center;justify-content:center;flex-shrink:0">🤖</div><div style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:260px;word-wrap:break-word;font-size:13px;white-space:pre-line">' + responseText + '</div></div>';
+                msgs.innerHTML += '<div style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden"><img src="Customer Support Emoji.png" style="width:100%;height:100%;object-fit:cover" alt="AI"></div><div style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:260px;word-wrap:break-word;font-size:13px;white-space:pre-line">' + responseText + '</div></div>';
                 msgs.scrollTop = msgs.scrollHeight;
             } catch (err) {
                 console.error(err);
                 document.getElementById(loadingId).remove();
-                msgs.innerHTML += '<div style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;color:#667eea;display:flex;align-items:center;justify-content:center;flex-shrink:0">🤖</div><div style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:260px;font-size:13px">เกิดข้อผิดพลาด กรุณาติดต่อ: cblue.thailand@gmail.com</div></div>';
+                msgs.innerHTML += '<div style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden"><img src="Customer Support Emoji.png" style="width:100%;height:100%;object-fit:cover" alt="AI"></div><div style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:260px;font-size:13px">เกิดข้อผิดพลาด กรุณาติดต่อ: cblue.thailand@gmail.com</div></div>';
                 msgs.scrollTop = msgs.scrollHeight;
             }
         };
