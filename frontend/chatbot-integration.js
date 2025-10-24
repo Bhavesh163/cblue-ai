@@ -1,5 +1,5 @@
 (function() {
-    const API_URL = 'http://localhost:8010';
+    const API_URL = 'https://cblue-ai.onrender.com';
     
     const chatbotHTML = `
         <div id="cblue-chatbot-container" style="position:fixed;bottom:20px;right:20px;z-index:10000">
