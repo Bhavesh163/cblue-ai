@@ -2,6 +2,12 @@
     const API_URL = 'https://cblue-ai.onrender.com';
     
     const chatbotHTML = `
+        <style>
+            @media (max-width: 768px) {
+                #cblue-chat-window { width: calc(100vw - 20px) !important; height: calc(100vh - 100px) !important; right: 10px !important; bottom: 80px !important; }
+                #cblue-chat-button { bottom: 10px !important; right: 10px !important; }
+            }
+        </style>
         <div id="cblue-chatbot-container" style="position:fixed;bottom:20px;right:20px;z-index:10000">
             <button id="cblue-chat-button" style="width:60px;height:60px;border-radius:30px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);border:none;box-shadow:0 4px 12px rgba(0,0,0,0.15);cursor:pointer;transition:transform 0.3s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
                 <svg viewBox="0 0 24 24" style="width:28px;height:28px;fill:white"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
@@ -63,7 +69,7 @@
                 document.getElementById(loadingId).remove();
                 const responseText = d.message || 'ขออภัย ไม่ได้รับการตอบกลับ กรุณาติดต่อ: cblue.thailand@gmail.com';
                 const formattedResponse = responseText.replace(/•\s*/g, '<br>• ');
-                msgs.innerHTML += '<div style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden"><img src="Customer Support Emoji.png" style="width:100%;height:100%;object-fit:cover" alt="AI"></div><div style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:260px;word-wrap:break-word;font-size:14px;white-space:pre-line">' + formattedResponse + '</div></div>';
+                msgs.innerHTML += '<div style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden"><img src="Customer Support Emoji.png" style="width:100%;height:100%;object-fit:cover" alt="AI"></div><div style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:260px;word-wrap:break-word;font-size:13px;white-space:pre-line">' + formattedResponse + '</div></div>';
                 msgs.scrollTop = msgs.scrollHeight;
             } catch (err) {
                 console.error(err);
