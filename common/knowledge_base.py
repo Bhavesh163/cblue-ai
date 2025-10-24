@@ -2,24 +2,46 @@
 
 KNOWLEDGE_BASE = {
     "services_overview": {
-        "keywords": ["your services", "what services", "what do you do", "your solutions", "what solutions", "what are you doing"],
-        "content": """Cblue Thailand offers a comprehensive suite of services focused on construction, engineering, and sustainable technology solutions.
+        "keywords": ["your services", "what services", "what do you do", "your solutions", "what solutions", "what are you doing", "who are we", "who are you", "what are your offers", "บริการของคุณคืออะไร", "โซลูชันของคุณคืออะไร", "ข้อเสนอของคุณคืออะไร", "คุณกำลังทำอะไรอยู่", "เราคือใคร", "คุณคือใคร", "你在做什么", "我们是谁", "你是谁", "你们的服务是什么", "你们的解决方案是什么", "你们的产品"],
+        "content": """Cblue Thailand offers a comprehensive suite of services focused on AI/Digital Solutions, sustainable technology solutions, and construction, engineering.
 
 The services can be grouped into several key areas:
 
+• Digital Solutions: AI chatbot development, software development, and machine learning.
+• Smart Technology & Automation: Building Management Systems (BMS), smart building controls, automation, and energy-saving solutions.
+• Renewable Energy & EV Solutions: Solar power, wind turbines, and EV charging stations.
+• Design & Engineering: Full architectural, interior, landscape, and detailed engineering design.
+• Construction & Specialized Trades: General construction, fit-outs, HVAC, MEP systems, retrofitting, and green building (including vertical gardens).
+• Specialized Fabrication: Metal sheet, steel structure, aluminium, and glass work.
 • Consulting & Strategy: Market research, economic evaluations, feasibility studies, and project management.
 
-• Design & Engineering: Full architectural, interior, landscape, and detailed engineering design.
+---
 
-• Construction & Specialized Trades: General construction, fit-outs, HVAC, MEP systems, retrofitting, and green building (including vertical gardens).
+Cblue Thailand นำเสนอบริการที่ครอบคลุมและหลากหลาย โดยเน้นโซลูชันด้าน AI/ดิจิทัล โซลูชันเทคโนโลยีที่ยั่งยืน และงานก่อสร้างและวิศวกรรม
 
-• Smart Technology & Automation: Building Management Systems (BMS), smart building controls, automation, and energy-saving solutions.
+บริการสามารถจัดกลุ่มได้เป็นหลายด้านหลัก ดังนี้:
 
-• Specialized Fabrication: Metal sheet, steel structure, aluminium, and glass work.
+• โซลูชันดิจิทัล: การพัฒนาแชทบอท AI, การพัฒนาซอฟต์แวร์, และการเรียนรู้ของเครื่อง (Machine Learning)
+• เทคโนโลยีอัจฉริยะและระบบอัตโนมัติ: ระบบบริหารจัดการอาคาร (BMS), ระบบควบคุมอาคารอัจฉริยะ, ระบบอัตโนมัติ, และโซลูชันประหยัดพลังงาน
+• พลังงานหมุนเวียนและโซลูชัน EV: พลังงานแสงอาทิตย์, กังหันลม, และสถานีชาร์จรถยนต์ไฟฟ้า
+• การออกแบบและวิศวกรรม: การออกแบบสถาปัตยกรรม, ออกแบบตกแต่งภายใน, ภูมิสถาปัตย์, และการออกแบบวิศวกรรมโดยละเอียดครบวงจร
+• งานก่อสร้างและงานช่างเฉพาะทาง: งานก่อสร้างทั่วไป, งานตกแต่งภายใน, ระบบปรับอากาศ, ระบบ MEP (เครื่องกล-ไฟฟ้า-ประปา), งานปรับปรุงอาคาร, และอาคารเขียว (รวมถึงสวนแนวตั้ง)
+• งานผลิตเฉพาะทาง: งานแผ่นโลหะ, โครงสร้างเหล็ก, อลูมิเนียม, และงานกระจก
+• ที่ปรึกษาและกลยุทธ์: การวิจัยตลาด, การประเมินทางเศรษฐศาสตร์, การศึกษาความเป็นไปได้, และการบริหารโครงการ
 
-• Renewable Energy & EV Solutions: Solar power, wind turbines, and EV charging stations.
+---
 
-• Digital Solutions: AI chatbot development, software development, and machine learning."""
+Cblue Thailand 提供全面的服务套餐，专注于人工智能/数字化解决方案、可持续技术解决方案以及建筑工程。
+
+服务可分为以下几个关键领域:
+
+• 数字化解决方案: AI聊天机器人开发、软件开发和机器学习
+• 智能技术与自动化: 楼宇管理系统(BMS)、智能建筑控制、自动化和节能解决方案
+• 可再生能源与电动汽车解决方案: 太阳能、风力涡轮机和电动汽车充电站
+• 设计与工程: 全方位建筑设计、室内设计、景观设计和详细工程设计
+• 建筑与专业工程: 一般建筑施工、装修工程、暖通空调系统、机电管道系统(MEP)、改造工程和绿色建筑(包括垂直花园)
+• 专业制造: 金属板材、钢结构、铝材和玻璃工程
+• 咨询与策略: 市场研究、经济评估、可行性研究和项目管理"""
     },
     "ai_general": {
         "keywords": ["what is ai", "ai คือ", "artificial intelligence"],
