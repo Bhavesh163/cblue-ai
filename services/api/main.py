@@ -30,10 +30,10 @@ def get_response(message: str) -> str:
     is_thai = any(ord(c) >= 0x0E00 and ord(c) <= 0x0E7F for c in message)
     
     if context and "Cblue Thailand provides" not in context:
-        # Found specific content - return it
+        # Found specific content - return it without contact info
         return context
     else:
-        # Fallback response - shorter with only email
+        # Fallback response - only when no answer found
         if is_thai:
             return """ขออภัย ไม่พบข้อมูลที่ตรงกับคำถามของคุณ
 
