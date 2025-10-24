@@ -584,88 +584,142 @@ Systems that identify and prevent entry by unauthorized persons using access con
 Rapid reaction protocols connecting to authorities or security teams when threats are detected. Ensures quick action during security incidents or emergencies."""
     },
     "security": {
-        "keywords": ["security", "security system", "ระบบรักษาความปลอดภัย", "ความปลอดภัย"],
-        "content": """Security System
+        "keywords": ["security", "what is security", "what is security system", "security system", "ระบบรักษาความปลอดภัย", "ความปลอดภัย", "ระบบรักษาความปลอดภัยคือ", "什么是安全系统", "安全系统是什么"],
+        "content": """Security System provides comprehensive security solutions for home and business protection including CCTV, motion detectors, fire alarms, access control, and 24/7 monitoring.
 
-Comprehensive security solutions for home and business protection including CCTV, motion detectors, fire alarms, access control, and 24/7 monitoring."""
+---
+
+ระบบรักษาความปลอดภัยให้โซลูชันความปลอดภัยที่ครอบคลุมสำหรับการปกป้องบ้านและธุรกิจ รวมถึง CCTV, เครื่องตรวจจับการเคลื่อนไหว, สัญญาณเตือนไฟไหม้, การควบคุมการเข้าถึง และการตรวจสอบตลอด 24/7
+
+---
+
+安全系统为家庭和企业保护提供全面的安全解决方案，包括闭路电视、运动探测器、火警、门禁控制和24/7监控"""
     },
     "access_control": {
-        "keywords": ["access control", "access management", "ระบบควบคุมการเข้าถึง", "คอนโทรลเข้าออก"],
-        "content": """Access Control (ระบบควบคุมการเข้าถึง):
-- Building security
-- Authorized access management
-- Unauthorized entry prevention
-- Tracking and monitoring
-- Operational efficiency
-- Secure access solutions
-- Card access systems
+        "keywords": ["access control", "what is access control", "access management", "ระบบควบคุมการเข้าถึง", "คอนโทรลเข้าออก", "ระบบควบคุมการเข้าถึงคือ", "什么是门禁控制", "门禁控制是什么"],
+        "content": """Access Control is a security system that manages and restricts who can enter specific areas, using cards, biometrics, or codes to authorize entry.
 
-Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+Services: Building security, authorized access management, unauthorized entry prevention, tracking and monitoring, operational efficiency, secure access solutions, card access systems.
+
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+ระบบควบคุมการเข้าถึงคือระบบรักษาความปลอดภัยที่จัดการและจำกัดผู้ที่สามารถเข้าพื้นที่เฉพาะได้ โดยใช้บัตร ไบโอเมตริกซ์ หรือรหัสเพื่ออนุญาตการเข้า
+
+บริการ: ความปลอดภัยของอาคาร, การจัดการการเข้าถึงที่ได้รับอนุญาต, การป้องกันการเข้าโดยไม่ได้รับอนุญาต, การติดตามและตรวจสอบ, ประสิทธิภาพการดำเนินงาน, โซลูชันการเข้าถึงที่ปลอดภัย, ระบบเข้าถึงด้วยบัตร
+
+ติดต่อ: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+门禁控制是一种安全系统，管理和限制谁可以进入特定区域，使用卡片、生物识别或密码授权进入。
+
+服务：建筑安全、授权访问管理、防止未经授权进入、跟踪和监控、运营效率、安全访问解决方案、卡片访问系统
+
+联系方式：cblue.thailand@gmail.com, +66 (0)81 854 4291"""
     },
     "fitout": {
-        "keywords": ["fit out", "fit-out", "fitout", "what is fit out", "what is fit-out"],
-        "content": """Fit Out
+        "keywords": ["fit out", "fit-out", "fitout", "what is fit out", "what is fit-out", "what is fitout", "fitout คือ", "การตกแต่งภายในคือ", "什么是装修工程", "装修工程是什么"],
+        "content": """Fit Out is the process of making interior spaces ready for occupation by installing fixtures, furniture, equipment, and finishes. Fit out transforms empty spaces into functional environments.
 
-The process of making interior spaces ready for occupation by installing fixtures, furniture, equipment, and finishes. Fit out transforms empty spaces into functional environments.
+Includes: Partitions and walls, flooring and ceilings, lighting systems, HVAC installation, electrical systems, furniture and fixtures.
 
-Includes:
-• Partitions and walls
-• Flooring and ceilings
-• Lighting systems
-• HVAC installation
-• Electrical systems
-• Furniture and fixtures"""
+---
+
+Fit Out คือกระบวนการทำให้พื้นที่ภายในพร้อมสำหรับการเข้าอยู่โดยการติดตั้งอุปกรณ์ เฟอร์นิเจอร์ อุปกรณ์ และการตกแต่ง Fit out เปลี่ยนพื้นที่ว่างให้เป็นสภาพแวดล้อมที่ใช้งานได้
+
+ประกอบด้วย: ผนังกั้นและผนัง, พื้นและเพดาน, ระบบแสงสว่าง, การติดตั้ง HVAC, ระบบไฟฟ้า, เฟอร์นิเจอร์และอุปกรณ์ติดตั้ง
+
+---
+
+装修工程是通过安装固定装置、家具、设备和装饰使室内空间准备好供使用的过程。装修工程将空置空间转变为功能性环境。
+
+包括：隔断和墙壁、地板和天花板、照明系统、HVAC安装、电气系统、家具和固定装置"""
     },
     "green_construction": {
-        "keywords": ["green construction", "green contruction", "green building", "sustainable construction", "การก่อสร้างสีเขียว", "ก่อสร้างเขียว"],
-        "content": """Green Construction
+        "keywords": ["green construction", "what is green construction", "green contruction", "green building", "sustainable construction", "การก่อสร้างสีเขียว", "ก่อสร้างเขียว", "การก่อสร้างสีเขียวคือ", "什么是绿色建筑", "绿色建筑是什么"],
+        "content": """Green Construction refers to sustainable building practices that minimize environmental impact through energy-efficient designs, renewable materials, and waste reduction. Creates healthier living environments while conserving resources.
 
-Sustainable building practices that minimize environmental impact through energy-efficient designs, renewable materials, and waste reduction. Creates healthier living environments while conserving resources.
+Features: Energy-efficient designs, renewable and sustainable materials, waste minimization, environmental impact reduction, resource conservation.
 
-Features:
-• Energy-efficient designs
-• Renewable and sustainable materials
-• Waste minimization
-• Environmental impact reduction
-• Resource conservation
+Services: Construction Management, Project Management & Training, Office buildings, hotels, housing complexes.
 
-Services:
-• Construction Management
-• Project Management & Training
-• Office buildings, hotels, housing complexes"""
+---
+
+การก่อสร้างสีเขียวหมายถึงแนวปฏิบัติการก่อสร้างที่ยั่งยืนซึ่งลดผลกระทบต่อสิ่งแวดล้อมผ่านการออกแบบที่ประหยัดพลังงาน วัสดุหมุนเวียน และการลดของเสีย สร้างสภาพแวดล้อมการอยู่อาศัยที่ดีต่อสุขภาพในขณะที่อนุรักษ์ทรัพยากร
+
+คุณสมบัติ: การออกแบบที่ประหยัดพลังงาน, วัสดุหมุนเวียนและยั่งยืน, การลดของเสีย, การลดผลกระทบต่อสิ่งแวดล้อม, การอนุรักษ์ทรัพยากร
+
+บริการ: การจัดการก่อสร้าง, การจัดการโครงการและการฝึกอบรม, อาคารสำนักงาน โรงแรม ที่อยู่อาศัย
+
+---
+
+绿色建筑是指通过节能设计、可再生材料和减少废物来最小化环境影响的可持续建筑实践。在保护资源的同时创造更健康的生活环境。
+
+特点：节能设计、可再生和可持续材料、废物最小化、环境影响减少、资源保护
+
+服务：施工管理、项目管理和培训、办公楼、酒店、住宅综合体"""
     },
     "vertical_garden": {
-        "keywords": ["vertical garden", "green wall", "living wall", "สวนแนวตั้ง"],
-        "content": """Vertical Garden
+        "keywords": ["vertical garden", "what is vertical garden", "green wall", "living wall", "สวนแนวตั้ง", "สวนแนวตั้งคือ", "什么是垂直花园", "垂直花园是什么"],
+        "content": """Vertical Garden, also known as living walls or green walls, are plant installations on vertical surfaces. They improve air quality, reduce urban heat, provide insulation, and create aesthetic green spaces in limited areas.
 
-Living walls or vertical gardens are plant installations on vertical surfaces. They improve air quality, reduce urban heat, provide insulation, and create aesthetic green spaces in limited areas."""
+---
+
+สวนแนวตั้ง หรือที่เรียกว่าผนังมีชีวิตหรือผนังสีเขียว คือการติดตั้งพืชบนพื้นผิวแนวตั้ง ช่วยปรับปรุงคุณภาพอากาศ ลดความร้อนในเมือง ให้ฉนวนกันความร้อน และสร้างพื้นที่สีเขียวที่สวยงามในพื้นที่จำกัด
+
+---
+
+垂直花园，也称为生态墙或绿墙，是在垂直表面上安装的植物。它们改善空气质量、减少城市热量、提供隔热，并在有限的区域创造美观的绿色空间"""
     },
     "smart_home": {
-        "keywords": ["smart home", "home automation", "บ้านอัจฉริยะ", "สมาร์ทโฮม"],
-        "content": """Smart Home (บ้านอัจฉริยะ):
-- Home automation systems
-- Remote control capabilities
-- Energy efficiency
-- Enhanced security
-- Smart lighting & thermostat
-- IoT home devices
-- Connected home solutions
+        "keywords": ["smart home", "what is smart home", "home automation", "บ้านอัจฉริยะ", "สมาร์ทโฮม", "บ้านอัจฉริยะคือ", "什么是智能家居", "智能家居是什么"],
+        "content": """Smart Home is a residence equipped with automated systems and IoT devices that can be controlled remotely for enhanced convenience, security, and energy efficiency.
 
-Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+Services: Home automation systems, remote control capabilities, energy efficiency, enhanced security, smart lighting & thermostat, IoT home devices, connected home solutions.
+
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+บ้านอัจฉริยะคือที่อยู่อาศัยที่ติดตั้งระบบอัตโนมัติและอุปกรณ์ IoT ที่สามารถควบคุมจากระยะไกลเพื่อความสะดวกสบาย ความปลอดภัย และประสิทธิภาพพลังงานที่เพิ่มขึ้น
+
+บริการ: ระบบอัตโนมัติของบ้าน, ความสามารถในการควบคุมระยะไกล, ประสิทธิภาพพลังงาน, ความปลอดภัยที่เพิ่มขึ้น, แสงสว่างและเทอร์โมสแตทอัจฉริยะ, อุปกรณ์บ้าน IoT, โซลูชันบ้านที่เชื่อมต่อ
+
+ติดต่อ: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+智能家居是配备自动化系统和物联网设备的住宅，可以远程控制以增强便利性、安全性和能源效率。
+
+服务：家庭自动化系统、远程控制功能、能源效率、增强安全性、智能照明和恒温器、物联网家居设备、互联家居解决方案
+
+联系方式：cblue.thailand@gmail.com, +66 (0)81 854 4291"""
     },
     "smart_farming": {
-        "keywords": ["smart farming", "precision agriculture", "เกษตรอัจฉริยะ", "ฟาร์มอัจฉริยะ"],
-        "content": """Smart Farming (เกษตรอัจฉริยะ):
-- Precision agriculture
-- IoT in agriculture
-- Crop monitoring
-- Irrigation management
-- Soil management
-- Data-driven farming
-- Agricultural technology
-- Sustainable farming
+        "keywords": ["smart farming", "what is smart farming", "precision agriculture", "เกษตรอัจฉริยะ", "ฟาร์มอัจฉริยะ", "เกษตรอัจฉริยะคือ", "什么是智能农业", "智能农业是什么"],
+        "content": """Smart Farming uses IoT, sensors, and data analytics to optimize agricultural operations, improving crop yields, resource efficiency, and sustainability.
 
-Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+Services: Precision agriculture, IoT in agriculture, crop monitoring, irrigation management, soil management, data-driven farming, agricultural technology, sustainable farming.
+
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+เกษตรอัจฉริยะใช้ IoT เซ็นเซอร์ และการวิเคราะห์ข้อมูลเพื่อเพิ่มประสิทธิภาพการดำเนินงานทางการเกษตร ปรับปรุงผลผลิตพืช ประสิทธิภาพทรัพยากร และความยั่งยืน
+
+บริการ: เกษตรแม่นยำ, IoT ในการเกษตร, การตรวจสอบพืชผล, การจัดการชลประทาน, การจัดการดิน, การทำฟาร์มที่ขับเคลื่อนด้วยข้อมูล, เทคโนโลยีการเกษตร, การทำฟาร์มที่ยั่งยืน
+
+ติดต่อ: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+智能农业使用物联网、传感器和数据分析来优化农业运营，提高作物产量、资源效率和可持续性。
+
+服务：精准农业、农业物联网、作物监测、灌溉管理、土壤管理、数据驱动农业、农业技术、可持续农业
+
+联系方式：cblue.thailand@gmail.com, +66 (0)81 854 4291"""
     },
     "website_development": {
         "keywords": ["website", "web development", "web design", "พัฒนาเว็บไซต์", "ทำเว็บไซต์"],
@@ -681,16 +735,22 @@ Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
 Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
     },
     "machine_learning": {
-        "keywords": ["machine learning", "ml", "ai model", "deep learning", "neural network", "แมชชีนเลิร์นนิง", "เรียนรู้ของเครื่อง"],
-        "content": """Machine Learning
+        "keywords": ["machine learning", "what is machine learning", "ml", "what is ml", "ai model", "deep learning", "neural network", "แมชชีนเลิร์นนิง", "เรียนรู้ของเครื่อง", "machine learning คือ", "什么是机器学习", "机器学习是什么"],
+        "content": """Machine Learning is an AI field focused on algorithms that learn from data to recognize patterns and make predictions with minimal human intervention.
 
-AI field focused on algorithms that learn from data to recognize patterns and make predictions with minimal human intervention.
+Services: ML model development & training, predictive analytics, computer vision & NLP, model deployment & optimization.
 
-Services:
-• ML model development & training
-• Predictive analytics
-• Computer vision & NLP
-• Model deployment & optimization"""
+---
+
+Machine Learning คือสาขา AI ที่เน้นอัลกอริทึมที่เรียนรู้จากข้อมูลเพื่อจดจำรูปแบบและทำนายด้วยการแทรกแซงของมนุษย์น้อยที่สุด
+
+บริการ: การพัฒนาและฝึกโมเดล ML, การวิเคราะห์เชิงคาดการณ์, computer vision และ NLP, การปรับใช้และเพิ่มประสิทธิภาพโมเดล
+
+---
+
+机器学习是一个AI领域，专注于从数据中学习以识别模式并以最少的人工干预进行预测的算法。
+
+服务：ML模型开发和训练、预测分析、计算机视觉和NLP、模型部署和优化"""
     },
     "ai_chatbot": {
         "keywords": ["chatbot", "ai chatbot", "ai chat", "conversational ai", "chat bot", "แชทบอท", "บอทตอบคำถาม", "ai bot"],
@@ -720,59 +780,94 @@ Services:
 Technologies: Python, Java, C++, JavaScript, Git, Docker, Kubernetes"""
     },
     "contact_phone": {
-        "keywords": ["your phone number", "phone number", "contact number", "telephone", "เบอร์โทร", "หมายเลขโทรศัพท์"],
-        "content": """Contact Phone Number
+        "keywords": ["your phone number", "what is your phone number", "phone number", "contact number", "telephone", "เบอร์โทร", "หมายเลขโทรศัพท์", "เบอร์โทรคือ", "什么是你的电话号码", "电话号码是什么"],
+        "content": """Contact Phone Number: +66 (0)81 854 4291
 
-Phone: +66 (0)81 854 4291
+Available for inquiries about our services including solar solutions, green architecture, smart building systems, AI chatbot development, and more.
 
-Available for inquiries about our services including solar solutions, green architecture, smart building systems, AI chatbot development, and more."""
+---
+
+หมายเลขโทรศัพท์ติดต่อ: +66 (0)81 854 4291
+
+พร้อมให้บริการสอบถามเกี่ยวกับบริการของเรา รวมถึงโซลูชันพลังงานแสงอาทิตย์ สถาปัตยกรรมสีเขียว ระบบอาคารอัจฉริยะ การพัฒนาแชทบอท AI และอื่นๆ
+
+---
+
+联系电话：+66 (0)81 854 4291
+
+可咨询我们的服务，包括太阳能解决方案、绿色建筑、智能建筑系统、AI聊天机器人开发等"""
     },
     "contact_email": {
-        "keywords": ["your email", "email address", "contact email", "อีเมล", "อีเมลติดต่อ"],
-        "content": """Contact Email
+        "keywords": ["your email", "what is your email", "email address", "contact email", "อีเมล", "อีเมลติดต่อ", "อีเมลคือ", "什么是你的电子邮件", "电子邮件是什么"],
+        "content": """Contact Email: cblue.thailand@gmail.com
 
-Email: cblue.thailand@gmail.com
+Send us your inquiries about our comprehensive services including construction, engineering, smart technology solutions, and AI development.
 
-Send us your inquiries about our comprehensive services including construction, engineering, smart technology solutions, and AI development."""
+---
+
+อีเมลติดต่อ: cblue.thailand@gmail.com
+
+ส่งคำถามของคุณเกี่ยวกับบริการที่ครอบคลุมของเรา รวมถึงการก่อสร้าง วิศวกรรม โซลูชันเทคโนโลยีอัจฉริยะ และการพัฒนา AI
+
+---
+
+联系邮箱：cblue.thailand@gmail.com
+
+向我们发送有关我们全面服务的咨询，包括建筑、工程、智能技术解决方案和AI开发"""
     },
     "bms": {
-        "keywords": ["bms", "building management system", "ระบบจัดการอาคาร"],
-        "content": """BMS (Building Management System)
+        "keywords": ["bms", "what is bms", "building management system", "ระบบจัดการอาคาร", "bms คือ", "什么是bms", "bms是什么"],
+        "content": """BMS (Building Management System) is a centralized system that monitors and controls building operations including HVAC, lighting, security, and energy management.
 
-Centralized system that monitors and controls building operations including HVAC, lighting, security, and energy management.
+Features: Real-time monitoring and control, energy optimization, automated system management, predictive maintenance, integrated building operations, cost reduction through efficiency.
 
-Features:
-• Real-time monitoring and control
-• Energy optimization
-• Automated system management
-• Predictive maintenance
-• Integrated building operations
-• Cost reduction through efficiency
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291
 
-Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+---
+
+BMS (ระบบจัดการอาคาร) คือระบบรวมศูนย์ที่ตรวจสอบและควบคุมการดำเนินงานของอาคาร รวมถึง HVAC แสงสว่าง ความปลอดภัย และการจัดการพลังงาน
+
+คุณสมบัติ: การตรวจสอบและควบคุมแบบเรียลไทม์, การเพิ่มประสิทธิภาพพลังงาน, การจัดการระบบอัตโนมัติ, การบำรุงรักษาเชิงคาดการณ์, การดำเนินงานอาคารแบบบูรณาการ, การลดต้นทุนผ่านประสิทธิภาพ
+
+ติดต่อ: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+BMS（建筑管理系统）是一个集中式系统，监控和控制建筑运营，包括HVAC、照明、安全和能源管理。
+
+特点：实时监控和控制、能源优化、自动化系统管理、预测性维护、集成建筑运营、通过效率降低成本
+
+联系方式：cblue.thailand@gmail.com, +66 (0)81 854 4291"""
     },
     "iot": {
-        "keywords": ["iot", "internet of things", "connected devices", "smart devices", "อินเทอร์เน็ตของสรรพสิ่ง"],
-        "content": """IoT (Internet of Things)
+        "keywords": ["iot", "what is iot", "internet of things", "connected devices", "smart devices", "อินเทอร์เน็ตของสรรพสิ่ง", "iot คือ", "什么是物联网", "物联网是什么"],
+        "content": """IoT (Internet of Things) is a network of interconnected devices that collect and exchange data to enable smart automation and monitoring.
 
-Network of interconnected devices that collect and exchange data to enable smart automation and monitoring.
+Applications: Smart building systems, industrial automation, environmental monitoring, asset tracking, predictive maintenance, remote control and monitoring.
 
-Applications:
-• Smart building systems
-• Industrial automation
-• Environmental monitoring
-• Asset tracking
-• Predictive maintenance
-• Remote control and monitoring
+Services: IoT system design and implementation, sensor integration, data analytics, cloud connectivity, mobile app development.
 
-Services:
-• IoT system design and implementation
-• Sensor integration
-• Data analytics
-• Cloud connectivity
-• Mobile app development
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291
 
-Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+---
+
+IoT (อินเทอร์เน็ตของสรรพสิ่ง) คือเครือข่ายของอุปกรณ์ที่เชื่อมต่อกันซึ่งรวบรวมและแลกเปลี่ยนข้อมูลเพื่อเปิดใช้งานระบบอัตโนมัติและการตรวจสอบอัจฉริยะ
+
+การใช้งาน: ระบบอาคารอัจฉริยะ, ระบบอัตโนมัติทางอุตสาหกรรม, การตรวจสอบสิ่งแวดล้อม, การติดตามทรัพย์สิน, การบำรุงรักษาเชิงคาดการณ์, การควบคุมและตรวจสอบระยะไกล
+
+บริการ: การออกแบบและใช้งานระบบ IoT, การบูรณาการเซ็นเซอร์, การวิเคราะห์ข้อมูล, การเชื่อมต่อคลาวด์, การพัฒนาแอปมือถือ
+
+ติดต่อ: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+IoT（物联网）是一个互联设备网络，收集和交换数据以实现智能自动化和监控。
+
+应用：智能建筑系统、工业自动化、环境监测、资产跟踪、预测性维护、远程控制和监控
+
+服务：物联网系统设计和实施、传感器集成、数据分析、云连接、移动应用开发
+
+联系方式：cblue.thailand@gmail.com, +66 (0)81 854 4291"""
     },
     "chatbot_development": {
         "keywords": ["chatbot development", "bot development", "conversational ai development", "พัฒนาแชทบอท"],
