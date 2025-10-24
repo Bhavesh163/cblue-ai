@@ -550,21 +550,84 @@ Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
     }
 }
 
+def detect_language(text: str) -> str:
+    """Detect language: th, zh, or en"""
+    import re
+    thai_chars = len(re.findall(r'[\u0E00-\u0E7F]', text))
+    chinese_chars = len(re.findall(r'[\u4E00-\u9FFF]', text))
+    total_chars = len(text.strip())
+    
+    if total_chars == 0:
+        return 'en'
+    
+    if thai_chars / total_chars > 0.3:
+        return 'th'
+    elif chinese_chars / total_chars > 0.3:
+        return 'zh'
+    return 'en'
+
+def extract_language_content(content: str, lang: str) -> str:
+    """Extract content for specific language from multilingual content"""
+    if '---' not in content:
+        return content
+    
+    sections = content.split('---')
+    
+    if lang == 'en':
+        return sections[0].strip()
+    elif lang == 'th' and len(sections) > 1:
+        return sections[1].strip()
+    elif lang == 'zh' and len(sections) > 2:
+        return sections[2].strip()
+    
+    return sections[0].strip()
+
 def find_relevant_content(query: str) -> str:
     """Find relevant content using keyword matching with synonyms"""
     query_lower = query.lower()
+    lang = detect_language(query)
     matches = []
     
     for topic, data in KNOWLEDGE_BASE.items():
         for keyword in data["keywords"]:
             if keyword.lower() in query_lower:
-                matches.append(data["content"])
+                content = extract_language_content(data["content"], lang)
+                matches.append(content)
                 break
     
     if matches:
         return "\n\n".join(matches)
     
-    return """Cblue Thailand provides:
+    fallback = {
+        'th': """Cblue Thailand ให้บริการ:
+- โซลูชันพลังงานแสงอาทิตย์และเครื่องชาร์จ EV
+- สถาปัตยกรรมสีเขียวและการก่อสร้างสีเขียว
+- HVAC, MEP, Retrofit
+- ระบบควบคุม, ระบบอัตโนมัติ, BAS และอาคารอัจฉริยะ
+- บริการสิ่งแวดล้อมและประหยัดพลังงาน
+- ระบบรักษาความปลอดภัยและควบคุมการเข้าถึง
+- บ้านอัจฉริยะและเกษตรอัจฉริยะ
+- พัฒนาเว็บไซต์
+- พัฒนาแชทบอท AI
+- พัฒนาซอฟต์แวร์
+- Machine Learning
+
+ติดต่อ: cblue.thailand@gmail.com, +66 (0)81 854 4291""",
+        'zh': """Cblue Thailand 提供:
+- 太阳能解决方案和电动汽车充电站
+- 绿色建筑和绿色施工
+- HVAC, MEP, 改造工程
+- 控制系统、自动化、BAS和智能建筑
+- 环境服务和节能
+- 安全系统和门禁控制
+- 智能家居和智能农业
+- 网站开发
+- AI聊天机器人开发
+- 软件开发
+- 机器学习
+
+联系方式: cblue.thailand@gmail.com, +66 (0)81 854 4291""",
+        'en': """Cblue Thailand provides:
 - Solar Solutions & EV Chargers
 - Green Architecture & Green Construction
 - HVAC, MEP, Retrofit
@@ -578,3 +641,6 @@ def find_relevant_content(query: str) -> str:
 - Machine Learning
 
 Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+    }
+    
+    return fallback.get(lang, fallback['en'])
