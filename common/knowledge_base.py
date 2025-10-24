@@ -379,6 +379,152 @@ Services:
 • CI/CD pipeline implementation
 
 Technologies: Python, Java, C++, JavaScript, Git, Docker, Kubernetes"""
+    },
+    "contact_phone": {
+        "keywords": ["your phone number", "phone number", "contact number", "telephone", "เบอร์โทร", "หมายเลขโทรศัพท์"],
+        "content": """Contact Phone Number
+
+Phone: +66 (0)81 854 4291
+
+Available for inquiries about our services including solar solutions, green architecture, smart building systems, AI chatbot development, and more."""
+    },
+    "contact_email": {
+        "keywords": ["your email", "email address", "contact email", "อีเมล", "อีเมลติดต่อ"],
+        "content": """Contact Email
+
+Email: cblue.thailand@gmail.com
+
+Send us your inquiries about our comprehensive services including construction, engineering, smart technology solutions, and AI development."""
+    },
+    "bms": {
+        "keywords": ["bms", "building management system", "ระบบจัดการอาคาร"],
+        "content": """BMS (Building Management System)
+
+Centralized system that monitors and controls building operations including HVAC, lighting, security, and energy management.
+
+Features:
+• Real-time monitoring and control
+• Energy optimization
+• Automated system management
+• Predictive maintenance
+• Integrated building operations
+• Cost reduction through efficiency
+
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+    },
+    "iot": {
+        "keywords": ["iot", "internet of things", "connected devices", "smart devices", "อินเทอร์เน็ตของสรรพสิ่ง"],
+        "content": """IoT (Internet of Things)
+
+Network of interconnected devices that collect and exchange data to enable smart automation and monitoring.
+
+Applications:
+• Smart building systems
+• Industrial automation
+• Environmental monitoring
+• Asset tracking
+• Predictive maintenance
+• Remote control and monitoring
+
+Services:
+• IoT system design and implementation
+• Sensor integration
+• Data analytics
+• Cloud connectivity
+• Mobile app development
+
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+    },
+    "chatbot_development": {
+        "keywords": ["chatbot development", "bot development", "conversational ai development", "พัฒนาแชทบอท"],
+        "content": """Chatbot Development
+
+Professional development of intelligent conversational systems for businesses.
+
+Services:
+• Custom chatbot design and development
+• Natural Language Processing (NLP) integration
+• Multi-platform deployment (Web, LINE, WhatsApp, Facebook)
+• Multi-language support (Thai, English, Chinese)
+• AI training and optimization
+• Integration with existing systems
+• Maintenance and updates
+
+Use Cases:
+• Customer support automation
+• Lead generation
+• FAQ handling
+• Appointment scheduling
+• E-commerce assistance
+
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+    },
+    "ai_chatbot_development": {
+        "keywords": ["ai chatbot development", "artificial intelligence chatbot", "intelligent bot development", "พัฒนาแชทบอท ai"],
+        "content": """AI Chatbot Development
+
+Advanced artificial intelligence-powered chatbot solutions using machine learning and natural language processing.
+
+Features:
+• Advanced AI and machine learning algorithms
+• Natural Language Understanding (NLU)
+• Context-aware conversations
+• Sentiment analysis
+• Continuous learning and improvement
+• Integration with business systems
+• Analytics and reporting
+
+Technologies:
+• Machine Learning frameworks
+• NLP libraries
+• Cloud AI services
+• Custom AI models
+• Deep learning algorithms
+
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+    },
+    "green_architect": {
+        "keywords": ["green architect", "green architechture", "eco architect", "sustainable architect", "สถาปนิกสีเขียว"],
+        "content": """Green Architecture
+
+Eco-friendly buildings harmonizing with nature.
+
+Services:
+• Architectural, Interior, Landscape design
+• Detailed engineering design
+• Energy-efficient systems
+• Sustainable materials
+• Environmental design"""
+    },
+    "website_dev": {
+        "keywords": ["website development", "web development", "web design", "website design", "พัฒนาเว็บไซต์", "ทำเว็บไซต์"],
+        "content": """Website Development
+
+Professional web development services for businesses and organizations.
+
+Services:
+• Custom website design and development
+• Responsive web design
+• E-commerce websites
+• Content Management Systems (CMS)
+• Web application development
+• SEO optimization
+• Website maintenance and support
+• Performance optimization
+
+Technologies:
+• HTML5, CSS3, JavaScript
+• React, Vue.js, Angular
+• PHP, Python, Node.js
+• WordPress, Drupal
+• Database integration
+• Cloud hosting solutions
+
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+    },
+    "who_are_you": {
+        "keywords": ["who are you", "what is cblue", "about cblue", "cblue thailand", "คุณคือใคร", "cblue คือ"],
+        "content": """Cblue Thailand offers a comprehensive suite of services focused on construction, engineering, and sustainable technology solutions."""
     }
 }
 
