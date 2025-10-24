@@ -44,73 +44,268 @@ Cblue Thailand 提供全面的服务套餐，专注于人工智能/数字化解�
 • 咨询与策略: 市场研究、经济评估、可行性研究和项目管理"""
     },
     "ai_general": {
-        "keywords": ["what is ai", "ai คือ", "artificial intelligence"],
-        "content": """Artificial Intelligence (AI)
+        "keywords": ["what is ai", "ai คือ", "ai是什么", "artificial intelligence", "ปัญญาประดิษฐ์คือ", "人工智能是什么"],
+        "content": """Artificial Intelligence (AI) is technology that enables computers to simulate human intelligence, including learning, reasoning, and problem-solving. AI systems can analyze data, recognize patterns, make decisions, and improve performance over time without explicit programming.
 
-AI is technology that enables computers to simulate human intelligence, including learning, reasoning, and problem-solving. AI systems can analyze data, recognize patterns, make decisions, and improve performance over time without explicit programming.
+Applications: Virtual assistants and chatbots, image and speech recognition, autonomous vehicles, predictive analytics, natural language processing.
 
-Applications:
-• Virtual assistants and chatbots
-• Image and speech recognition
-• Autonomous vehicles
-• Predictive analytics
-• Natural language processing"""
+---
+
+ปัญญาประดิษฐ์ (AI) คือเทคโนโลยีที่ทำให้คอมพิวเตอร์สามารถจำลองความฉลาดของมนุษย์ รวมถึงการเรียนรู้ การใช้เหตุผล และการแก้ปัญหา ระบบ AI สามารถวิเคราะห์ข้อมูล จดจำรูปแบบ ตัดสินใจ และปรับปรุงประสิทธิภาพเมื่อเวลาผ่านไปโดยไม่ต้องเขียนโปรแกรมโดยตรง
+
+การใช้งาน: ผู้ช่วยเสมือนและแชทบอท, การจดจำภาพและเสียง, ยานยนต์อัตโนมัติ, การวิเคราะห์เชิงคาดการณ์, การประมวลผลภาษาธรรมชาติ
+
+---
+
+人工智能（AI）是使计算机能够模拟人类智能的技术，包括学习、推理和解决问题。AI系统可以分析数据、识别模式、做出决策，并随着时间的推移在没有明确编程的情况下提高性能。
+
+应用：虚拟助手和聊天机器人、图像和语音识别、自动驾驶汽车、预测分析、自然语言处理"""
+    },
+    "chatbot_definition": {
+        "keywords": ["what is a chatbot", "what is chatbot", "chatbot คือ", "แชทบอทคือ", "什么是聊天机器人", "聊天机器人是什么"],
+        "content": """A chatbot is an AI-powered software application that simulates human conversation through text or voice interactions. Chatbots can answer questions, provide customer support, and automate tasks 24/7.
+
+---
+
+แชทบอทคือแอปพลิเคชันซอฟต์แวร์ที่ขับเคลื่อนด้วย AI ที่จำลองการสนทนาของมนุษย์ผ่านข้อความหรือเสียง แชทบอทสามารถตอบคำถาม ให้การสนับสนุนลูกค้า และทำงานอัตโนมัติได้ตลอด 24/7
+
+---
+
+聊天机器人是一种由AI驱动的软件应用程序，通过文本或语音交互模拟人类对话。聊天机器人可以回答问题、提供客户支持并全天候自动化任务"""
+    },
+    "software_definition": {
+        "keywords": ["what is software", "software คือ", "ซอฟต์แวร์คือ", "什么是软件", "软件是什么"],
+        "content": """Software is a set of instructions, programs, or data that tells a computer how to perform specific tasks. It includes applications, operating systems, and utilities that enable computers to function.
+
+---
+
+ซอฟต์แวร์คือชุดคำสั่ง โปรแกรม หรือข้อมูลที่บอกคอมพิวเตอร์ว่าจะทำงานเฉพาะอย่างไร ประกอบด้วยแอปพลิเคชัน ระบบปฏิบัติการ และยูทิลิตี้ที่ทำให้คอมพิวเตอร์ทำงานได้
+
+---
+
+软件是一组指令、程序或数据，告诉计算机如何执行特定任务。它包括应用程序、操作系统和实用程序，使计算机能够运行"""
+    },
+    "computer_definition": {
+        "keywords": ["what is a computer", "what are computers", "คอมพิวเตอร์คือ", "什么是计算机", "计算机是什么"],
+        "content": """A computer is an electronic device that processes data and performs tasks according to programmed instructions. It can store, retrieve, and process information for various applications.
+
+---
+
+คอมพิวเตอร์คืออุปกรณ์อิเล็กทรอนิกส์ที่ประมวลผลข้อมูลและทำงานตามคำสั่งที่ตั้งโปรแกรมไว้ สามารถจัดเก็บ เรียกคืน และประมวลผลข้อมูลสำหรับการใช้งานต่างๆ
+
+---
+
+计算机是一种电子设备，根据编程指令处理数据和执行任务。它可以存储、检索和处理各种应用的信息"""
+    },
+    "data_definition": {
+        "keywords": ["what is data", "data คือ", "ข้อมูลคือ", "什么是数据", "数据是什么"],
+        "content": """Data is raw facts, figures, or information that can be processed, analyzed, and used to make decisions. Data can be numbers, text, images, or any form of information stored digitally.
+
+---
+
+ข้อมูลคือข้อเท็จจริง ตัวเลข หรือสารสนเทศดิบที่สามารถประมวลผล วิเคราะห์ และใช้ในการตัดสินใจ ข้อมูลอาจเป็นตัวเลข ข้อความ รูปภาพ หรือสารสนเทศในรูปแบบใดๆ ที่จัดเก็บในรูปแบบดิจิทัล
+
+---
+
+数据是可以被处理、分析和用于决策的原始事实、数字或信息。数据可以是数字、文本、图像或任何以数字形式存储的信息"""
+    },
+    "machine_definition": {
+        "keywords": ["what is a machine", "machine คือ", "เครื่องจักรคือ", "什么是机器", "机器是什么"],
+        "content": """A machine is a device that uses energy to perform tasks, making work easier or more efficient. In computing, it refers to computer hardware or systems.
+
+---
+
+เครื่องจักรคืออุปกรณ์ที่ใช้พลังงานในการทำงาน ทำให้งานง่ายขึ้นหรือมีประสิทธิภาพมากขึ้น ในด้านคอมพิวเตอร์ หมายถึงฮาร์ดแวร์หรือระบบคอมพิวเตอร์
+
+---
+
+机器是使用能量执行任务的设备，使工作更容易或更高效。在计算机领域，它指的是计算机硬件或系统"""
+    },
+    "learning_definition": {
+        "keywords": ["what is learning", "learning คือ", "การเรียนรู้คือ", "什么是学习", "学习是什么"],
+        "content": """Learning is the process of acquiring knowledge, skills, or understanding through study, experience, or teaching. In AI, machine learning enables systems to improve from experience.
+
+---
+
+การเรียนรู้คือกระบวนการได้มาซึ่งความรู้ ทักษะ หรือความเข้าใจผ่านการศึกษา ประสบการณ์ หรือการสอน ใน AI การเรียนรู้ของเครื่องทำให้ระบบสามารถปรับปรุงจากประสบการณ์
+
+---
+
+学习是通过学习、经验或教学获得知识、技能或理解的过程。在AI中，机器学习使系统能够从经验中改进"""
+    },
+    "technology_definition": {
+        "keywords": ["what is technology", "what are technologies", "เทคโนโลยีคือ", "什么是技术", "技术是什么"],
+        "content": """Technology is the application of scientific knowledge for practical purposes, especially in industry. It includes tools, systems, and methods used to solve problems and improve life.
+
+---
+
+เทคโนโลยีคือการประยุกต์ใช้ความรู้ทางวิทยาศาสตร์เพื่อวัตถุประสงค์ในทางปฏิบัติ โดยเฉพาะในอุตสาหกรรม ประกอบด้วยเครื่องมือ ระบบ และวิธีการที่ใช้แก้ปัญหาและปรับปรุงชีวิต
+
+---
+
+技术是将科学知识应用于实际目的，特别是在工业中。它包括用于解决问题和改善生活的工具、系统和方法"""
+    },
+    "wifi_definition": {
+        "keywords": ["what is wifi", "what is wi-fi", "wifi คือ", "ไวไฟคือ", "什么是wifi", "wifi是什么"],
+        "content": """Wi-Fi is a wireless networking technology that allows devices to connect to the internet and communicate with each other without physical cables, using radio waves.
+
+---
+
+Wi-Fi คือเทคโนโลยีเครือข่ายไร้สายที่ช่วยให้อุปกรณ์เชื่อมต่ออินเทอร์เน็ตและสื่อสารกันได้โดยไม่ต้องใช้สายเคเบิล โดยใช้คลื่นวิทยุ
+
+---
+
+Wi-Fi是一种无线网络技术，允许设备在不使用物理电缆的情况下连接到互联网并相互通信，使用无线电波"""
+    },
+    "ecofriendly_definition": {
+        "keywords": ["what is eco-friendly", "eco-friendly คือ", "เป็นมิตรกับสิ่งแวดล้อมคือ", "什么是环保", "环保是什么"],
+        "content": """Eco-friendly means not harmful to the environment. It refers to products, practices, or services that minimize negative impact on nature and promote sustainability.
+
+---
+
+เป็นมิตรกับสิ่งแวดล้อม หมายถึง ไม่เป็นอันตรายต่อสิ่งแวดล้อม หมายถึงผลิตภัณฑ์ แนวปฏิบัติ หรือบริการที่ลดผลกระทบเชิงลบต่อธรรมชาติและส่งเสริมความยั่งยืน
+
+---
+
+环保意味着对环境无害。它指的是最小化对自然负面影响并促进可持续性的产品、做法或服务"""
+    },
+    "renovation_definition": {
+        "keywords": ["what is renovation", "renovation คือ", "การรีโนเวทคือ", "什么是翻新", "翻新是什么"],
+        "content": """Renovation is the process of improving, updating, or restoring a building or space. It includes repairs, modernization, and aesthetic improvements to enhance functionality and value.
+
+---
+
+การรีโนเวทคือกระบวนการปรับปรุง อัปเดต หรือบูรณะอาคารหรือพื้นที่ ประกอบด้วยการซ่อมแซม การทำให้ทันสมัย และการปรับปรุงความสวยงามเพื่อเพิ่มการใช้งานและมูลค่า
+
+---
+
+翻新是改善、更新或修复建筑物或空间的过程。它包括维修、现代化和美学改进，以增强功能和价值"""
+    },
+    "reinstatement_definition": {
+        "keywords": ["what is reinstatement", "reinstatement คือ", "การคืนสภาพคือ", "什么是恢复原状", "恢复原状是什么"],
+        "content": """Reinstatement is the process of restoring a property to its original condition, typically required when a lease ends. It involves removing modifications and returning the space to its pre-lease state.
+
+---
+
+การคืนสภาพคือกระบวนการฟื้นฟูทรัพย์สินให้กลับสู่สภาพเดิม โดยทั่วไปจำเป็นเมื่อสัญญาเช่าสิ้นสุด ประกอบด้วยการถอดการดัดแปลงและคืนพื้นที่ให้กลับสู่สภาพก่อนเช่า
+
+---
+
+恢复原状是将物业恢复到原始状态的过程，通常在租约结束时需要。它涉及拆除改造并将空间恢复到租赁前的状态"""
+    },
+    "seo_definition": {
+        "keywords": ["what is seo", "seo คือ", "什么是seo", "seo是什么"],
+        "content": """SEO (Search Engine Optimization) is the practice of improving website visibility in search engine results. It involves optimizing content, keywords, and technical elements to rank higher and attract more organic traffic.
+
+---
+
+SEO (Search Engine Optimization) คือการปรับปรุงการมองเห็นเว็บไซต์ในผลการค้นหา ประกอบด้วยการปรับปรุงเนื้อหา คำสำคัญ และองค์ประกอบทางเทคนิคเพื่อจัดอันดับที่สูงขึ้นและดึงดูดการเข้าชมแบบออร์แกนิกมากขึ้น
+
+---
+
+SEO（搜索引擎优化）是提高网站在搜索引擎结果中可见性的做法。它涉及优化内容、关键词和技术元素，以获得更高排名并吸引更多自然流量"""
+    },
+    "coding_definition": {
+        "keywords": ["what is coding", "coding คือ", "การเขียนโค้ดคือ", "什么是编码", "编码是什么"],
+        "content": """Coding is the process of writing instructions in a programming language that computers can understand and execute. It's used to create software, websites, apps, and automate tasks.
+
+---
+
+การเขียนโค้ดคือกระบวนการเขียนคำสั่งในภาษาโปรแกรมที่คอมพิวเตอร์สามารถเข้าใจและดำเนินการได้ ใช้สร้างซอฟต์แวร์ เว็บไซต์ แอป และทำงานอัตโนมัติ
+
+---
+
+编码是用计算机能够理解和执行的编程语言编写指令的过程。它用于创建软件、网站、应用程序和自动化任务"""
+    },
+    "website_definition": {
+        "keywords": ["what is a website", "website คือ", "เว็บไซต์คือ", "什么是网站", "网站是什么"],
+        "content": """A website is a collection of web pages accessible via the internet, containing information, images, videos, or interactive content. Websites serve various purposes like business, education, entertainment, or e-commerce.
+
+---
+
+เว็บไซต์คือชุดของหน้าเว็บที่เข้าถึงได้ผ่านอินเทอร์เน็ต ประกอบด้วยข้อมูล รูปภาพ วิดีโอ หรือเนื้อหาเชิงโต้ตอบ เว็บไซต์มีวัตถุประสงค์ต่างๆ เช่น ธุรกิจ การศึกษา ความบันเทิง หรืออีคอมเมิร์ซ
+
+---
+
+网站是通过互联网访问的网页集合，包含信息、图像、视频或交互内容。网站服务于各种目的，如商业、教育、娱乐或电子商务"""
     },
     "solar": {
-        "keywords": ["solar", "solar panel", "solar energy", "solar solution", "photovoltaic", "renewable energy", "พลังงานแสงอาทิตย์", "โซล่าเซลล์"],
-        "content": """Solar Solutions
+        "keywords": ["solar", "what is solar", "solar panel", "solar energy", "solar solution", "photovoltaic", "renewable energy", "พลังงานแสงอาทิตย์", "โซล่าเซลล์", "โซล่าคือ", "什么是太阳能", "太阳能是什么", "太阳能"],
+        "content": """Solar Solutions are renewable energy systems using solar panels to convert sunlight into electricity.
 
-Renewable energy systems using solar panels to convert sunlight into electricity.
+Services: Solar panels & photovoltaic systems, renewable energy integration, clean energy technology, cost-effective power generation, sustainable energy solutions.
 
-Services:
-• Solar panels & photovoltaic systems
-• Renewable energy integration
-• Clean energy technology
-• Cost-effective power generation
-• Sustainable energy solutions"""
+---
+
+โซลูชันพลังงานแสงอาทิตย์คือระบบพลังงานหมุนเวียนที่ใช้แผงโซลาร์เซลล์แปลงแสงอาทิตย์เป็นไฟฟ้า
+
+บริการ: แผงโซลาร์เซลล์และระบบโฟโตโวลตาอิก, การบูรณาการพลังงานหมุนเวียน, เทคโนโลยีพลังงานสะอาด, การผลิตไฟฟ้าที่คุ้มค่า, โซลูชันพลังงานที่ยั่งยืน
+
+---
+
+太阳能解决方案是使用太阳能电池板将阳光转化为电能的可再生能源系统。
+
+服务：太阳能电池板和光伏系统、可再生能源集成、清洁能源技术、经济高效的发电、可持续能源解决方案"""
     },
     "ev_charger": {
-        "keywords": ["ev charger", "electric vehicle charger", "car charger", "charging station", "เครื่องชาร์จรถยนต์ไฟฟ้า", "ชาร์จรถไฟฟ้า"],
-        "content": """EV Charger
+        "keywords": ["ev charger", "what is ev charger", "electric vehicle charger", "car charger", "charging station", "เครื่องชาร์จรถยนต์ไฟฟ้า", "ชาร์จรถไฟฟ้า", "เครื่องชาร์จ ev คือ", "什么是电动汽车充电器", "电动汽车充电器", "充电站"],
+        "content": """EV Charger is an electric vehicle charging station that replenishes EV batteries.
 
-Electric vehicle charging stations that replenish EV batteries.
+Types: Level 1 (Standard home outlet, 8-12 hours), Level 2 (Faster home/public charging, 3-8 hours), DC Fast Charging (Rapid charging, 30-60 minutes).
 
-Types:
-• Level 1: Standard home outlet (slow, 8-12 hours)
-• Level 2: Faster home/public charging (3-8 hours)
-• DC Fast Charging: Rapid charging for long trips (30-60 minutes)
+Benefits: Convenient home or public charging, smart charging capabilities, renewable energy integration, cost-effective operation.
 
-Benefits:
-• Convenient home or public charging
-• Smart charging capabilities
-• Renewable energy integration
-• Cost-effective operation"""
+---
+
+เครื่องชาร์จ EV คือสถานีชาร์จรถยนต์ไฟฟ้าที่เติมพลังงานให้แบตเตอรี่ EV
+
+ประเภท: Level 1 (ปลั๊กบ้านมาตรฐาน 8-12 ชั่วโมง), Level 2 (ชาร์จที่บ้าน/สาธารณะเร็วขึ้น 3-8 ชั่วโมง), DC Fast Charging (ชาร์จเร็ว 30-60 นาที)
+
+ประโยชน์: ชาร์จที่บ้านหรือที่สาธารณะสะดวก, ความสามารถในการชาร์จอัจฉริยะ, การบูรณาการพลังงานหมุนเวียน, การใช้งานที่คุ้มค่า
+
+---
+
+电动汽车充电器是为电动汽车电池充电的充电站。
+
+类型：Level 1（标准家用插座，8-12小时），Level 2（更快的家用/公共充电，3-8小时），DC快速充电（快速充电，30-60分钟）
+
+优势：方便的家用或公共充电、智能充电功能、可再生能源集成、经济高效的运营"""
     },
     "ev": {
-        "keywords": ["ev", "electric vehicle", "what is ev", "รถไฟฟ้า"],
-        "content": """Electric Vehicle (EV)
+        "keywords": ["ev", "what is ev", "electric vehicle", "รถไฟฟ้า", "ev คือ", "什么是电动汽车", "电动汽车是什么"],
+        "content": """Electric Vehicle (EV) is a car powered by electric motors using energy stored in rechargeable batteries, instead of gasoline or diesel.
 
-A car powered by electric motors using energy stored in rechargeable batteries, instead of gasoline or diesel.
+Benefits: Zero direct emissions, quieter operation, lower operating costs, reduced maintenance, environmentally friendly.
 
-Benefits:
-• Zero direct emissions
-• Quieter operation
-• Lower operating costs
-• Reduced maintenance
-• Environmentally friendly"""
+---
+
+รถยนต์ไฟฟ้า (EV) คือรถยนต์ที่ขับเคลื่อนด้วยมอเตอร์ไฟฟ้าโดยใช้พลังงานที่เก็บไว้ในแบตเตอรี่ชาร์จได้ แทนที่จะใช้น้ำมันเบนซินหรือดีเซล
+
+ประโยชน์: ไม่มีการปล่อยมลพิษโดยตรง, ทำงานเงียบกว่า, ต้นทุนการใช้งานต่ำกว่า, การบำรุงรักษาน้อยลง, เป็นมิตรกับสิ่งแวดล้อม
+
+---
+
+电动汽车（EV）是一种由电动马达驱动的汽车，使用可充电电池中存储的能量，而不是汽油或柴油。
+
+优势：零直接排放、更安静的运行、更低的运营成本、减少维护、环保"""
     },
     "green_architecture": {
-        "keywords": ["green architecture", "green architechture", "eco-friendly design", "sustainable architecture", "สถาปัตยกรรมสีเขียว", "อาคารเขียว"],
-        "content": """Green Architecture
+        "keywords": ["green architecture", "what is green architecture", "green architechture", "eco-friendly design", "sustainable architecture", "สถาปัตยกรรมสีเขียว", "อาคารเขียว", "สถาปัตยกรรมสีเขียวคือ", "什么是绿色建筑", "绿色建筑是什么"],
+        "content": """Green Architecture refers to eco-friendly buildings harmonizing with nature.
 
-Eco-friendly buildings harmonizing with nature.
+Services: Architectural, Interior, Landscape design, detailed engineering design, energy-efficient systems, sustainable materials, environmental design.
 
-Services:
-• Architectural, Interior, Landscape design
-• Detailed engineering design
-• Energy-efficient systems
-• Sustainable materials
-• Environmental design"""
+---
+
+สถาปัตยกรรมสีเขียวหมายถึงอาคารที่เป็นมิตรกับสิ่งแวดล้อมและกลมกลืนกับธรรมชาติ
+
+บริการ: การออกแบบสถาปัตยกรรม ตกแต่งภายใน ภูมิสถาปัตย์, การออกแบบวิศวกรรมโดยละเอียด, ระบบประหยัดพลังงาน, วัสดุที่ยั่งยืน, การออกแบบสิ่งแวดล้อม
+
+---
+
+绿色建筑是指与自然和谐相处的环保建筑。
+
+服务：建筑、室内、景观设计、详细工程设计、节能系统、可持续材料、环境设计"""
     },
     "hvac": {
         "keywords": ["hvac", "air conditioning", "ventilation", "heating", "ระบบปรับอากาศ", "แอร์"],
@@ -203,32 +398,52 @@ Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
 Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
     },
     "environmental": {
-        "keywords": ["environmental", "environment", "environmental service", "สิ่งแวดล้อม", "บริการสิ่งแวดล้อม"],
-        "content": """Environmental Services
+        "keywords": ["environmental", "what is environmental", "environment", "environmental service", "what are environmental services", "สิ่งแวดล้อม", "บริการสิ่งแวดล้อม", "สิ่งแวดล้อมคือ", "什么是环境服务", "环境服务是什么"],
+        "content": """Environmental Services are sustainable practices for natural resource management and ecosystem protection.
 
-Sustainable practices for natural resource management and ecosystem protection.
+Services: Natural resource management, ecosystem restoration, biodiversity protection, pollution reduction, sustainable practices, environmental consulting.
 
-Services:
-• Natural resource management
-• Ecosystem restoration
-• Biodiversity protection
-• Pollution reduction
-• Sustainable practices
-• Environmental consulting"""
+---
+
+บริการสิ่งแวดล้อมคือแนวปฏิบัติที่ยั่งยืนสำหรับการจัดการทรัพยากรธรรมชาติและการปกป้องระบบนิเวศ
+
+บริการ: การจัดการทรัพยากรธรรมชาติ, การฟื้นฟูระบบนิเวศ, การปกป้องความหลากหลายทางชีวภาพ, การลดมลพิษ, แนวปฏิบัติที่ยั่งยืน, การให้คำปรึกษาด้านสิ่งแวดล้อม
+
+---
+
+环境服务是自然资源管理和生态系统保护的可持续实践。
+
+服务：自然资源管理、生态系统恢复、生物多样性保护、污染减少、可持续实践、环境咨询"""
     },
     "energy_saving": {
-        "keywords": ["energy saving", "energy efficiency", "save energy", "ประหยัดพลังงาน", "ประหยัดไฟ"],
-        "content": """Energy Saving
+        "keywords": ["energy saving", "what is energy saving", "energy efficiency", "save energy", "ประหยัดพลังงาน", "ประหยัดไฟ", "การประหยัดพลังงานคือ", "什么是节能", "节能是什么"],
+        "content": """Energy Saving refers to solutions to reduce energy consumption and costs while maintaining performance.
 
-Solutions to reduce energy consumption and costs while maintaining performance.
+Services: Energy efficiency solutions, cost reduction strategies, renewable energy integration, energy audits, sustainable energy practices, energy management systems.
 
-Services:
-• Energy efficiency solutions
-• Cost reduction strategies
-• Renewable energy integration
-• Energy audits
-• Sustainable energy practices
-• Energy management systems"""
+---
+
+การประหยัดพลังงานหมายถึงโซลูชันเพื่อลดการใช้พลังงานและต้นทุนในขณะที่รักษาประสิทธิภาพ
+
+บริการ: โซลูชันประสิทธิภาพพลังงาน, กลยุทธ์การลดต้นทุน, การบูรณาการพลังงานหมุนเวียน, การตรวจสอบพลังงาน, แนวปฏิบัติพลังงานที่ยั่งยืน, ระบบจัดการพลังงาน
+
+---
+
+节能是指在保持性能的同时减少能源消耗和成本的解决方案。
+
+服务：能效解决方案、成本削减策略、可再生能源集成、能源审计、可持续能源实践、能源管理系统"""
+    },
+    "environmental_footprints": {
+        "keywords": ["environmental footprint", "what is environmental footprint", "what are environmental footprints", "carbon footprint", "รอยเท้าสิ่งแวดล้อม", "รอยเท้าสิ่งแวดล้อมคือ", "什么是环境足迹", "环境足迹是什么"],
+        "content": """Environmental Footprint is the measure of human impact on the environment, including carbon emissions, resource consumption, and waste generation. It quantifies how much nature is needed to support our lifestyle.
+
+---
+
+รอยเท้าสิ่งแวดล้อมคือการวัดผลกระทบของมนุษย์ต่อสิ่งแวดล้อม รวมถึงการปล่อยคาร์บอน การใช้ทรัพยากร และการสร้างขยะ มันวัดปริมาณธรรมชาติที่จำเป็นในการสนับสนุนวิถีชีวิตของเรา
+
+---
+
+环境足迹是衡量人类对环境影响的指标，包括碳排放、资源消耗和废物产生。它量化了支持我们生活方式所需的自然资源量"""
     },
     "cctv": {
         "keywords": ["cctv", "surveillance", "camera", "security camera", "กล้องวงจรปิด"],
