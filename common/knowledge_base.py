@@ -308,94 +308,166 @@ Services: Architectural, Interior, Landscape design, detailed engineering design
 服务：建筑、室内、景观设计、详细工程设计、节能系统、可持续材料、环境设计"""
     },
     "hvac": {
-        "keywords": ["hvac", "air conditioning", "ventilation", "heating", "ระบบปรับอากาศ", "แอร์"],
-        "content": """HVAC Solutions (ระบบปรับอากาศ):
-- Energy efficiency optimization
-- Indoor comfort systems
-- System reliability
-- Heating, Ventilation, Air Conditioning
-- Climate control systems
-- Energy-efficient HVAC
+        "keywords": ["hvac", "what is hvac", "air conditioning", "ventilation", "heating", "ระบบปรับอากาศ", "แอร์", "hvac คือ", "什么是hvac", "hvac是什么"],
+        "content": """HVAC (Heating, Ventilation, Air Conditioning) is a system that provides heating, cooling, and air quality control for buildings.
 
-Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+Services: Energy efficiency optimization, indoor comfort systems, system reliability, climate control systems, energy-efficient HVAC.
+
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+HVAC (ระบบทำความร้อน ระบายอากาศ และปรับอากาศ) คือระบบที่ให้ความร้อน ความเย็น และควบคุมคุณภาพอากาศสำหรับอาคาร
+
+บริการ: การเพิ่มประสิทธิภาพพลังงาน, ระบบความสะดวกสบายภายในอาคาร, ความน่าเชื่อถือของระบบ, ระบบควบคุมอากาศ, HVAC ประหยัดพลังงาน
+
+ติดต่อ: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+HVAC（供暖、通风和空调）是为建筑物提供供暖、制冷和空气质量控制的系统。
+
+服务：能效优化、室内舒适系统、系统可靠性、气候控制系统、节能HVAC
+
+联系方式：cblue.thailand@gmail.com, +66 (0)81 854 4291"""
     },
     "mep": {
-        "keywords": ["mep", "mechanical electrical plumbing", "ระบบไฟฟ้า", "ระบบประปา"],
-        "content": """MEP (Mechanical, Electrical, Plumbing):
-- Mechanical systems design
-- Electrical systems installation
-- Plumbing infrastructure
-- Building systems integration
-- Energy-efficient MEP solutions
-- System reliability
+        "keywords": ["mep", "what is mep", "mechanical electrical plumbing", "ระบบไฟฟ้า", "ระบบประปา", "mep คือ", "什么是mep", "mep是什么"],
+        "content": """MEP (Mechanical, Electrical, Plumbing) refers to the building systems that make structures functional and comfortable.
 
-Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+Services: Mechanical systems design, electrical systems installation, plumbing infrastructure, building systems integration, energy-efficient MEP solutions, system reliability.
+
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+MEP (ระบบเครื่องกล ไฟฟ้า ประปา) หมายถึงระบบอาคารที่ทำให้โครงสร้างใช้งานได้และสะดวกสบาย
+
+บริการ: การออกแบบระบบเครื่องกล, การติดตั้งระบบไฟฟ้า, โครงสร้างพื้นฐานประปา, การบูรณาการระบบอาคาร, โซลูชัน MEP ประหยัดพลังงาน, ความน่าเชื่อถือของระบบ
+
+ติดต่อ: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+MEP（机械、电气、管道）是指使建筑结构功能齐全和舒适的建筑系统。
+
+服务：机械系统设计、电气系统安装、管道基础设施、建筑系统集成、节能MEP解决方案、系统可靠性
+
+联系方式：cblue.thailand@gmail.com, +66 (0)81 854 4291"""
     },
     "retrofit": {
-        "keywords": ["retrofit", "renovation", "renovate", "upgrade", "what is renovation", "ปรับปรุง", "รีโนเวท"],
-        "content": """Retrofit & Renovation Services
+        "keywords": ["retrofit", "what is retrofit", "renovation", "renovate", "upgrade", "what is renovation", "ปรับปรุง", "รีโนเวท", "retrofit คือ", "什么是改造", "改造是什么"],
+        "content": """Retrofit is upgrading existing buildings with new systems or features to improve energy efficiency, safety, or performance without complete reconstruction.
 
-Renovation:
-The process of improving, updating, or restoring a building or space. Includes repairs, modernization, and aesthetic improvements to enhance functionality, appearance, and value while extending the building's lifespan.
+Services: Building retrofit and upgrades, energy efficiency improvements, system modernization, building renovation, performance optimization.
 
-Retrofit:
-Upgrading existing buildings with new systems or features to improve energy efficiency, safety, or performance without complete reconstruction.
+---
 
-Services:
-• Building retrofit and upgrades
-• Energy efficiency improvements
-• System modernization
-• Building renovation
-• Performance optimization"""
+Retrofit คือการอัปเกรดอาคารที่มีอยู่ด้วยระบบหรือคุณสมบัติใหม่เพื่อปรับปรุงประสิทธิภาพพลังงาน ความปลอดภัย หรือประสิทธิภาพโดยไม่ต้องสร้างใหม่ทั้งหมด
+
+บริการ: การ retrofit และอัปเกรดอาคาร, การปรับปรุงประสิทธิภาพพลังงาน, การทำให้ระบบทันสมัย, การรีโนเวทอาคาร, การเพิ่มประสิทธิภาพ
+
+---
+
+改造是用新系统或功能升级现有建筑，以提高能源效率、安全性或性能，而无需完全重建。
+
+服务：建筑改造和升级、能效改进、系统现代化、建筑翻新、性能优化"""
     },
     "controls": {
-        "keywords": ["controls", "control system", "ระบบควบคุม", "การควบคุม"],
-        "content": """Controls (ระบบควบคุม):
-- Building control systems
-- Automated control solutions
-- System monitoring
-- Real-time control
-- Energy management controls
-- Smart control systems
+        "keywords": ["controls", "what is controls", "what are controls", "control system", "ระบบควบคุม", "การควบคุม", "ระบบควบคุมคือ", "什么是控制系统", "控制系统是什么"],
+        "content": """Controls are building control systems that automate and manage various building operations for efficiency and comfort.
 
-Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+Services: Building control systems, automated control solutions, system monitoring, real-time control, energy management controls, smart control systems.
+
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+ระบบควบคุมคือระบบควบคุมอาคารที่ทำงานอัตโนมัติและจัดการการดำเนินงานของอาคารต่างๆ เพื่อประสิทธิภาพและความสะดวกสบาย
+
+บริการ: ระบบควบคุมอาคาร, โซลูชันควบคุมอัตโนมัติ, การตรวจสอบระบบ, การควบคุมแบบเรียลไทม์, การควบคุมการจัดการพลังงาน, ระบบควบคุมอัจฉริยะ
+
+ติดต่อ: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+控制系统是自动化和管理各种建筑操作以提高效率和舒适度的建筑控制系统。
+
+服务：建筑控制系统、自动化控制解决方案、系统监控、实时控制、能源管理控制、智能控制系统
+
+联系方式：cblue.thailand@gmail.com, +66 (0)81 854 4291"""
     },
     "automation": {
-        "keywords": ["automation", "automated", "ระบบอัตโนมัติ", "อัตโนมัติ"],
-        "content": """Automation (ระบบอัตโนมัติ):
-- Building automation systems
-- Process automation
-- Smart automation solutions
-- Automated monitoring
-- Efficiency through automation
-- IoT integration
+        "keywords": ["automation", "what is automation", "automated", "ระบบอัตโนมัติ", "อัตโนมัติ", "ระบบอัตโนมัติคือ", "什么是自动化", "自动化是什么"],
+        "content": """Automation is the use of technology to perform tasks with minimal human intervention, improving efficiency and consistency.
 
-Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+Services: Building automation systems, process automation, smart automation solutions, automated monitoring, efficiency through automation, IoT integration.
+
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+ระบบอัตโนมัติคือการใช้เทคโนโลยีในการทำงานโดยมีการแทรกแซงของมนุษย์น้อยที่สุด ปรับปรุงประสิทธิภาพและความสม่ำเสมอ
+
+บริการ: ระบบอัตโนมัติของอาคาร, ระบบอัตโนมัติของกระบวนการ, โซลูชันอัตโนมัติอัจฉริยะ, การตรวจสอบอัตโนมัติ, ประสิทธิภาพผ่านระบบอัตโนมัติ, การบูรณาการ IoT
+
+ติดต่อ: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+自动化是使用技术以最少的人工干预执行任务，提高效率和一致性。
+
+服务：建筑自动化系统、流程自动化、智能自动化解决方案、自动化监控、通过自动化提高效率、物联网集成
+
+联系方式：cblue.thailand@gmail.com, +66 (0)81 854 4291"""
     },
     "bas": {
-        "keywords": ["bas", "building automation system", "ระบบบริหารอาคาร"],
-        "content": """BAS (Building Automation System):
-- Centralized building management
-- Real-time monitoring
-- Automated control systems
-- Energy optimization
-- Predictive maintenance
-- Integrated building systems
+        "keywords": ["bas", "what is bas", "building automation system", "ระบบบริหารอาคาร", "bas คือ", "什么是bas", "bas是什么"],
+        "content": """BAS (Building Automation System) is a centralized system that monitors and controls building operations including HVAC, lighting, security, and energy management.
 
-Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+Services: Centralized building management, real-time monitoring, automated control systems, energy optimization, predictive maintenance, integrated building systems.
+
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+BAS (ระบบอัตโนมัติของอาคาร) คือระบบรวมศูนย์ที่ตรวจสอบและควบคุมการดำเนินงานของอาคาร รวมถึง HVAC แสงสว่าง ความปลอดภัย และการจัดการพลังงาน
+
+บริการ: การจัดการอาคารแบบรวมศูนย์, การตรวจสอบแบบเรียลไทม์, ระบบควบคุมอัตโนมัติ, การเพิ่มประสิทธิภาพพลังงาน, การบำรุงรักษาเชิงคาดการณ์, ระบบอาคารแบบบูรณาการ
+
+ติดต่อ: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+BAS（建筑自动化系统）是一个集中式系统，监控和控制建筑运营，包括HVAC、照明、安全和能源管理。
+
+服务：集中式建筑管理、实时监控、自动化控制系统、能源优化、预测性维护、集成建筑系统
+
+联系方式：cblue.thailand@gmail.com, +66 (0)81 854 4291"""
     },
     "smart_building": {
-        "keywords": ["smart building", "intelligent building", "อาคารอัจฉริยะ", "สมาร์ทบิลดิ้ง"],
-        "content": """Smart Building (อาคารอัจฉริยะ):
-- Building Automation Systems (BAS)
-- Real-time monitoring
-- Predictive maintenance
-- Energy efficiency
-- Occupant comfort & security
-- IoT integration
-- Intelligent building management
+        "keywords": ["smart building", "what is smart building", "intelligent building", "อาคารอัจฉริยะ", "สมาร์ทบิลดิ้ง", "อาคารอัจฉริยะคือ", "什么是智能建筑", "智能建筑是什么"],
+        "content": """Smart Building is an intelligent building that uses automated systems and IoT technology to optimize operations, energy efficiency, occupant comfort, and security.
 
-Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
+Services: Building Automation Systems (BAS), real-time monitoring, predictive maintenance, energy efficiency, occupant comfort & security, IoT integration, intelligent building management.
+
+Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+อาคารอัจฉริยะคืออาคารที่ใช้ระบบอัตโนมัติและเทคโนโลยี IoT เพื่อเพิ่มประสิทธิภาพการดำเนินงาน ประสิทธิภาพพลังงาน ความสะดวกสบายของผู้อยู่อาศัย และความปลอดภัย
+
+บริการ: ระบบอัตโนมัติของอาคาร (BAS), การตรวจสอบแบบเรียลไทม์, การบำรุงรักษาเชิงคาดการณ์, ประสิทธิภาพพลังงาน, ความสะดวกสบายและความปลอดภัยของผู้อยู่อาศัย, การบูรณาการ IoT, การจัดการอาคารอัจฉริยะ
+
+ติดต่อ: cblue.thailand@gmail.com, +66 (0)81 854 4291
+
+---
+
+智能建筑是使用自动化系统和物联网技术优化运营、能源效率、居住者舒适度和安全性的智能建筑。
+
+服务：建筑自动化系统（BAS）、实时监控、预测性维护、能源效率、居住者舒适度和安全、物联网集成、智能建筑管理
+
+联系方式：cblue.thailand@gmail.com, +66 (0)81 854 4291"""
     },
     "environmental": {
         "keywords": ["environmental", "what is environmental", "environment", "environmental service", "what are environmental services", "สิ่งแวดล้อม", "บริการสิ่งแวดล้อม", "สิ่งแวดล้อมคือ", "什么是环境服务", "环境服务是什么"],
@@ -470,10 +542,40 @@ Safety devices that detect smoke, heat, or flames and alert occupants to evacuat
 Systems that identify and prevent entry by unauthorized persons using access control, sensors, and monitoring technologies. Protects restricted areas from intrusions."""
     },
     "realtime_monitoring": {
-        "keywords": ["real-time monitoring", "real time monitoring", "realtime monitoring", "live monitoring", "24/7 monitoring", "การตรวจสอบแบบเรียลไทม์"],
-        "content": """Real-Time Monitoring
+        "keywords": ["real-time monitoring", "what is real-time monitoring", "real time monitoring", "realtime monitoring", "live monitoring", "24/7 monitoring", "การตรวจสอบแบบเรียลไทม์", "การตรวจสอบแบบเรียลไทม์คือ", "什么是实时监控", "实时监控是什么"],
+        "content": """Real-Time Monitoring is continuous surveillance with instant alerts, allowing immediate response to security events 24/7. Provides live visibility and rapid notification of any incidents.
 
-Continuous surveillance with instant alerts, allowing immediate response to security events 24/7. Provides live visibility and rapid notification of any incidents."""
+---
+
+การตรวจสอบแบบเรียลไทม์คือการเฝ้าระวังอย่างต่อเนื่องพร้อมการแจ้งเตือนทันที ช่วยให้สามารถตอบสนองต่อเหตุการณ์ด้านความปลอดภัยได้ทันที 24/7 ให้การมองเห็นแบบสดและการแจ้งเตือนอย่างรวดเร็วของเหตุการณ์ใดๆ
+
+---
+
+实时监控是持续监视并即时警报，允许全天候立即响应安全事件。提供实时可见性和任何事件的快速通知"""
+    },
+    "predictive_maintenance": {
+        "keywords": ["predictive maintenance", "what is predictive maintenance", "การบำรุงรักษาเชิงคาดการณ์", "การบำรุงรักษาเชิงคาดการณ์คือ", "什么是预测性维护", "预测性维护是什么"],
+        "content": """Predictive Maintenance uses data analysis and monitoring to predict when equipment will need maintenance, preventing failures before they occur and reducing downtime.
+
+---
+
+การบำรุงรักษาเชิงคาดการณ์ใช้การวิเคราะห์ข้อมูลและการตรวจสอบเพื่อคาดการณ์ว่าอุปกรณ์จะต้องการการบำรุงรักษาเมื่อใด ป้องกันความล้มเหลวก่อนที่จะเกิดขึ้นและลดเวลาหยุดทำงาน
+
+---
+
+预测性维护使用数据分析和监控来预测设备何时需要维护，在故障发生之前预防并减少停机时间"""
+    },
+    "occupant_comfort": {
+        "keywords": ["occupant comfort", "what is occupant comfort", "ความสะดวกสบายของผู้อยู่อาศัย", "ความสะดวกสบายของผู้อยู่อาศัยคือ", "什么是居住者舒适度", "居住者舒适度是什么"],
+        "content": """Occupant Comfort refers to the physical and environmental conditions that make building occupants feel comfortable, including temperature, air quality, lighting, and acoustics.
+
+---
+
+ความสะดวกสบายของผู้อยู่อาศัยหมายถึงสภาพทางกายภาพและสิ่งแวดล้อมที่ทำให้ผู้อยู่อาศัยในอาคารรู้สึกสะดวกสบาย รวมถึงอุณหภูมิ คุณภาพอากาศ แสงสว่าง และเสียง
+
+---
+
+居住者舒适度是指使建筑居住者感到舒适的物理和环境条件，包括温度、空气质量、照明和声学"""
     },
     "emergency_response": {
         "keywords": ["emergency response", "emergency", "rapid response", "การตอบสนองฉุกเฉิน"],
