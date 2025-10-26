@@ -20,7 +20,7 @@
             <button id="cblue-chat-button" style="width:60px;height:60px;border-radius:30px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);border:none;box-shadow:0 4px 12px rgba(0,0,0,0.15);cursor:pointer;transition:transform 0.3s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
                 <svg viewBox="0 0 24 24" style="width:28px;height:28px;fill:white"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
             </button>
-            <div id="cblue-chat-window" style="display:none;position:fixed;bottom:90px;right:20px;width:380px;height:600px;background:white;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,0.15);flex-direction:column">
+            <div id="cblue-chat-window" style="display:none;position:fixed;bottom:90px;right:20px;width:320px;height:480px;background:white;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,0.15);flex-direction:column">
                 <div id="cblue-chat-header">
                     <div id="cblue-chat-header-content">
                         <div style="width:36px;height:36px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0"><img src="Customer Support Emoji.png" style="width:100%;height:100%;object-fit:cover" alt="AI"></div>
