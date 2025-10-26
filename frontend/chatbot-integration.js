@@ -4,8 +4,10 @@
     const chatbotHTML = `
         <style>
             @media (max-width: 768px) {
-                #cblue-chat-window { width: calc(100vw - 20px) !important; height: calc(100vh - 100px) !important; right: 10px !important; bottom: 80px !important; }
+                #cblue-chat-window { width: 90% !important; max-width: 340px !important; height: 500px !important; right: 50% !important; bottom: 80px !important; transform: translateX(50%) !important; }
                 #cblue-chat-button { bottom: 10px !important; right: 10px !important; }
+                #cblue-chat-messages { padding: 12px !important; }
+                #cblue-chat-input { font-size: 14px !important; padding: 10px 14px !important; }
             }
         </style>
         <div id="cblue-chatbot-container" style="position:fixed;bottom:20px;right:20px;z-index:10000">
