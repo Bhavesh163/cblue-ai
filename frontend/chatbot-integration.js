@@ -9,16 +9,14 @@
             #cblue-chat-header-text h3 { margin:0;font-size:16px;white-space:nowrap; }
             #cblue-chat-header-text small { opacity:0.9;font-size:12px; }
             @media (max-width: 768px) {
-                #cblue-chat-window { width: 90% !important; max-width: 340px !important; height: 500px !important; right: 50% !important; bottom: 80px !important; transform: translateX(50%) !important; }
+                #cblue-chat-window { width: 90% !important; max-width: 340px !important; height: 500px !important; right: 50% !important; bottom: 80px !important; transform: translateX(50%) !important; transition: height 0.3s ease; }
+                #cblue-chat-window.keyboard-open { height: 300px !important; }
                 #cblue-chat-button { bottom: 10px !important; right: 10px !important; }
-<<<<<<< HEAD
                 #cblue-chat-messages { padding: 12px !important; }
                 #cblue-chat-input { font-size: 14px !important; padding: 10px 14px !important; }
-=======
                 #cblue-chat-header { padding: 12px 16px !important; }
                 #cblue-chat-header-text h3 { font-size: 14px !important; }
                 #cblue-chat-header-text small { font-size: 11px !important; }
->>>>>>> 55c828e820d6896142258b0ee3463cd052df9e2a
             }
         </style>
         <div id="cblue-chatbot-container" style="position:fixed;bottom:20px;right:20px;z-index:10000">
@@ -57,7 +55,18 @@
         const msgs = document.getElementById('cblue-chat-messages');
         
         btn.onclick = () => { win.style.display = 'flex'; input.focus(); };
-        close.onclick = () => win.style.display = 'none';
+        close.onclick = () => { win.style.display = 'none'; win.classList.remove('keyboard-open'); };
+        
+        // Detect keyboard open/close on mobile
+        input.addEventListener('focus', () => {
+            if (window.innerWidth <= 768) {
+                setTimeout(() => win.classList.add('keyboard-open'), 300);
+            }
+        });
+        
+        input.addEventListener('blur', () => {
+            setTimeout(() => win.classList.remove('keyboard-open'), 100);
+        });
         
         form.onsubmit = async (e) => {
             e.preventDefault();
