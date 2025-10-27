@@ -959,6 +959,102 @@ Contact: cblue.thailand@gmail.com, +66 (0)81 854 4291"""
     "who_are_you": {
         "keywords": ["who are you", "what is cblue", "about cblue", "cblue thailand", "คุณคือใคร", "cblue คือ"],
         "content": """Cblue Thailand offers a comprehensive suite of services focused on construction, engineering, and sustainable technology solutions."""
+    },
+    "ai_chatbot_dev": {
+        "keywords": ["what is ai chatbot development", "ai chatbot development คือ", "การพัฒนาแชทบอท ai คือ", "什么是ai聊天机器人开发", "ai聊天机器人开发是什么"],
+        "content": """AI Chatbot Development is the process of creating intelligent conversational systems using artificial intelligence, machine learning, and natural language processing to understand and respond to user queries automatically.
+
+---
+
+การพัฒนาแชทบอท AI คือกระบวนการสร้างระบบสนทนาอัจฉริยะโดยใช้ปัญญาประดิษฐ์ การเรียนรู้ของเครื่อง และการประมวลผลภาษาธรรมชาติเพื่อเข้าใจและตอบสนองคำถามของผู้ใช้โดยอัตโนมัติ
+
+---
+
+AI聊天机器人开发是使用人工智能、机器学习和自然语言处理创建智能对话系统的过程，以自动理解和响应用户查询"""
+    },
+    "chatbot_dev": {
+        "keywords": ["what is chatbot development", "chatbot development คือ", "การพัฒนาแชทบอทคือ", "什么是聊天机器人开发", "聊天机器人开发是什么"],
+        "content": """Chatbot Development is the process of creating automated conversational programs that can interact with users through text or voice, providing customer service, information, and assistance.
+
+---
+
+การพัฒนาแชทบอทคือกระบวนการสร้างโปรแกรมสนทนาอัตโนมัติที่สามารถโต้ตอบกับผู้ใช้ผ่านข้อความหรือเสียง ให้บริการลูกค้า ข้อมูล และความช่วยเหลือ
+
+---
+
+聊天机器人开发是创建自动化对话程序的过程，可以通过文本或语音与用户交互，提供客户服务、信息和帮助"""
+    },
+    "software_dev": {
+        "keywords": ["what is software development", "software development คือ", "การพัฒนาซอฟต์แวร์คือ", "什么是软件开发", "软件开发是什么"],
+        "content": """Software Development is the systematic process of designing, creating, testing, and maintaining computer programs and applications to solve problems or meet specific requirements.
+
+---
+
+การพัฒนาซอฟต์แวร์คือกระบวนการที่เป็นระบบในการออกแบบ สร้าง ทดสอบ และบำรุงรักษาโปรแกรมคอมพิวเตอร์และแอปพลิเคชันเพื่อแก้ปัญหาหรือตอบสนองความต้องการเฉพาะ
+
+---
+
+软件开发是设计、创建、测试和维护计算机程序和应用程序以解决问题或满足特定需求的系统过程"""
+    },
+    "ml_definition": {
+        "keywords": ["what is machine learning", "what is ml", "machine learning คือ", "ml คือ", "การเรียนรู้ของเครื่องคือ", "什么是机器学习", "什么是ml", "机器学习是什么"],
+        "content": """Machine Learning (ML) is a subset of artificial intelligence that enables computers to learn and make decisions from data without being explicitly programmed for every task.
+
+---
+
+การเรียนรู้ของเครื่อง (ML) คือส่วนหนึ่งของปัญญาประดิษฐ์ที่ทำให้คอมพิวเตอร์สามารถเรียนรู้และตัดสินใจจากข้อมูลโดยไม่ต้องเขียนโปรแกรมอย่างชัดเจนสำหรับทุกงาน
+
+---
+
+机器学习（ML）是人工智能的一个子集，使计算机能够从数据中学习和做出决策，而无需为每项任务明确编程"""
+    },
+    "solar_solutions": {
+        "keywords": ["what is solar solutions", "solar solutions คือ", "โซลูชันพลังงานแสงอาทิตย์คือ", "什么是太阳能解决方案", "太阳能解决方案是什么"],
+        "content": """Solar Solutions are renewable energy systems that harness sunlight to generate clean electricity through photovoltaic panels and solar technologies.
+
+---
+
+โซลูชันพลังงานแสงอาทิตย์คือระบบพลังงานหมุนเวียนที่ใช้แสงแดดในการผลิตไฟฟ้าสะอาดผ่านแผงโซลาร์เซลล์และเทคโนโลยีพลังงานแสงอาทิตย์
+
+---
+
+太阳能解决方案是利用阳光通过光伏板和太阳能技术产生清洁电力的可再生能源系统"""
+    },
+    "technologies": {
+        "keywords": ["what are technologies", "technologies คือ", "เทคโนโลยีต่างๆคือ", "什么是技术", "技术是什么"],
+        "content": """Technologies are tools, systems, and methods developed through scientific knowledge to solve problems, improve efficiency, and enhance human capabilities.
+
+---
+
+เทคโนโลยีคือเครื่องมือ ระบบ และวิธีการที่พัฒนาขึ้นผ่านความรู้ทางวิทยาศาสตร์เพื่อแก้ปัญหา ปรับปรุงประสิทธิภาพ และเพิ่มขีดความสามารถของมนุษย์
+
+---
+
+技术是通过科学知识开发的工具、系统和方法，用于解决问题、提高效率和增强人类能力"""
+    },
+    "green_architect_def": {
+        "keywords": ["what is green architect", "green architect คือ", "สถาปนิกสีเขียวคือ", "什么是绿色建筑师", "绿色建筑师是什么"],
+        "content": """Green Architect refers to eco-friendly buildings harmonizing with nature, same as Green Architecture - sustainable building design that minimizes environmental impact.
+
+---
+
+สถาปนิกสีเขียวหมายถึงอาคารที่เป็นมิตรกับสิ่งแวดล้อมที่กลมกลืนกับธรรมชาติ เช่นเดียวกับสถาปัตยกรรมสีเขียว - การออกแบบอาคารที่ยั่งยืนซึ่งลดผลกระทบต่อสิ่งแวดล้อม
+
+---
+
+绿色建筑师是指与自然和谐相处的环保建筑，与绿色建筑相同 - 最小化环境影响的可持续建筑设计"""
+    },
+    "website_dev_def": {
+        "keywords": ["what is website development", "website development คือ", "การพัฒนาเว็บไซต์คือ", "什么是网站开发", "网站开发是什么"],
+        "content": """Website Development is the process of creating, building, and maintaining websites and web applications for the internet, including design, coding, and functionality implementation.
+
+---
+
+การพัฒนาเว็บไซต์คือกระบวนการสร้าง พัฒนา และบำรุงรักษาเว็บไซต์และเว็บแอปพลิเคชันสำหรับอินเทอร์เน็ต รวมถึงการออกแบบ การเขียนโค้ด และการใช้งานฟังก์ชัน
+
+---
+
+网站开发是为互联网创建、构建和维护网站和Web应用程序的过程，包括设计、编码和功能实现"""
     }
 }
 
