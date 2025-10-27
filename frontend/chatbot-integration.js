@@ -3,11 +3,11 @@
     
     const chatbotHTML = `
         <style>
-            #cblue-chat-header { background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;border-radius:16px 16px 0 0;min-height:68px; }
-            #cblue-chat-header-content { display:flex;align-items:center;gap:12px;flex:1;min-width:0; }
+            #cblue-chat-header { background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:10px 16px;display:flex;justify-content:space-between;align-items:center;border-radius:16px 16px 0 0;min-height:50px; }
+            #cblue-chat-header-content { display:flex;align-items:center;gap:8px;flex:1;min-width:0; }
             #cblue-chat-header-text { display:flex;flex-direction:column;min-width:0; }
-            #cblue-chat-header-text h3 { margin:0;font-size:16px;white-space:nowrap; }
-            #cblue-chat-header-text small { opacity:0.9;font-size:12px; }
+            #cblue-chat-header-text h3 { margin:0;font-size:14px;white-space:nowrap; }
+            #cblue-chat-header-text small { opacity:0.9;font-size:11px; }
             @media (max-width: 768px) {
                 #cblue-chat-window { width: 90% !important; max-width: 340px !important; height: 500px !important; right: 50% !important; bottom: 80px !important; transform: translateX(50%) !important; transition: height 0.3s ease; }
                 #cblue-chat-window.keyboard-open { height: 300px !important; }
@@ -23,13 +23,13 @@
             <button id="cblue-chat-button" style="width:60px;height:60px;border-radius:30px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);border:none;box-shadow:0 4px 12px rgba(0,0,0,0.15);cursor:pointer;transition:transform 0.3s" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
                 <svg viewBox="0 0 24 24" style="width:28px;height:28px;fill:white"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/></svg>
             </button>
-            <div id="cblue-chat-window" style="display:none;position:fixed;bottom:90px;right:20px;width:320px;height:480px;background:white;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,0.15);flex-direction:column">
+            <div id="cblue-chat-window" style="display:none;position:fixed;bottom:90px;right:20px;width:280px;height:480px;background:white;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,0.15);flex-direction:column">
                 <div id="cblue-chat-header">
                     <div id="cblue-chat-header-content">
-                        <div style="width:36px;height:36px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0"><img src="Customer Support Emoji.png" style="width:100%;height:100%;object-fit:cover" alt="AI"></div>
+                        <div style="width:30px;height:30px;background:white;border-radius:50%;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0"><img src="Customer Support Emoji.png" style="width:100%;height:100%;object-fit:cover" alt="AI"></div>
                         <div id="cblue-chat-header-text"><h3>Cblue AI Assistant</h3><small>ออนไลน์</small></div>
                     </div>
-                    <button id="cblue-chat-close" style="background:none;border:none;color:white;cursor:pointer;font-size:28px;line-height:1;flex-shrink:0">×</button>
+                    <button id="cblue-chat-close" style="background:none;border:none;color:white;cursor:pointer;font-size:24px;line-height:1;flex-shrink:0">×</button>
                 </div>
                 <div id="cblue-chat-messages" style="flex:1;overflow-y:auto;padding:20px;background:#f7f8fa"></div>
                 <div style="padding:16px;background:white;border-radius:0 0 16px 16px">

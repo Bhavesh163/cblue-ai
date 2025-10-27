@@ -26,18 +26,21 @@ def get_response(message: str) -> str:
     """Generate response using knowledge base"""
     context = find_relevant_content(message)
     
-    # Detect language
-    is_thai = any(ord(c) >= 0x0E00 and ord(c) <= 0x0E7F for c in message)
-    
     if context and "Cblue Thailand provides" not in context:
-        # Found specific content - return it without contact info
         return context
     else:
-        # Fallback response - only when no answer found
-        if is_thai:
-            return """ขออภัย ไม่พบข้อมูลที่ตรงกับคำถามของคุณ
+        # Detect language
+        has_thai = any(ord(c) >= 0x0E00 and ord(c) <= 0x0E7F for c in message)
+        has_chinese = any(ord(c) >= 0x4E00 and ord(c) <= 0x9FFF for c in message)
+        
+        if has_thai:
+            return """ขออภัยค่ะ ไม่พบข้อมูลที่ตรงกับคำถามของคุณ
 
 กรุณาติดต่อเราที่: cblue.thailand@gmail.com"""
+        elif has_chinese:
+            return """抱歉，我们未能找到与您问题相关的信息。
+
+请通过以下邮箱联系我们：cblue.thailand@gmail.com"""
         else:
             return """Sorry, I couldn't find information matching your question.
 
