@@ -9,14 +9,43 @@
             #cblue-chat-header-text h3 { margin:0;font-size:14px;white-space:nowrap; }
             #cblue-chat-header-text small { opacity:0.9;font-size:11px; }
             @media (max-width: 768px) {
-                #cblue-chat-window { width: 90% !important; max-width: 340px !important; height: 500px !important; right: 50% !important; bottom: 80px !important; transform: translateX(50%) !important; transition: height 0.3s ease; }
-                #cblue-chat-window.keyboard-open { height: 300px !important; }
-                #cblue-chat-button { bottom: 10px !important; right: 10px !important; }
+                #cblue-chat-window { width: calc(100vw - 20px) !important; max-width: 380px !important; height: calc(100vh - 120px) !important; max-height: 600px !important; right: 10px !important; bottom: 80px !important; left: 10px !important; margin: 0 auto !important; }
+                #cblue-chat-button { width: 56px !important; height: 56px !important; bottom: 12px !important; right: 12px !important; }
+                #cblue-chat-header { padding: 8px 12px !important; min-height: 42px !important; }
+                #cblue-chat-header-content { gap: 6px !important; }
+                #cblue-chat-header-content div:first-child { width: 28px !important; height: 28px !important; }
+                #cblue-chat-header-text h3 { font-size: 12px !important; }
+                #cblue-chat-header-text small { font-size: 10px !important; }
+                #cblue-chat-close { font-size: 22px !important; }
+                #cblue-chat-messages { padding: 14px !important; }
+                #cblue-chat-input { font-size: 16px !important; padding: 11px 14px !important; }
+                .chat-message-user { max-width: 75% !important; }
+                .chat-message-bot { max-width: 80% !important; }
+            }
+            @media (max-width: 480px) {
+                #cblue-chat-window { width: calc(100vw - 16px) !important; right: 8px !important; left: 8px !important; bottom: 76px !important; }
+                #cblue-chat-header { padding: 7px 10px !important; min-height: 40px !important; }
+                #cblue-chat-header-content { gap: 5px !important; }
+                #cblue-chat-header-content div:first-child { width: 26px !important; height: 26px !important; }
+                #cblue-chat-header-text h3 { font-size: 11px !important; }
+                #cblue-chat-header-text small { font-size: 9px !important; }
+                #cblue-chat-close { font-size: 20px !important; }
                 #cblue-chat-messages { padding: 12px !important; }
-                #cblue-chat-input { font-size: 14px !important; padding: 10px 14px !important; }
-                #cblue-chat-header { padding: 12px 16px !important; }
-                #cblue-chat-header-text h3 { font-size: 14px !important; }
-                #cblue-chat-header-text small { font-size: 11px !important; }
+            }
+            @media (max-width: 430px) {
+                #cblue-chat-window { height: calc((100vh - 120px) * 0.7) !important; max-height: 420px !important; }
+            }
+            @media (max-width: 375px) {
+                #cblue-chat-window { width: calc(100vw - 12px) !important; max-width: 363px !important; height: calc(100vh - 140px) !important; max-height: 480px !important; right: 6px !important; left: 6px !important; bottom: 70px !important; }
+                #cblue-chat-button { width: 50px !important; height: 50px !important; bottom: 10px !important; right: 10px !important; }
+                #cblue-chat-header { padding: 6px 8px !important; min-height: 38px !important; }
+                #cblue-chat-header-content div:first-child { width: 24px !important; height: 24px !important; }
+                #cblue-chat-header-text h3 { font-size: 11px !important; }
+                #cblue-chat-header-text small { font-size: 8px !important; }
+                #cblue-chat-close { font-size: 18px !important; }
+                #cblue-chat-messages { padding: 10px !important; }
+                #cblue-chat-input { padding: 9px 12px !important; font-size: 16px !important; }
+                .chat-message-user, .chat-message-bot { max-width: 70% !important; font-size: 13px !important; padding: 8px 12px !important; }
             }
         </style>
         <div id="cblue-chatbot-container" style="position:fixed;bottom:20px;right:20px;z-index:10000">
@@ -54,19 +83,8 @@
         const input = document.getElementById('cblue-chat-input');
         const msgs = document.getElementById('cblue-chat-messages');
         
-        btn.onclick = () => { win.style.display = 'flex'; input.focus(); };
-        close.onclick = () => { win.style.display = 'none'; win.classList.remove('keyboard-open'); };
-        
-        // Detect keyboard open/close on mobile
-        input.addEventListener('focus', () => {
-            if (window.innerWidth <= 768) {
-                setTimeout(() => win.classList.add('keyboard-open'), 300);
-            }
-        });
-        
-        input.addEventListener('blur', () => {
-            setTimeout(() => win.classList.remove('keyboard-open'), 100);
-        });
+        btn.onclick = () => { win.style.display = 'flex'; setTimeout(() => input.focus(), 100); };
+        close.onclick = () => { win.style.display = 'none'; input.blur(); };
         
         form.onsubmit = async (e) => {
             e.preventDefault();
@@ -74,11 +92,11 @@
             if (!msg) return;
             input.value = '';
             
-            msgs.innerHTML += '<div style="margin-bottom:16px;display:flex;flex-direction:row-reverse;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#667eea;color:white;display:flex;align-items:center;justify-content:center;flex-shrink:0">👤</div><div style="padding:10px 14px;border-radius:16px;background:#667eea;color:white;max-width:260px;word-wrap:break-word;font-size:17px">' + msg + '</div></div>';
+            msgs.innerHTML += '<div style="margin-bottom:16px;display:flex;flex-direction:row-reverse;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#667eea;color:white;display:flex;align-items:center;justify-content:center;flex-shrink:0">👤</div><div class="chat-message-user" style="padding:10px 14px;border-radius:16px;background:#667eea;color:white;max-width:220px;word-wrap:break-word;font-size:14px">' + msg + '</div></div>';
             msgs.scrollTop = msgs.scrollHeight;
             
             const loadingId = 'loading-' + Date.now();
-            msgs.innerHTML += '<div id="' + loadingId + '" style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden"><img src="Customer Support Emoji.png" style="width:100%;height:100%;object-fit:cover" alt="AI"></div><div style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:260px;font-size:13px">กำลังคิด...</div></div>';
+            msgs.innerHTML += '<div id="' + loadingId + '" style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden"><img src="Customer Support Emoji.png" style="width:100%;height:100%;object-fit:cover" alt="AI"></div><div class="chat-message-bot" style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:220px;font-size:13px">กำลังคิด...</div></div>';
             msgs.scrollTop = msgs.scrollHeight;
             
             try {
@@ -91,12 +109,12 @@
                 document.getElementById(loadingId).remove();
                 const responseText = d.message || 'ขออภัย ไม่ได้รับการตอบกลับ กรุณาติดต่อ: cblue.thailand@gmail.com';
                 const formattedResponse = responseText.replace(/•\s*/g, '<br>• ');
-                msgs.innerHTML += '<div style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden"><img src="Customer Support Emoji.png" style="width:100%;height:100%;object-fit:cover" alt="AI"></div><div style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:260px;word-wrap:break-word;font-size:13px;white-space:pre-line">' + formattedResponse + '</div></div>';
+                msgs.innerHTML += '<div style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden"><img src="Customer Support Emoji.png" style="width:100%;height:100%;object-fit:cover" alt="AI"></div><div class="chat-message-bot" style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:220px;word-wrap:break-word;font-size:13px;white-space:pre-line">' + formattedResponse + '</div></div>';
                 msgs.scrollTop = msgs.scrollHeight;
             } catch (err) {
                 console.error(err);
                 document.getElementById(loadingId).remove();
-                msgs.innerHTML += '<div style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden"><img src="Customer Support Emoji.png" style="width:100%;height:100%;object-fit:cover" alt="AI"></div><div style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:260px;font-size:13px">เกิดข้อผิดพลาด กรุณาติดต่อ: cblue.thailand@gmail.com</div></div>';
+                msgs.innerHTML += '<div style="margin-bottom:16px;display:flex;gap:8px"><div style="width:32px;height:32px;border-radius:50%;background:#e8eaf6;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden"><img src="Customer Support Emoji.png" style="width:100%;height:100%;object-fit:cover" alt="AI"></div><div class="chat-message-bot" style="padding:10px 14px;border-radius:16px;background:white;border:1px solid #e0e0e0;max-width:220px;font-size:13px">เกิดข้อผิดพลาด กรุณาติดต่อ: cblue.thailand@gmail.com</div></div>';
                 msgs.scrollTop = msgs.scrollHeight;
             }
         };
