@@ -28,21 +28,20 @@ def get_response(message: str) -> str:
     
     if context and "Cblue Thailand provides" not in context:
         return context
-    else:
-        # Detect language
-        has_thai = any(ord(c) >= 0x0E00 and ord(c) <= 0x0E7F for c in message)
-        has_chinese = any(ord(c) >= 0x4E00 and ord(c) <= 0x9FFF for c in message)
-        
-        if has_thai:
-            return """ขออภัยค่ะ ไม่พบข้อมูลที่ตรงกับคำถามของคุณ
+    
+    # Detect language for fallback message
+    has_thai = any(ord(c) >= 0x0E00 and ord(c) <= 0x0E7F for c in message)
+    has_chinese = any(ord(c) >= 0x4E00 and ord(c) <= 0x9FFF for c in message)
+    
+    if has_thai:
+        return """ขออภัยค่ะ ไม่พบข้อมูลที่ตรงกับคำถามของคุณ
 
 กรุณาติดต่อเราที่: cblue.thailand@gmail.com"""
-        elif has_chinese:
-            return """抱歉，我们未能找到与您问题相关的信息。
-
+    elif has_chinese:
+        return """抱歉，我们未能找到与您问题相关的信息。
 请通过以下邮箱联系我们：cblue.thailand@gmail.com"""
-        else:
-            return """Sorry, I couldn't find information matching your question.
+    else:
+        return """Sorry, I couldn't find information matching your question.
 
 Please contact us at: cblue.thailand@gmail.com"""
 
