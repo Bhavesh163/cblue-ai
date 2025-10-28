@@ -242,7 +242,7 @@ Wi-Fi是一种无线网络技术，允许设备在不使用物理电缆的情况
 绿色建筑是一种注重环境保护的设计方法，旨在减少能源消耗、减少浪费并促进建筑可持续性。"""
     },
     "ecofriendly_definition": {
-        "keywords": ["what is eco-friendly", "eco-friendly คือ", "什么是环保"],
+        "keywords": ["what is eco-friendly", "what is eco friendly", "what is ecofriendly", "eco-friendly คือ", "eco friendly คือ", "什么是环保"],
         "content": """Eco-friendly refers to products, practices, or systems that cause minimal harm to the environment.
 
 ---
@@ -338,7 +338,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 智慧建筑利用技术和传感器自动控制与优化照明、温度和能源使用等操作，以提高效率和舒适度。"""
     },
     "realtime_monitoring": {
-        "keywords": ["what is real-time monitoring", "real-time monitoring คือ", "什么是实时监控"],
+        "keywords": ["what is real-time monitoring", "what is real time monitoring", "what is realtime monitoring", "real-time monitoring คือ", "real time monitoring คือ", "什么是实时监控"],
         "content": """Real-time monitoring is the continuous observation and tracking of systems or data as events happen, allowing immediate response or adjustments.
 
 ---
@@ -446,7 +446,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 绿色施工是指可持续、节能且对环境负责的建筑实践。"""
     },
     "fitout": {
-        "keywords": ["what is fit out", "what is fitout", "fit out คือ", "什么是室内装修"],
+        "keywords": ["what is fit out", "what is fitout", "what is fit-out", "fit out คือ", "fit-out คือ", "什么是室内装修"],
         "content": """Fit Out refers to the process of furnishing and equipping interior spaces to make them functional and ready for use.
 
 ---
@@ -623,15 +623,22 @@ def extract_language_content(content: str, lang: str) -> str:
     
     return sections[0].strip()
 
+def normalize_text(text: str) -> str:
+    """Normalize text by removing hyphens and extra spaces for better matching"""
+    return text.replace('-', ' ').replace('  ', ' ').strip()
+
 def find_relevant_content(query: str) -> str:
     """Find relevant content using keyword matching with synonyms"""
     query_lower = query.lower()
+    query_normalized = normalize_text(query_lower)
     lang = detect_language(query)
     matches = []
     
     for topic, data in KNOWLEDGE_BASE.items():
         for keyword in data["keywords"]:
-            if keyword.lower() in query_lower:
+            keyword_lower = keyword.lower()
+            keyword_normalized = normalize_text(keyword_lower)
+            if keyword_lower in query_lower or keyword_normalized in query_normalized:
                 content = extract_language_content(data["content"], lang)
                 matches.append(content)
                 break
