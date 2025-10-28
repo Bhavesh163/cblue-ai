@@ -1055,6 +1055,30 @@ AI聊天机器人开发是使用人工智能、机器学习和自然语言处理
 ---
 
 网站开发是为互联网创建、构建和维护网站和Web应用程序的过程，包括设计、编码和功能实现"""
+    },
+    "seo_extended": {
+        "keywords": ["seo", "search engine optimization", "seo optimization", "seo คือ", "什么是seo"],
+        "content": """SEO (Search Engine Optimization) is the practice of improving a website's visibility in search engine results to attract more organic traffic. It involves optimizing content, keywords, and technical elements to rank higher.
+
+---
+
+SEO (Search Engine Optimization) คือการปรับปรุงการมองเห็นเว็บไซต์ในผลการค้นหาเพื่อดึงดูดการเข้าชมแบบออร์แกนิกมากขึ้น ประกอบด้วยการปรับปรุงเนื้อหา คำสำคัญ และองค์ประกอบทางเทคนิคเพื่อจัดอันดับที่สูงขึ้น
+
+---
+
+SEO（搜索引擎优化）是提高网站在搜索引擎结果中可见性的做法，以吸引更多自然流量。它涉及优化内容、关键词和技术元素以获得更高排名"""
+    },
+    "coding_extended": {
+        "keywords": ["coding", "what is coding", "programming", "การเขียนโค้ด", "编程", "什么是编程"],
+        "content": """Coding is the process of writing instructions in a programming language that computers can understand and execute. It's used to create software, websites, apps, and automate tasks.
+
+---
+
+การเขียนโค้ดคือกระบวนการเขียนคำสั่งในภาษาโปรแกรมที่คอมพิวเตอร์สามารถเข้าใจและดำเนินการได้ ใช้สร้างซอฟต์แวร์ เว็บไซต์ แอป และทำงานอัตโนมัติ
+
+---
+
+编码是用计算机能够理解和执行的编程语言编写指令的过程。它用于创建软件、网站、应用程序和自动化任务"""
     }
 }
 
