@@ -2,7 +2,7 @@
 
 KNOWLEDGE_BASE = {
     "ai_general": {
-        "keywords": ["what is ai", "ai คือ", "ai是什么", "什么是ai", "什么是人工智能"],
+        "keywords": ["what is ai", "ai คือ", "ai คืออะไร", "ai是什么", "什么是ai", "什么是人工智能"],
         "content": """AI (Artificial Intelligence) is the simulation of human intelligence in machines that are programmed to think, reason, learn, and make decisions like humans.
 
 ---
@@ -14,7 +14,7 @@ AI (ปัญญาประดิษฐ์) คือการจำลอง�
 人工智能（AI）是指在机器中模拟人类智能的技术，使其能够像人类一样思考、推理、学习和做出决策。"""
     },
     "chatbot_definition": {
-        "keywords": ["what is a chatbot", "what is chatbot", "chatbot คือ", "แชทบอทคือ", "什么是聊天机器人"],
+        "keywords": ["what is a chatbot", "what is chatbot", "chatbot คือ", "แชตบอทคือ", "แชตบอทคืออะไร", "什么是聊天机器人"],
         "content": """A chatbot is a software application that can converse with users through text or voice, often used to provide information or automate customer service tasks.
 
 ---
@@ -26,7 +26,7 @@ AI (ปัญญาประดิษฐ์) คือการจำลอง�
 聊天机器人是一种软件应用程序，可以通过文字或语音与用户进行对话，通常用于提供信息或自动化客户服务任务。"""
     },
     "ai_chatbot_development": {
-        "keywords": ["what is ai chatbot development", "ai chatbot development คือ", "什么是ai聊天机器人开发"],
+        "keywords": ["what is ai chatbot development", "ai chatbot development คือ", "การพัฒนาแชตบอท ai คืออะไร", "什么是ai聊天机器人开发"],
         "content": """AI chatbot development is the process of building chatbots that use artificial intelligence and natural language processing (NLP) to understand, learn from, and respond intelligently to user inputs.
 
 ---
@@ -38,7 +38,7 @@ AI (ปัญญาประดิษฐ์) คือการจำลอง�
 AI聊天机器人开发是构建使用人工智能和自然语言处理（NLP）技术的聊天机器人的过程，使其能够理解、学习并智能地回应用户输入。"""
     },
     "chatbot_development": {
-        "keywords": ["what is chatbot development", "chatbot development คือ", "什么是聊天机器人开发"],
+        "keywords": ["what is chatbot development", "chatbot development คือ", "การพัฒนาแชตบอทคืออะไร", "什么是聊天机器人开发"],
         "content": """Chatbot development is the creation of automated conversational programs that can interact with users through predefined rules, scripts, or AI-based understanding.
 
 ---
@@ -50,7 +50,7 @@ AI聊天机器人开发是构建使用人工智能和自然语言处理（NLP）
 聊天机器人开发是创建能通过预设规则、脚本或基于AI理解与用户互动的自动化对话程序的过程。"""
     },
     "software_definition": {
-        "keywords": ["what is software", "software คือ", "ซอฟต์แวร์คือ", "什么是软件"],
+        "keywords": ["what is software", "software คือ", "ซอฟต์แวร์คือ", "ซอฟต์แวร์คืออะไร", "什么是软件"],
         "content": """Software is a set of instructions, programs, or data that tell a computer how to perform specific tasks or functions.
 
 ---
@@ -62,7 +62,7 @@ AI聊天机器人开发是构建使用人工智能和自然语言处理（NLP）
 软件是一组指令、程序或数据，用来告诉计算机如何执行特定任务或功能。"""
     },
     "software_development": {
-        "keywords": ["what is software development", "software development คือ", "什么是软件开发"],
+        "keywords": ["what is software development", "software development คือ", "การพัฒนาซอฟต์แวร์คืออะไร", "พัฒนาซอฟต์แวร์คืออะไร", "什么是软件开发"],
         "content": """Software development is the process of designing, coding, testing, and maintaining applications, systems, or programs to meet user needs.
 
 ---
@@ -74,7 +74,7 @@ AI聊天机器人开发是构建使用人工智能和自然语言处理（NLP）
 软件开发是设计、编程、测试和维护应用程序、系统或程序的过程，以满足用户需求。"""
     },
     "machine_learning": {
-        "keywords": ["what is machine learning", "machine learning คือ", "什么是机器学习"],
+        "keywords": ["what is machine learning", "machine learning คือ", "การเรียนรู้ของเครื่องคืออะไร", "แมชชีนเลิร์นนิงคืออะไร", "什么是机器学习"],
         "content": """Machine Learning (ML) is a branch of AI that enables computers to learn from data and improve their performance without being explicitly programmed.
 
 ---
@@ -86,7 +86,7 @@ AI聊天机器人开发是构建使用人工智能和自然语言处理（NLP）
 机器学习（ML）是人工智能的一个分支，使计算机能够从数据中学习并不断提高性能，而无需明确编程。"""
     },
     "ml_definition": {
-        "keywords": ["what is ml", "ml คือ", "什么是ml"],
+        "keywords": ["what is ml", "ml คือ", "ml คืออะไร", "什么是ml"],
         "content": """ML stands for Machine Learning — a field of AI that allows computers to automatically learn patterns and make predictions from data.
 
 ---
@@ -98,7 +98,7 @@ ML คือคำย่อของ Machine Learning ซึ่งเป็น�
 ML是机器学习（Machine Learning）的缩写，是人工智能的一个领域，使计算机能够自动学习数据模式并进行预测。"""
     },
     "machine_definition": {
-        "keywords": ["what is a machine", "machine คือ", "เครื่องจักรคือ", "什么是机器"],
+        "keywords": ["what is a machine", "machine คือ", "เครื่องจักรคือ", "เครื่องจักรคืออะไร", "什么是机器"],
         "content": """A machine is a device or system that performs work or processes tasks using mechanical, electrical, or computational power.
 
 ---
@@ -110,7 +110,7 @@ ML是机器学习（Machine Learning）的缩写，是人工智能的一个领�
 机器是使用机械、电气或计算能力来执行工作或处理任务的装置或系统。"""
     },
     "learning_definition": {
-        "keywords": ["what is learning", "learning คือ", "การเรียนรู้คือ", "什么是学习"],
+        "keywords": ["what is learning", "learning คือ", "การเรียนรู้คือ", "การเรียนรู้คืออะไร", "什么是学习"],
         "content": """Learning is the process of acquiring knowledge, understanding, or skills through study, experience, or teaching.
 
 ---
@@ -122,7 +122,7 @@ ML是机器学习（Machine Learning）的缩写，是人工智能的一个领�
 学习是通过学习、经验或教学获得知识、理解或技能的过程。"""
     },
     "artificial_intelligence": {
-        "keywords": ["what is artificial intelligence", "artificial intelligence คือ", "什么是人工智能"],
+        "keywords": ["what is artificial intelligence", "artificial intelligence คือ", "ปัญญาประดิษฐ์คืออะไร", "ปัญญาประดิษฐ์คือ", "什么是人工智能"],
         "content": """Artificial intelligence is the ability of machines or computers to perform tasks that normally require human intelligence, such as reasoning, perception, and problem-solving.
 
 ---
@@ -134,7 +134,7 @@ ML是机器学习（Machine Learning）的缩写，是人工智能的一个领�
 人工智能是机器或计算机执行通常需要人类智能的任务的能力，例如推理、感知和解决问题。"""
     },
     "computer_definition": {
-        "keywords": ["what is computers", "what are computers", "คอมพิวเตอร์คือ", "什么是计算机"],
+        "keywords": ["what is computers", "what are computers", "คอมพิวเตอร์คือ", "คอมพิวเตอร์คืออะไร", "什么是计算机"],
         "content": """Computers are electronic devices that process data using instructions (software) to perform calculations, store information, and execute tasks.
 
 ---
@@ -146,7 +146,7 @@ ML是机器学习（Machine Learning）的缩写，是人工智能的一个领�
 计算机是一种电子设备，通过执行指令（软件）来处理数据、进行计算、存储信息并执行任务。"""
     },
     "data_definition": {
-        "keywords": ["what is data", "data คือ", "ข้อมูลคือ", "什么是数据"],
+        "keywords": ["what is data", "data คือ", "ข้อมูลคือ", "ข้อมูลคืออะไร", "什么是数据"],
         "content": """Data is information in raw or structured form, such as numbers, text, or images, that can be processed or analyzed by computers.
 
 ---
@@ -158,7 +158,7 @@ ML是机器学习（Machine Learning）的缩写，是人工智能的一个领�
 数据是以原始或结构化形式存在的信息，如数字、文本或图像，计算机可以处理或分析这些信息。"""
     },
     "solar": {
-        "keywords": ["what is solar", "solar คือ", "什么是太阳能"],
+        "keywords": ["what is solar", "solar คือ", "พลังงานแสงอาทิตย์คืออะไร", "พลังงานจากแสงอาทิตย์คืออะไร", "พลังงานจากดวงอาทิตย์คืออะไร", "什么是太阳能"],
         "content": """Solar refers to energy derived from the sun's radiation, which can be converted into electricity or heat.
 
 ---
@@ -170,7 +170,7 @@ ML是机器学习（Machine Learning）的缩写，是人工智能的一个领�
 太阳能指来自太阳辐射的能量，可以转化为电能或热能。"""
     },
     "solar_solutions": {
-        "keywords": ["what is solar solutions", "solar solutions คือ", "什么是太阳能解决方案"],
+        "keywords": ["what is solar solutions", "solar solutions คือ", "โซลูชันพลังงานแสงอาทิตย์คืออะไร", "什么是太阳能解决方案"],
         "content": """Solar Solutions are systems or services that use solar energy technologies (like solar panels or solar water heaters) to provide renewable power or heating.
 
 ---
@@ -182,7 +182,7 @@ ML是机器学习（Machine Learning）的缩写，是人工智能的一个领�
 太阳能解决方案是利用太阳能技术（如太阳能电池板或太阳能热水器）来提供可再生能源或供热的系统或服务。"""
     },
     "technologies": {
-        "keywords": ["what is technologies", "what are technologies", "เทคโนโลยีคือ", "什么是技术"],
+        "keywords": ["what is technologies", "what are technologies", "เทคโนโลยีคือ", "เทคโนโลยีคืออะไร", "什么是技术"],
         "content": """Technologies are tools, systems, or methods developed using scientific knowledge to solve problems or improve human life.
 
 ---
@@ -194,7 +194,7 @@ ML是机器学习（Machine Learning）的缩写，是人工智能的一个领�
 技术是利用科学知识开发的工具、系统或方法，用于解决问题或改善人类生活。"""
     },
     "ev": {
-        "keywords": ["what is ev", "ev คือ", "什么是ev"],
+        "keywords": ["what is ev", "ev คือ", "ev คืออะไร", "什么是ev"],
         "content": """EV stands for Electric Vehicle — a vehicle powered by electricity stored in batteries instead of fossil fuels.
 
 ---
@@ -206,7 +206,7 @@ EV ย่อมาจาก Electric Vehicle หมายถึงยานพ�
 EV是电动汽车（Electric Vehicle）的缩写，指使用储存在电池中的电能而非化石燃料驱动的车辆。"""
     },
     "ev_charger": {
-        "keywords": ["what is ev charger", "ev charger คือ", "什么是ev充电器"],
+        "keywords": ["what is ev charger", "ev charger คือ", "เครื่องชาร์จรถยนต์ไฟฟ้าคืออะไร", "เครื่องชาร์จไฟฟ้าคืออะไร", "ที่ชาร์จรถยนต์ไฟฟ้าคืออะไร", "什么是ev充电器"],
         "content": """An EV charger is a device that supplies electric energy to recharge the battery of an electric vehicle.
 
 ---
@@ -218,7 +218,7 @@ EV是电动汽车（Electric Vehicle）的缩写，指使用储存在电池中�
 电动汽车充电器是一种为电动车电池充电的设备。"""
     },
     "wifi_definition": {
-        "keywords": ["what is wifi", "what is wi-fi", "wifi คือ", "什么是wifi"],
+        "keywords": ["what is wifi", "what is wi-fi", "wifi คือ", "wi-fi คืออะไร", "什么是wifi"],
         "content": """Wi-Fi is a wireless networking technology that allows devices to connect to the internet or communicate without physical cables.
 
 ---
@@ -230,7 +230,7 @@ Wi-Fi คือเทคโนโลยีเครือข่ายไร้�
 Wi-Fi是一种无线网络技术，允许设备在不使用物理电缆的情况下连接到互联网或进行通信。"""
     },
     "green_architecture": {
-        "keywords": ["what is green architecture", "green architecture คือ", "什么是绿色建筑"],
+        "keywords": ["what is green architecture", "green architecture คือ", "สถาปัตยกรรมสีเขียวคืออะไร", "สถาปัตยกรรมเขียวคืออะไร", "什么是绿色建筑"],
         "content": """Green Architecture is an environmentally conscious design approach that reduces energy use, minimizes waste, and promotes sustainability in building construction.
 
 ---
@@ -242,7 +242,7 @@ Wi-Fi是一种无线网络技术，允许设备在不使用物理电缆的情况
 绿色建筑是一种注重环境保护的设计方法，旨在减少能源消耗、减少浪费并促进建筑可持续性。"""
     },
     "ecofriendly_definition": {
-        "keywords": ["what is eco-friendly", "what is eco friendly", "what is ecofriendly", "eco-friendly คือ", "eco friendly คือ", "什么是环保"],
+        "keywords": ["what is eco-friendly", "what is eco friendly", "what is ecofriendly", "eco-friendly คือ", "eco friendly คือ", "เป็นมิตรต่อสิ่งแวดล้อมหมายถึงอะไร", "มิตรต่อสิ่งแวดล้อมคืออะไร", "เป็นมิตรกับสิ่งแวดล้อมคืออะไร", "什么是环保"],
         "content": """Eco-friendly refers to products, practices, or systems that cause minimal harm to the environment.
 
 ---
@@ -254,7 +254,7 @@ Wi-Fi是一种无线网络技术，允许设备在不使用物理电缆的情况
 环保是指对环境危害最小的产品、做法或系统。"""
     },
     "hvac": {
-        "keywords": ["what is hvac", "hvac คือ", "什么是hvac"],
+        "keywords": ["what is hvac", "hvac คือ", "hvac คืออะไร", "什么是hvac"],
         "content": """HVAC stands for Heating, Ventilation, and Air Conditioning — systems used to regulate indoor climate and air quality.
 
 ---
@@ -266,7 +266,7 @@ HVAC ย่อมาจาก Heating, Ventilation, and Air Conditioning คื�
 HVAC是供暖（Heating）、通风（Ventilation）和空调（Air Conditioning）的缩写，用于调节室内气候和空气质量的系统。"""
     },
     "mep": {
-        "keywords": ["what is mep", "mep คือ", "什么是mep"],
+        "keywords": ["what is mep", "mep คือ", "mep คืออะไร", "什么是mep"],
         "content": """MEP stands for Mechanical, Electrical, and Plumbing — the essential engineering systems integrated into building design and construction.
 
 ---
@@ -278,7 +278,7 @@ MEP ย่อมาจาก Mechanical, Electrical, and Plumbing คือร�
 MEP代表机械（Mechanical）、电气（Electrical）和管道（Plumbing）工程，是建筑设计和施工中不可或缺的系统。"""
     },
     "retrofit": {
-        "keywords": ["what is retrofit", "retrofit คือ", "什么是改造"],
+        "keywords": ["what is retrofit", "retrofit คือ", "การปรับปรุงระบบ (retrofit) คืออะไร", "什么是改造"],
         "content": """Retrofit means upgrading or modifying existing buildings or systems to improve energy efficiency, performance, or sustainability.
 
 ---
@@ -290,7 +290,7 @@ MEP代表机械（Mechanical）、电气（Electrical）和管道（Plumbing）�
 改造是指升级或修改现有建筑或系统，以提高能源效率、性能或可持续性。"""
     },
     "controls": {
-        "keywords": ["what is controls", "what are controls", "controls คือ", "什么是控制系统"],
+        "keywords": ["what is controls", "what are controls", "controls คือ", "ระบบควบคุมคืออะไร", "什么是控制系统"],
         "content": """Controls refer to systems or devices that manage and regulate equipment operations, such as temperature, lighting, or security systems.
 
 ---
@@ -302,7 +302,7 @@ MEP代表机械（Mechanical）、电气（Electrical）和管道（Plumbing）�
 控制系统是用于管理和调节设备运行（如温度、照明或安全系统）的系统或装置。"""
     },
     "automation": {
-        "keywords": ["what is automation", "automation คือ", "什么是自动化"],
+        "keywords": ["what is automation", "automation คือ", "ระบบอัตโนมัติคืออะไร", "อัตโนมัติคืออะไร", "什么是自动化"],
         "content": """Automation is the use of technology to perform tasks automatically without human intervention.
 
 ---
@@ -314,7 +314,7 @@ MEP代表机械（Mechanical）、电气（Electrical）和管道（Plumbing）�
 自动化是利用技术以最少的人工干预执行任务的过程。"""
     },
     "bas": {
-        "keywords": ["what is bas", "bas คือ", "什么是bas"],
+        "keywords": ["what is bas", "bas คือ", "bas คืออะไร", "什么是bas"],
         "content": """BAS stands for Building Automation System — a centralized system that monitors and controls building functions like HVAC, lighting, and security.
 
 ---
@@ -326,7 +326,7 @@ BAS ย่อมาจาก Building Automation System คือระบบค
 BAS是楼宇自动化系统（Building Automation System）的缩写，是一个集中控制HVAC、照明和安全等建筑功能的系统。"""
     },
     "smart_building": {
-        "keywords": ["what is smart building", "smart building คือ", "什么是智慧建筑"],
+        "keywords": ["what is smart building", "smart building คือ", "อาคารอัจฉริยะคืออะไร", "อาคารสมาร์ทคืออะไร", "什么是智慧建筑"],
         "content": """A Smart Building uses technology and sensors to automatically control and optimize operations such as lighting, temperature, and energy use for efficiency and comfort.
 
 ---
@@ -338,7 +338,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 智慧建筑利用技术和传感器自动控制与优化照明、温度和能源使用等操作，以提高效率和舒适度。"""
     },
     "realtime_monitoring": {
-        "keywords": ["what is real-time monitoring", "what is real time monitoring", "what is realtime monitoring", "real-time monitoring คือ", "real time monitoring คือ", "什么是实时监控"],
+        "keywords": ["what is real-time monitoring", "what is real time monitoring", "what is realtime monitoring", "real-time monitoring คือ", "real time monitoring คือ", "การตรวจสอบแบบเรียลไทม์คืออะไร", "การตรวจสอบเรียลไทม์คืออะไร", "什么是实时监控"],
         "content": """Real-time monitoring is the continuous observation and tracking of systems or data as events happen, allowing immediate response or adjustments.
 
 ---
@@ -350,7 +350,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 实时监控是对系统或数据进行持续观察和跟踪的过程，以便在事件发生时立即响应或调整。"""
     },
     "predictive_maintenance": {
-        "keywords": ["what is predictive maintenance", "predictive maintenance คือ", "什么是预测性维护"],
+        "keywords": ["what is predictive maintenance", "predictive maintenance คือ", "การบำรุงรักษาเชิงคาดการณ์คืออะไร", "什么是预测性维护"],
         "content": """Predictive maintenance uses data and AI to predict when equipment will fail, allowing maintenance before a breakdown occurs.
 
 ---
@@ -362,7 +362,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 预测性维护利用数据和人工智能预测设备故障的时间，从而在设备损坏前进行维护。"""
     },
     "occupant_comfort": {
-        "keywords": ["what is occupant comfort", "occupant comfort คือ", "什么是居住者舒适度"],
+        "keywords": ["what is occupant comfort", "occupant comfort คือ", "ความสบายของผู้ใช้อาคารคืออะไร", "什么是居住者舒适度"],
         "content": """Occupant comfort refers to the physical and psychological well-being of people inside a building, influenced by factors like temperature, lighting, and air quality.
 
 ---
@@ -374,7 +374,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 居住者舒适度指建筑内部人员的身心舒适度，受温度、照明和空气质量等因素影响。"""
     },
     "environmental_services": {
-        "keywords": ["what is environmental services", "what are environmental services", "environmental services คือ", "什么是环境服务"],
+        "keywords": ["what is environmental services", "what are environmental services", "environmental services คือ", "บริการด้านสิ่งแวดล้อมคืออะไร", "什么是环境服务"],
         "content": """Environmental services involve managing and protecting natural resources through waste management, pollution control, and sustainability programs.
 
 ---
@@ -386,7 +386,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 环境服务包括通过废物管理、污染控制和可持续发展计划来管理和保护自然资源。"""
     },
     "energy_saving": {
-        "keywords": ["what is energy saving", "energy saving คือ", "什么是节能"],
+        "keywords": ["what is energy saving", "energy saving คือ", "การประหยัดพลังงานคืออะไร", "ประหยัดพลังงานคืออะไร", "什么是节能"],
         "content": """Energy saving means reducing energy use through efficient technologies, behavior, or design, to lower costs and environmental impact.
 
 ---
@@ -398,7 +398,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 节能是通过高效技术、行为或设计减少能源使用，从而降低成本和环境影响。"""
     },
     "environmental_footprints": {
-        "keywords": ["what is environmental footprints", "what are environmental footprints", "environmental footprints คือ", "什么是环境足迹"],
+        "keywords": ["what is environmental footprints", "what are environmental footprints", "environmental footprints คือ", "รอยเท้าสิ่งแวดล้อมคืออะไร", "什么是环境足迹"],
         "content": """Environmental footprints measure the total impact of human activities on the environment, including energy use, emissions, and resource consumption.
 
 ---
@@ -410,7 +410,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 环境足迹衡量人类活动对环境的总影响，包括能源使用、排放和资源消耗。"""
     },
     "security_system": {
-        "keywords": ["what is security system", "security system คือ", "什么是安防系统"],
+        "keywords": ["what is security system", "security system คือ", "ระบบรักษาความปลอดภัยคืออะไร", "ระบบความปลอดภัยคืออะไร", "什么是安防系统"],
         "content": """A security system is a set of devices and software designed to protect buildings or data from unauthorized access, theft, or harm.
 
 ---
@@ -422,7 +422,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 安防系统是一组设备和软件，用于保护建筑或数据免受未经授权的访问、盗窃或破坏。"""
     },
     "access_control": {
-        "keywords": ["what is access control", "access control คือ", "什么是门禁控制"],
+        "keywords": ["what is access control", "access control คือ", "การควบคุมการเข้าถึงคืออะไร", "ควบคุมการเข้าถึงคืออะไร", "什么是门禁控制"],
         "content": """Access control is a security process that restricts or grants entry to specific areas, systems, or information based on authorization.
 
 ---
@@ -434,7 +434,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 门禁控制是一种安全管理过程，根据授权限制或允许进入特定区域、系统或信息。"""
     },
     "green_construction": {
-        "keywords": ["what is green construction", "green construction คือ", "什么是绿色施工"],
+        "keywords": ["what is green construction", "green construction คือ", "การก่อสร้างสีเขียวคืออะไร", "การก่อสร้างเขียวคืออะไร", "什么是绿色施工"],
         "content": """Green construction involves building practices that are sustainable, energy-efficient, and environmentally responsible.
 
 ---
@@ -446,7 +446,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 绿色施工是指可持续、节能且对环境负责的建筑实践。"""
     },
     "fitout": {
-        "keywords": ["what is fit out", "what is fitout", "what is fit-out", "fit out คือ", "fit-out คือ", "什么是室内装修"],
+        "keywords": ["what is fit out", "what is fitout", "what is fit-out", "fit out คือ", "fit-out คือ", "งานตกแต่งภายในคืออะไร", "什么是室内装修"],
         "content": """Fit Out refers to the process of furnishing and equipping interior spaces to make them functional and ready for use.
 
 ---
@@ -458,7 +458,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 室内装修是为使空间具备功能性并可投入使用而进行的布置与设备安装过程。"""
     },
     "renovation": {
-        "keywords": ["what is renovation", "renovation คือ", "什么是翻新"],
+        "keywords": ["what is renovation", "renovation คือ", "การปรับปรุงหรือรีโนเวทคืออะไร", "รีโนเวทคืออะไร", "การรีโนเวทคืออะไร", "什么是翻新"],
         "content": """Renovation means restoring, repairing, or upgrading existing buildings to improve functionality or appearance.
 
 ---
@@ -470,7 +470,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 翻新是修复、改进或升级现有建筑的过程，以提升功能或外观。"""
     },
     "reinstatement": {
-        "keywords": ["what is reinstatement", "reinstatement คือ", "什么是恢复原状"],
+        "keywords": ["what is reinstatement", "reinstatement คือ", "การคืนสภาพคืออะไร", "什么是恢复原状"],
         "content": """Reinstatement is the process of returning a property to its original condition, often after a lease ends or construction work is completed.
 
 ---
@@ -482,7 +482,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 恢复原状是将物业恢复至原始状态的过程，通常发生在租约结束或施工完成后。"""
     },
     "vertical_garden": {
-        "keywords": ["what is vertical garden", "vertical garden คือ", "什么是垂直花园"],
+        "keywords": ["what is vertical garden", "vertical garden คือ", "สวนแนวตั้งคืออะไร", "什么是垂直花园"],
         "content": """A Vertical Garden is a structure where plants grow on vertically suspended panels, used for aesthetics, insulation, and air purification.
 
 ---
@@ -494,7 +494,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 垂直花园是一种植物在垂直悬挂面板上生长的结构，用于美化、隔热和净化空气。"""
     },
     "smart_home": {
-        "keywords": ["what is smart home", "smart home คือ", "什么是智能家居"],
+        "keywords": ["what is smart home", "smart home คือ", "บ้านอัจฉริยะคืออะไร", "บ้านสมาร์ทคืออะไร", "什么是智能家居"],
         "content": """A Smart Home uses interconnected devices and automation systems to control lighting, temperature, appliances, and security remotely.
 
 ---
@@ -506,7 +506,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 智能家居通过互联设备和自动化系统远程控制照明、温度、电器和安防系统。"""
     },
     "smart_farming": {
-        "keywords": ["what is smart farming", "smart farming คือ", "什么是智慧农业"],
+        "keywords": ["what is smart farming", "smart farming คือ", "เกษตรอัจฉริยะคืออะไร", "เกษตรสมาร์ทคืออะไร", "การเกษตรอัจฉริยะคืออะไร", "什么是智慧农业"],
         "content": """Smart farming uses IoT, sensors, and AI technologies to optimize agricultural production, reduce waste, and improve efficiency.
 
 ---
@@ -518,7 +518,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 智慧农业利用物联网（IoT）、传感器和人工智能技术优化农业生产、减少浪费并提高效率。"""
     },
     "website": {
-        "keywords": ["what is a website", "website คือ", "什么是网站"],
+        "keywords": ["what is a website", "website คือ", "เว็บไซต์คืออะไร", "什么是网站"],
         "content": """A website is a collection of web pages accessible via the internet, typically under a single domain name.
 
 ---
@@ -530,7 +530,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 网站是一组网页的集合，可通过互联网访问，通常位于同一个域名下。"""
     },
     "website_development": {
-        "keywords": ["what is website development", "website development คือ", "什么是网站开发"],
+        "keywords": ["what is website development", "website development คือ", "การพัฒนาเว็บไซต์คืออะไร", "พัฒนาเว็บไซต์คืออะไร", "什么是网站开发"],
         "content": """Website development is the process of designing, coding, and maintaining websites to ensure functionality, accessibility, and performance.
 
 ---
@@ -542,7 +542,7 @@ BAS是楼宇自动化系统（Building Automation System）的缩写，是一个
 网站开发是设计、编程和维护网站的过程，以确保其功能性、可访问性和性能。"""
     },
     "seo_definition": {
-        "keywords": ["what is seo", "seo คือ", "什么是seo"],
+        "keywords": ["what is seo", "seo คือ", "seo คืออะไร", "什么是seo"],
         "content": """SEO (Search Engine Optimization) is the practice of improving a website's visibility in search engine results to attract more organic traffic.
 
 ---
@@ -554,7 +554,7 @@ SEO (Search Engine Optimization) คือการปรับปรุงเ�
 SEO（搜索引擎优化）是提高网站在搜索引擎结果中可见度的实践，以吸引更多自然流量。"""
     },
     "coding_definition": {
-        "keywords": ["what is coding", "coding คือ", "什么是编程"],
+        "keywords": ["what is coding", "coding คือ", "การเขียนโค้ดคืออะไร", "什么是编程"],
         "content": """Coding is the process of writing instructions in a programming language to create software, applications, or websites.
 
 ---
@@ -566,19 +566,19 @@ SEO（搜索引擎优化）是提高网站在搜索引擎结果中可见度的�
 编程是用编程语言编写指令的过程，用于创建软件、应用程序或网站。"""
     },
     "contact_phone": {
-        "keywords": ["what is your phone number", "your phone number", "phone number", "เบอร์โทร", "你的电话号码"],
+        "keywords": ["what is your phone number", "your phone number", "phone number", "เบอร์โทร", "หมายเลขโทรศัพท์ของคุณคืออะไร", "เบอร์โทรศัพท์คืออะไร", "เบอร์ติดต่อ", "你的电话号码"],
         "content": """You can contact us at +66 (0)81 854 4291
 
 ---
 
-คุณสามารถติดต่อเราได้ที่ +66 (0)81 854 4291
+คุณสามารถติดต่อฉันได้ที่ +66 (0)81 854 4291
 
 ---
 
 您可以拨打 +66 (0)81 854 4291 联系我们。"""
     },
     "contact_email": {
-        "keywords": ["what is your email", "your email", "email address", "อีเมล", "你的电子邮件"],
+        "keywords": ["what is your email", "your email", "email address", "อีเมล", "อีเมลของคุณคืออะไร", "อีเมลคืออะไร", "อีเมลติดต่อ", "你的电子邮件"],
         "content": """You can email me through cblue.thailand@gmail.com
 
 ---
@@ -634,14 +634,41 @@ def find_relevant_content(query: str) -> str:
     lang = detect_language(query)
     matches = []
     
-    for topic, data in KNOWLEDGE_BASE.items():
-        for keyword in data["keywords"]:
-            keyword_lower = keyword.lower()
-            keyword_normalized = normalize_text(keyword_lower)
-            if keyword_lower in query_lower or keyword_normalized in query_normalized:
-                content = extract_language_content(data["content"], lang)
-                matches.append(content)
-                break
+    # Check if query is a single word (no spaces or only one word)
+    # If so, treat it as "what is <word>"
+    query_words = query_normalized.strip().split()
+    is_single_word = len(query_words) == 1
+    
+    # If single word query, expand it based on language
+    if is_single_word:
+        single_word = query_words[0]
+        if lang == 'th':
+            # For Thai, add variations: "word คือ", "word คืออะไร"
+            expanded_queries = [single_word, f"{single_word} คือ", f"{single_word} คืออะไร", 
+                              f"{single_word}คือ", f"{single_word}คืออะไร"]
+        elif lang == 'zh':
+            # For Chinese, add variations: "什么是word", "word是什么"
+            expanded_queries = [single_word, f"什么是{single_word}", f"{single_word}是什么"]
+        else:
+            # For English, add "what is word"
+            expanded_queries = [single_word, f"what is {single_word}", f"what is a {single_word}",
+                              f"what are {single_word}"]
+    else:
+        expanded_queries = [query_lower, query_normalized]
+    
+    # Search through all expanded query variations
+    for search_query in expanded_queries:
+        for topic, data in KNOWLEDGE_BASE.items():
+            for keyword in data["keywords"]:
+                keyword_lower = keyword.lower()
+                keyword_normalized = normalize_text(keyword_lower)
+                if keyword_lower in search_query or keyword_normalized in search_query or search_query in keyword_lower:
+                    content = extract_language_content(data["content"], lang)
+                    if content not in matches:  # Avoid duplicates
+                        matches.append(content)
+                    break
+        if matches:  # If we found matches, stop searching
+            break
     
     if matches:
         return "\n\n".join(matches)
