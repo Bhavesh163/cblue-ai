@@ -1756,6 +1756,198 @@ SEO（搜索引擎优化）是提高网站在搜索引擎结果中可见度的�
     "green_architecture_th": {
         "keywords": ["สถาปัตยกรรมสีเขียวคืออะไร"],
         "content": """สถาปัตยกรรมสีเขียวคือแนวคิดการออกแบบอาคารที่คำนึงถึงสิ่งแวดล้อม เน้นการประหยัดพลังงาน ลดของเสีย และสร้างความยั่งยืน"""
+    },
+    "cctv": {
+        "keywords": ["what is cctv", "cctv คือ", "cctv คืออะไร", "กล้องวงจรปิด", "กล้องวงจรปิดคืออะไร", "什么是cctv", "闭路电视", "闭路电视是什么"],
+        "content": """CCTV (Closed-Circuit Television) is a video surveillance system that monitors and records activities in specific areas for security purposes.
+
+---
+
+กล้องวงจรปิดคือระบบเฝ้าระวังด้วยวิดีโอที่ติดตามและบันทึกกิจกรรมในพื้นที่เฉพาะเพื่อวัตถุประสงค์ด้านความปลอดภัย
+
+---
+
+闭路电视是一种视频监控系统，用于监控和记录特定区域的活动以实现安全目的。"""
+    },
+    "alarm_systems": {
+        "keywords": ["what is alarm systems", "what are alarm systems", "alarm systems คือ", "ระบบเตือนภัย", "ระบบเตือนภัยคืออะไร", "什么是报警系统", "报警系统", "报警系统是什么"],
+        "content": """Alarm systems are security systems that detect unauthorized entry, fire, or other emergencies and alert users through sounds, notifications, or signals.
+
+---
+
+ระบบเตือนภัยคือระบบรักษาความปลอดภัยที่ตรวจจับการบุกรุก ไฟไหม้ หรือเหตุฉุกเฉินอื่นๆ และแจ้งเตือนผู้ใช้ผ่านเสียง การแจ้งเตือน หรือสัญญาณ
+
+---
+
+报警系统是检测未经授权进入、火灾或其他紧急情况并通过声音、通知或信号提醒用户的安全系统。"""
+    },
+    "intrusion_detection": {
+        "keywords": ["what is intrusion detection", "intrusion detection คือ", "การตรวจจับการบุกรุก", "การตรวจจับการบุกรุกคืออะไร", "什么是入侵检测", "入侵检测", "入侵检测是什么"],
+        "content": """Intrusion detection is technology that monitors networks or systems to identify unauthorized access attempts or security breaches.
+
+---
+
+การตรวจจับการบุกรุกคือเทคโนโลยีที่ตรวจสอบเครือข่ายหรือระบบเพื่อระบุความพยายามเข้าถึงโดยไม่ได้รับอนุญาตหรือการละเมิดความปลอดภัย
+
+---
+
+入侵检测是监控网络或系统以识别未经授权的访问尝试或安全漏洞的技术。"""
+    },
+    "motion_detectors": {
+        "keywords": ["what is motion detectors", "what are motion detectors", "motion detectors คือ", "เครื่องตรวจจับการเคลื่อนไหว", "เครื่องตรวจจับการเคลื่อนไหวคืออะไร", "什么是运动探测器", "运动探测器", "运动探测器是什么"],
+        "content": """Motion detectors are devices that sense movement in an area and trigger alarms or automated responses for security or automation purposes.
+
+---
+
+เครื่องตรวจจับการเคลื่อนไหวคืออุปกรณ์ที่รับรู้การเคลื่อนไหวในพื้นที่และกระตุ้นสัญญาณเตือนหรือการตอบสนองอัตโนมัติเพื่อความปลอดภัยหรือระบบอัตโนมัติ
+
+---
+
+运动探测器是感应区域内运动并触发警报或自动响应以实现安全或自动化目的的设备。"""
+    },
+    "motion_sensors": {
+        "keywords": ["what is motion sensors", "what are motion sensors", "motion sensors คือ", "เซ็นเซอร์ตรวจจับการเคลื่อนไหว", "เซ็นเซอร์ตรวจจับการเคลื่อนไหวคืออะไร", "什么是运动传感器", "运动传感器", "运动传感器是什么"],
+        "content": """Motion sensors are electronic devices that detect physical movement using infrared, microwave, or other technologies to activate lights, alarms, or systems.
+
+---
+
+เซ็นเซอร์ตรวจจับการเคลื่อนไหวคืออุปกรณ์อิเล็กทรอนิกส์ที่ตรวจจับการเคลื่อนไหวทางกายภาพโดยใช้อินฟราเรด ไมโครเวฟ หรือเทคโนโลยีอื่นๆ เพื่อเปิดไฟ สัญญาณเตือน หรือระบบต่างๆ
+
+---
+
+运动传感器是使用红外线、微波或其他技术检测物理运动以激活灯光、警报或系统的电子设备。"""
+    },
+    "cybersecurity": {
+        "keywords": ["what is cybersecurity", "cybersecurity คือ", "ความปลอดภัยทางไซเบอร์", "ความปลอดภัยทางไซเบอร์คืออะไร", "什么是网络安全", "网络安全", "网络安全是什么"],
+        "content": """Cybersecurity is the practice of protecting computer systems, networks, and data from digital attacks, unauthorized access, and damage.
+
+---
+
+ความปลอดภัยทางไซเบอร์คือการปฏิบัติในการปกป้องระบบคอมพิวเตอร์ เครือข่าย และข้อมูลจากการโจมตีทางดิจิทัล การเข้าถึงโดยไม่ได้รับอนุญาต และความเสียหาย
+
+---
+
+网络安全是保护计算机系统、网络和数据免受数字攻击、未经授权访问和损坏的实践。"""
+    },
+    "data_protection": {
+        "keywords": ["what is data protection", "data protection คือ", "การปกป้องข้อมูล", "การปกป้องข้อมูลคืออะไร", "什么是数据保护", "数据保护", "数据保护是什么"],
+        "content": """Data protection refers to measures and practices to safeguard sensitive information from unauthorized access, corruption, or loss.
+
+---
+
+การปกป้องข้อมูลคือมาตรการและแนวปฏิบัติในการปกป้องข้อมูลที่ละเอียดอ่อนจากการเข้าถึงโดยไม่ได้รับอนุญาต การเสียหาย หรือการสูญหาย
+
+---
+
+数据保护是保护敏感信息免受未经授权访问、损坏或丢失的措施和实践。"""
+    },
+    "network_security": {
+        "keywords": ["what is network security", "network security คือ", "ความปลอดภัยของเครือข่าย", "ความปลอดภัยของเครือข่ายคืออะไร", "什么是网络安全", "网络安全"],
+        "content": """Network security is the protection of computer networks from intrusions, attacks, and unauthorized access through firewalls, encryption, and monitoring.
+
+---
+
+ความปลอดภัยของเครือข่ายคือการปกป้องเครือข่ายคอมพิวเตอร์จากการบุกรุก การโจมตี และการเข้าถึงโดยไม่ได้รับอนุญาตผ่านไฟร์วอลล์ การเข้ารหัส และการตรวจสอบ
+
+---
+
+网络安全是通过防火墙、加密和监控保护计算机网络免受入侵、攻击和未经授权访问。"""
+    },
+    "identity_access_management": {
+        "keywords": ["what is identity & access management", "what is identity and access management", "identity & access management คือ", "identity and access management คือ", "การจัดการตัวตนและการเข้าถึง", "การจัดการตัวตนและการเข้าถึงคืออะไร", "什么是身份和访问管理", "身份和访问管理", "身份和访问管理是什么"],
+        "content": """Identity & access management (IAM) refers to systems and policies that control who can access resources and verify user identities in an organization.
+
+---
+
+การจัดการตัวตนและการเข้าถึงคือระบบและนโยบายที่ควบคุมว่าใครสามารถเข้าถึงทรัพยากรและตรวจสอบตัวตนของผู้ใช้ในองค์กร
+
+---
+
+身份和访问管理是控制谁可以访问资源并验证组织中用户身份的系统和策略。"""
+    },
+    "bms": {
+        "keywords": ["what is bms", "bms คือ", "bms คืออะไร", "ระบบบริหารจัดการอาคาร", "ระบบบริหารจัดการอาคารคืออะไร", "什么是bms", "楼宇管理系统"],
+        "content": """BMS (Building Management System) is a computer-based control system that monitors and manages building facilities like HVAC, lighting, and security.
+
+---
+
+ระบบบริหารจัดการอาคาร (BMS) คือระบบควบคุมที่ใช้คอมพิวเตอร์ซึ่งตรวจสอบและจัดการสิ่งอำนวยความสะดวกของอาคาร เช่น ระบบปรับอากาศ แสงสว่าง และความปลอดภัย
+
+---
+
+楼宇管理系统（BMS）是基于计算机的控制系统，用于监控和管理建筑设施，如暖通空调、照明和安全。"""
+    },
+    "mechanical": {
+        "keywords": ["what is mechanical", "mechanical คือ", "ระบบเครื่องกล", "ระบบเครื่องกลคืออะไร", "什么是机械系统", "机械系统", "机械系统是什么"],
+        "content": """Mechanical systems involve physical machinery and equipment, including HVAC, elevators, and other moving components in buildings.
+
+---
+
+ระบบเครื่องกลคือระบบที่เกี่ยวข้องกับเครื่องจักรและอุปกรณ์ทางกายภาพ รวมถึงระบบปรับอากาศ ลิฟต์ และส่วนประกอบที่เคลื่อนไหวอื่นๆ ในอาคาร
+
+---
+
+机械系统涉及物理机械和设备，包括暖通空调、电梯和建筑物中的其他移动部件。"""
+    },
+    "electrical": {
+        "keywords": ["what is electrical", "electrical คือ", "ระบบไฟฟ้า", "ระบบไฟฟ้าคืออะไร", "什么是电气系统", "电气系统", "电气系统是什么"],
+        "content": """Electrical systems distribute and control electrical power throughout a building, including wiring, panels, and electrical equipment.
+
+---
+
+ระบบไฟฟ้าคือระบบที่กระจายและควบคุมพลังงานไฟฟ้าทั่วทั้งอาคาร รวมถึงสายไฟ แผงควบคุม และอุปกรณ์ไฟฟ้า
+
+---
+
+电气系统是在整个建筑物中分配和控制电力的系统，包括布线、配电板和电气设备。"""
+    },
+    "plumbing": {
+        "keywords": ["what is plumbing", "plumbing คือ", "ระบบประปา", "ระบบประปาคืออะไร", "什么是管道系统", "管道系统", "管道系统是什么"],
+        "content": """Plumbing systems manage water supply, drainage, and sewage in buildings through pipes, fixtures, and related equipment.
+
+---
+
+ระบบประปาคือระบบที่จัดการน้ำประปา ระบบระบายน้ำ และน้ำเสียในอาคารผ่านท่อ อุปกรณ์ และอุปกรณ์ที่เกี่ยวข้อง
+
+---
+
+管道系统是通过管道、固定装置和相关设备管理建筑物中的供水、排水和污水的系统。"""
+    },
+    "fire_protection": {
+        "keywords": ["what is fire protection", "fire protection คือ", "ระบบป้องกันอัคคีภัย", "ระบบป้องกันอัคคีภัยคืออะไร", "什么是消防系统", "消防系统", "消防系统是什么"],
+        "content": """Fire protection refers to systems and measures designed to detect, prevent, and suppress fires, including alarms, sprinklers, and fire extinguishers.
+
+---
+
+ระบบป้องกันอัคคีภัยคือระบบและมาตรการที่ออกแบบมาเพื่อตรวจจับ ป้องกัน และดับไฟ รวมถึงสัญญาณเตือน สปริงเกลอร์ และเครื่องดับเพลิง
+
+---
+
+消防系统是设计用于检测、预防和扑灭火灾的系统和措施，包括警报器、喷淋系统和灭火器。"""
+    },
+    "power_control": {
+        "keywords": ["what is power control", "power control คือ", "ระบบควบคุมพลังงาน", "ระบบควบคุมพลังงานคืออะไร", "什么是电源控制", "电源控制", "电源控制是什么"],
+        "content": """Power control refers to systems that regulate and manage electrical power distribution, voltage, and consumption in buildings or facilities.
+
+---
+
+ระบบควบคุมพลังงานคือระบบที่ควบคุมและจัดการการกระจายพลังงานไฟฟ้า แรงดันไฟฟ้า และการใช้พลังงานในอาคารหรือสิ่งอำนวยความสะดวก
+
+---
+
+电源控制是调节和管理建筑物或设施中电力分配、电压和消耗的系统。"""
+    },
+    "lighting_control": {
+        "keywords": ["what is lighting control", "lighting control คือ", "ระบบควบคุมแสงสว่าง", "ระบบควบคุมแสงสว่างคืออะไร", "什么是照明控制", "照明控制", "照明控制是什么"],
+        "content": """Lighting control refers to automated systems that manage lighting levels, schedules, and energy efficiency through sensors, timers, and smart controls.
+
+---
+
+ระบบควบคุมแสงสว่างคือระบบอัตโนมัติที่จัดการระดับแสง ตารางเวลา และประสิทธิภาพการใช้พลังงานผ่านเซ็นเซอร์ ตัวจับเวลา และการควบคุมอัจฉริยะ
+
+---
+
+照明控制是通过传感器、定时器和智能控制管理照明水平、时间表和能源效率的自动化系统。"""
     }
 }
 
