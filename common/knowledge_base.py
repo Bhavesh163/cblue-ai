@@ -1948,6 +1948,399 @@ SEO（搜索引擎优化）是提高网站在搜索引擎结果中可见度的�
 ---
 
 照明控制是通过传感器、定时器和智能控制管理照明水平、时间表和能源效率的自动化系统。"""
+    },
+    "what_solutions_offered": {
+        "keywords": ["what solutions do you offer", "what solutions", "คุณมีโซลูชันอะไรบ้าง", "你们有什么解决方案"],
+        "content": """We offer comprehensive solutions including:
+• Digital Solutions: AI chatbot development, software development, and machine learning
+• Smart Technology & Automation: Building Management Systems (BMS), smart building controls, automation, and energy-saving solutions
+• Renewable Energy & EV Solutions: Solar power, wind turbines, and EV charging stations
+• Design & Engineering: Full architectural, interior, landscape, and detailed engineering design
+• Construction & Specialized Trades: General construction, fit-outs, HVAC, MEP systems, retrofitting, and green building
+• Specialized Fabrication: Metal sheet, steel structure, aluminium, and glass work
+• Consulting & Strategy: Market research, economic evaluations, feasibility studies, and project management
+
+---
+
+เรามีโซลูชันที่ครอบคลุม ได้แก่:
+• โซลูชันดิจิทัล: พัฒนาแชทบอต AI, การพัฒนาซอฟต์แวร์, และการเรียนรู้ของเครื่อง
+• เทคโนโลยีอัจฉริยะและระบบอัตโนมัติ: ระบบจัดการอาคาร (BMS), ระบบควบคุมอาคารอัจฉริยะ, ระบบอัตโนมัติ, และโซลูชันประหยัดพลังงาน
+• พลังงานทดแทนและโซลูชัน EV: พลังงานแสงอาทิตย์, กังหันลม, และสถานีชาร์จรถไฟฟ้า
+• การออกแบบและวิศวกรรม: การออกแบบสถาปัตยกรรมเต็มรูปแบบ, ภายใน, ภูมิสถาปัตย์, และการออกแบบทางวิศวกรรมโดยละเอียด
+• การก่อสร้างและงานเฉพาะทาง: การก่อสร้างทั่วไป, งานตกแต่งภายใน, ระบบ HVAC, ระบบ MEP, การปรับปรุงอาคาร, และอาคารสีเขียว
+• งานผลิตเฉพาะทาง: งานแผ่นเหล็ก, โครงสร้างเหล็ก, อลูมิเนียม, และงานกระจก
+• ที่ปรึกษาและกลยุทธ์: การวิจัยตลาด, การประเมินทางเศรษฐกิจ, การศึกษาความเป็นไปได้, และการจัดการโครงการ
+
+---
+
+我们提供全面的解决方案，包括：
+• 数字解决方案：AI聊天机器人开发、软件开发和机器学习
+• 智能技术与自动化：楼宇管理系统（BMS）、智能楼宇控制、自动化及节能解决方案
+• 可再生能源与电动车解决方案：太阳能、风力发电机和电动车充电站
+• 设计与工程：全方位建筑、室内、景观及详细工程设计
+• 建筑与专业工程：一般建筑、室内装修、暖通空调、机电管道系统、建筑改造及绿色建筑
+• 专业制造：金属板、钢结构、铝材及玻璃工程
+• 咨询与战略：市场研究、经济评估、可行性研究及项目管理"""
+    },
+    "how_can_you_help": {
+        "keywords": ["how can you help", "how can you help me", "คุณสามารถช่วยอะไรได้บ้าง", "你们能提供什么帮助"],
+        "content": """We can help you with:
+• AI and digital transformation through chatbot development, software solutions, and machine learning
+• Smart building automation and energy management systems
+• Renewable energy installations including solar panels, wind turbines, and EV charging stations
+• Complete design services from architecture to interior and landscape design
+• Construction projects of all sizes with specialized trades including HVAC, MEP systems, and green building solutions
+• Custom fabrication work in metal, steel, aluminium, and glass
+• Professional consulting for market research, feasibility studies, and project management
+
+We have the flexibility and strength to deliver projects successfully anywhere in Thailand, on time, on budget, with safety and integrity.
+
+---
+
+เราสามารถช่วยคุณได้ในด้าน:
+• การเปลี่ยนผ่านสู่ดิจิทัลและ AI ผ่านการพัฒนาแชทบอท โซลูชันซอฟต์แวร์ และการเรียนรู้ของเครื่อง
+• ระบบอัตโนมัติอาคารอัจฉริยะและระบบจัดการพลังงาน
+• การติดตั้งพลังงานทดแทน รวมถึงแผงโซลาร์เซลล์ กังหันลม และสถานีชาร์จรถไฟฟ้า
+• บริการออกแบบครบวงจร ตั้งแต่สถาปัตยกรรมไปจนถึงการออกแบบภายในและภูมิสถาปัตย์
+• โครงการก่อสร้างทุกขนาดพร้อมงานเฉพาะทาง รวมถึงระบบ HVAC, ระบบ MEP และโซลูชันอาคารสีเขียว
+• งานผลิตพิเศษด้านโลหะ เหล็ก อลูมิเนียม และกระจก
+• บริการที่ปรึกษามืออาชีพสำหรับการวิจัยตลาด การศึกษาความเป็นไปได้ และการจัดการโครงการ
+
+เรามีความยืดหยุ่นและความแข็งแกร่งในการส่งมอบโครงการได้สำเร็จทั่วประเทศไทย ตรงเวลา อยู่ในงบประมาณ ด้วยความปลอดภัยและซื่อสัตย์
+
+---
+
+我们可以帮助您：
+• 通过聊天机器人开发、软件解决方案和机器学习实现AI和数字化转型
+• 智能楼宇自动化和能源管理系统
+• 可再生能源安装，包括太阳能电池板、风力发电机和电动车充电站
+• 从建筑到室内和景观设计的完整设计服务
+• 各种规模的建筑项目，包括暖通空调、机电管道系统和绿色建筑解决方案等专业工程
+• 金属、钢材、铝材和玻璃的定制制造工作
+• 市场研究、可行性研究和项目管理的专业咨询
+
+我们兼具灵活性与实力，能够在泰国各地成功交付项目，按时、按预算、安全可靠。"""
+    },
+    "what_services_provided": {
+        "keywords": ["what services do you provide", "what services", "คุณให้บริการอะไร", "你们提供什么服务"],
+        "content": """We provide comprehensive services in:
+
+Digital Solutions:
+• AI chatbot development
+• Software development
+• Machine learning solutions
+
+Smart Technology & Automation:
+• Building Management Systems (BMS)
+• Smart building controls
+• Automation systems
+• Energy-saving solutions
+
+Renewable Energy & EV Solutions:
+• Solar power systems
+• Wind turbines
+• EV charging stations
+
+Design & Engineering:
+• Architectural design
+• Interior design
+• Landscape design
+• Detailed engineering design
+
+Construction & Specialized Trades:
+• General construction
+• Fit-outs
+• HVAC systems
+• MEP systems
+• Retrofitting
+• Green building (including vertical gardens)
+
+Specialized Fabrication:
+• Metal sheet work
+• Steel structure
+• Aluminium work
+• Glass work
+
+Consulting & Strategy:
+• Market research
+• Economic evaluations
+• Feasibility studies
+• Project management
+
+---
+
+เราให้บริการครบวงจรใน:
+
+โซลูชันดิจิทัล:
+• พัฒนาแชทบอต AI
+• พัฒนาซอฟต์แวร์
+• โซลูชันการเรียนรู้ของเครื่อง
+
+เทคโนโลยีอัจฉริยะและระบบอัตโนมัติ:
+• ระบบจัดการอาคาร (BMS)
+• ระบบควบคุมอาคารอัจฉริยะ
+• ระบบอัตโนมัติ
+• โซลูชันประหยัดพลังงาน
+
+พลังงานทดแทนและโซลูชัน EV:
+• ระบบพลังงานแสงอาทิตย์
+• กังหันลม
+• สถานีชาร์จรถไฟฟ้า
+
+การออกแบบและวิศวกรรม:
+• การออกแบบสถาปัตยกรรม
+• การออกแบบภายใน
+• การออกแบบภูมิสถาปัตย์
+• การออกแบบทางวิศวกรรมโดยละเอียด
+
+การก่อสร้างและงานเฉพาะทาง:
+• การก่อสร้างทั่วไป
+• งานตกแต่งภายใน
+• ระบบ HVAC
+• ระบบ MEP
+• การปรับปรุงอาคาร
+• อาคารสีเขียว (รวมถึงสวนแนวตั้ง)
+
+งานผลิตเฉพาะทาง:
+• งานแผ่นเหล็ก
+• โครงสร้างเหล็ก
+• งานอลูมิเนียม
+• งานกระจก
+
+ที่ปรึกษาและกลยุทธ์:
+• การวิจัยตลาด
+• การประเมินทางเศรษฐกิจ
+• การศึกษาความเป็นไปได้
+• การจัดการโครงการ
+
+---
+
+我们提供全面服务：
+
+数字解决方案：
+• AI聊天机器人开发
+• 软件开发
+• 机器学习解决方案
+
+智能技术与自动化：
+• 楼宇管理系统（BMS）
+• 智能楼宇控制
+• 自动化系统
+• 节能解决方案
+
+可再生能源与电动车解决方案：
+• 太阳能系统
+• 风力发电机
+• 电动车充电站
+
+设计与工程：
+• 建筑设计
+• 室内设计
+• 景观设计
+• 详细工程设计
+
+建筑与专业工程：
+• 一般建筑
+• 室内装修
+• 暖通空调系统
+• 机电管道系统
+• 建筑改造
+• 绿色建筑（包括垂直花园）
+
+专业制造：
+• 金属板工程
+• 钢结构
+• 铝材工程
+• 玻璃工程
+
+咨询与战略：
+• 市场研究
+• 经济评估
+• 可行性研究
+• 项目管理"""
+    },
+    "who_are_you": {
+        "keywords": ["who are you", "who are you and what do you do", "คุณคือใครและทำอะไร", "你是谁", "你做什么的"],
+        "content": """We are Cblue - a group of experienced and highly skilled professionals who design, engineer, and construct leading-edge facilities and related infrastructure for residential buildings, industries, and public civil works.
+
+We specialize in:
+• AI/Digital Solutions
+• Sustainable technology solutions
+• Construction and engineering
+
+We have the flexibility and strength to deliver large or small projects successfully anywhere in Thailand. Our mission is to provide the best, state-of-the-art green solutions and services on time, on budget, with safety and integrity.
+
+Contact us:
+Email: cblue.thailand@gmail.com
+Phone: +66 (0)81 854 4291
+
+---
+
+เราคือ Cblue - กลุ่มผู้เชี่ยวชาญที่มีประสบการณ์และความสามารถสูง ที่ออกแบบ วิศวกรรม และก่อสร้างสิ่งอำนวยความสะดวกอันทันสมัยและโครงสร้างพื้นฐานที่เกี่ยวข้องสำหรับอาคารที่อยู่อาศัย อุตสาหกรรม และงานโยธาสาธารณะ
+
+เราเชี่ยวชาญด้าน:
+• โซลูชันด้าน AI/ดิจิทัล
+• โซลูชันเทคโนโลยีที่ยั่งยืน
+• การก่อสร้างและวิศวกรรม
+
+เรามีความยืดหยุ่นและความแข็งแกร่งในการส่งมอบโครงการทั้งขนาดใหญ่และเล็กได้อย่างสำเร็จทั่วทุกพื้นที่ในประเทศไทย ภารกิจของเราคือนำเสนอโซลูชันสีเขียวที่ล้ำสมัยและบริการที่ดีที่สุด ตรงเวลา อยู่ในงบประมาณ ด้วยความปลอดภัยและซื่อสัตย์
+
+ติดต่อเรา:
+อีเมล: cblue.thailand@gmail.com
+โทร: +66 (0)81 854 4291
+
+---
+
+我们是Cblue - 一群经验丰富且技术精湛的专业人士，我们设计、工程并建造领先的设施及相关基础设施，服务涵盖住宅建筑、工业及公共土木工程。
+
+我们专注于：
+• AI/数字解决方案
+• 可持续技术解决方案
+• 建筑工程
+
+我们兼具灵活性与实力，能够成功交付各类大小项目，遍及泰国各地。我们的使命是按时提供最佳、最先进的绿色解决方案和服务，在预算范围内安全可靠。
+
+联系我们：
+邮箱：cblue.thailand@gmail.com
+电话：+66 (0)81 854 4291"""
+    },
+    "introduce_yourself": {
+        "keywords": ["can you introduce yourself", "introduce yourself", "introduce yourself and your work", "ขอแนะนำตัวและงานของคุณหน่อย", "请介绍一下你自己和你的工作"],
+        "content": """Hello! We are Cblue - a team of experienced professionals specializing in cutting-edge solutions for a sustainable future.
+
+About Us:
+We design, engineer, and construct leading-edge facilities and infrastructure for residential buildings, industries, and public civil works throughout Thailand.
+
+Our Expertise:
+• Digital Solutions: AI chatbot development, software development, and machine learning
+• Smart Technology: Building Management Systems, automation, and energy-saving solutions
+• Renewable Energy: Solar power, wind turbines, and EV charging stations
+• Design & Engineering: Architecture, interior, landscape, and detailed engineering
+• Construction: General construction, HVAC, MEP systems, and green building
+• Specialized Fabrication: Metal, steel, aluminium, and glass work
+• Consulting: Market research, feasibility studies, and project management
+
+Our Mission:
+To provide the best, state-of-the-art green solutions and services on time, on budget, with safety and integrity. We're committed to creating a greener, smarter, and more resilient future.
+
+Let us know how we can help you!
+Contact: cblue.thailand@gmail.com | +66 (0)81 854 4291
+
+---
+
+สวัสดีค่ะ! เราคือ Cblue - ทีมผู้เชี่ยวชาญที่มีประสบการณ์ เชี่ยวชาญด้านโซลูชันที่ทันสมัยเพื่ออนาคตที่ยั่งยืน
+
+เกี่ยวกับเรา:
+เราออกแบบ วิศวกรรม และก่อสร้างสิ่งอำนวยความสะดวกและโครงสร้างพื้นฐานที่ทันสมัยสำหรับอาคารที่อยู่อาศัย อุตสาหกรรม และงานโยธาสาธารณะทั่วประเทศไทย
+
+ความเชี่ยวชาญของเรา:
+• โซลูชันดิจิทัล: พัฒนาแชทบอต AI, พัฒนาซอฟต์แวร์, และการเรียนรู้ของเครื่อง
+• เทคโนโลยีอัจฉริยะ: ระบบจัดการอาคาร, ระบบอัตโนมัติ, และโซลูชันประหยัดพลังงาน
+• พลังงานทดแทน: พลังงานแสงอาทิตย์, กังหันลม, และสถานีชาร์จรถไฟฟ้า
+• การออกแบบและวิศวกรรม: สถาปัตยกรรม, ภายใน, ภูมิสถาปัตย์, และวิศวกรรมโดยละเอียด
+• การก่อสร้าง: ก่อสร้างทั่วไป, ระบบ HVAC, ระบบ MEP, และอาคารสีเขียว
+• งานผลิตเฉพาะทาง: งานโลหะ, เหล็ก, อลูมิเนียม, และกระจก
+• ที่ปรึกษา: วิจัยตลาด, ศึกษาความเป็นไปได้, และจัดการโครงการ
+
+ภารกิจของเรา:
+นำเสนอโซลูชันสีเขียวที่ล้ำสมัยและบริการที่ดีที่สุด ตรงเวลา อยู่ในงบประมาณ ด้วยความปลอดภัยและซื่อสัตย์ เรามุ่งมั่นสร้างอนาคตที่เขียวขึ้น ฉลาดขึ้น และยืดหยุ่นมากขึ้น
+
+บอกเราได้เลยว่าเราจะช่วยคุณได้อย่างไร!
+ติดต่อ: cblue.thailand@gmail.com | +66 (0)81 854 4291
+
+---
+
+您好！我们是Cblue - 一支经验丰富的专业团队，专注于为可持续未来提供尖端解决方案。
+
+关于我们：
+我们在泰国各地为住宅建筑、工业和公共土木工程设计、工程并建造领先的设施和基础设施。
+
+我们的专长：
+• 数字解决方案：AI聊天机器人开发、软件开发和机器学习
+• 智能技术：楼宇管理系统、自动化和节能解决方案
+• 可再生能源：太阳能、风力发电机和电动车充电站
+• 设计与工程：建筑、室内、景观和详细工程
+• 建筑：一般建筑、暖通空调、机电管道系统和绿色建筑
+• 专业制造：金属、钢材、铝材和玻璃工程
+• 咨询：市场研究、可行性研究和项目管理
+
+我们的使命：
+按时提供最佳、最先进的绿色解决方案和服务，在预算范围内安全可靠。我们致力于创造更绿色、更智能、更具韧性的未来。
+
+请告诉我们如何帮助您！
+联系方式：cblue.thailand@gmail.com | +66 (0)81 854 4291"""
+    },
+    "company_specialization": {
+        "keywords": ["what does your company specialize in", "company specialize", "บริษัทของคุณเชี่ยวชาญด้านอะไร", "你们公司专注于什么"],
+        "content": """Our company specializes in three main areas:
+
+1. AI/Digital Solutions
+   - AI chatbot development
+   - Software development
+   - Machine learning applications
+
+2. Sustainable Technology Solutions
+   - Building Management Systems (BMS)
+   - Smart building controls and automation
+   - Energy-saving solutions
+   - Renewable energy (solar, wind, EV charging)
+
+3. Construction & Engineering
+   - Architectural and engineering design
+   - General construction and fit-outs
+   - HVAC and MEP systems
+   - Green building and retrofitting
+   - Specialized fabrication (metal, steel, aluminium, glass)
+
+We focus on creating sustainable, innovative solutions that combine cutting-edge technology with environmental responsibility. Our expertise allows us to deliver projects of any size successfully throughout Thailand, always on time, on budget, with safety and integrity.
+
+---
+
+บริษัทของเราเชี่ยวชาญใน 3 ด้านหลัก:
+
+1. โซลูชันด้าน AI/ดิจิทัล
+   - พัฒนาแชทบอต AI
+   - พัฒนาซอฟต์แวร์
+   - การประยุกต์ใช้การเรียนรู้ของเครื่อง
+
+2. โซลูชันเทคโนโลยีที่ยั่งยืน
+   - ระบบจัดการอาคาร (BMS)
+   - ระบบควบคุมอาคารอัจฉริยะและระบบอัตโนมัติ
+   - โซลูชันประหยัดพลังงาน
+   - พลังงานทดแทน (แสงอาทิตย์, ลม, ชาร์จรถไฟฟ้า)
+
+3. การก่อสร้างและวิศวกรรม
+   - การออกแบบสถาปัตยกรรมและวิศวกรรม
+   - การก่อสร้างทั่วไปและงานตกแต่งภายใน
+   - ระบบ HVAC และ MEP
+   - อาคารสีเขียวและการปรับปรุงอาคาร
+   - งานผลิตเฉพาะทาง (โลหะ, เหล็ก, อลูมิเนียม, กระจก)
+
+เรามุ่งเน้นการสร้างโซลูชันที่ยั่งยืนและนวัตกรรมที่ผสมผสานเทคโนโลยีที่ทันสมัยกับความรับผิดชอบต่อสิ่งแวดล้อม ความเชี่ยวชาญของเราช่วยให้เราสามารถส่งมอบโครงการทุกขนาดได้สำเร็จทั่วประเทศไทย ตรงเวลา อยู่ในงบประมาณ ด้วยความปลอดภัยและซื่อสัตย์
+
+---
+
+我们公司专注于三个主要领域：
+
+1. AI/数字解决方案
+   - AI聊天机器人开发
+   - 软件开发
+   - 机器学习应用
+
+2. 可持续技术解决方案
+   - 楼宇管理系统（BMS）
+   - 智能楼宇控制和自动化
+   - 节能解决方案
+   - 可再生能源（太阳能、风能、电动车充电）
+
+3. 建筑与工程
+   - 建筑和工程设计
+   - 一般建筑和室内装修
+   - 暖通空调和机电管道系统
+   - 绿色建筑和建筑改造
+   - 专业制造（金属、钢材、铝材、玻璃）
+
+我们专注于创造可持续的创新解决方案，将尖端技术与环境责任相结合。我们的专业知识使我们能够在泰国各地成功交付任何规模的项目，始终按时、按预算、安全可靠。"""
     }
 }
 
