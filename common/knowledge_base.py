@@ -2341,6 +2341,411 @@ We focus on creating sustainable, innovative solutions that combine cutting-edge
    - 专业制造（金属、钢材、铝材、玻璃）
 
 我们专注于创造可持续的创新解决方案，将尖端技术与环境责任相结合。我们的专业知识使我们能够在泰国各地成功交付任何规模的项目，始终按时、按预算、安全可靠。"""
+    },
+    "what_are_your_solutions": {
+        "keywords": ["what are your solutions", "what solutions", "your solutions", "โซลูชันของคุณคืออะไร", "โซลูชันของคุณมีอะไรบ้าง", "คุณมีโซลูชันอะไรบ้าง", "你们的解决方案是什么", "你们有什么解决方案", "你们提供什么解决方案"],
+        "content": """We offer comprehensive solutions in three main areas:
+
+1. AI/Digital Solutions - AI chatbot development, software development, and machine learning applications
+2. Sustainable Technology Solutions - Building Management Systems (BMS), smart building controls, automation, energy-saving solutions, and renewable energy (solar, wind, EV charging)
+3. Construction & Engineering - Architectural and engineering design, general construction and fit-outs, HVAC and MEP systems, green building and retrofitting, specialized fabrication
+
+---
+
+เรามีโซลูชันครบวงจรใน 3 ด้านหลัก:
+
+1. โซลูชันด้าน AI/ดิจิทัล - พัฒนาแชทบอต AI, พัฒนาซอฟต์แวร์, และการประยุกต์ใช้การเรียนรู้ของเครื่อง
+2. โซลูชันเทคโนโลยีที่ยั่งยืน - ระบบจัดการอาคาร (BMS), ระบบควบคุมอาคารอัจฉริยะ, ระบบอัตโนมัติ, โซลูชันประหยัดพลังงาน, และพลังงานทดแทน (แสงอาทิตย์, ลม, ชาร์จรถไฟฟ้า)
+3. การก่อสร้างและวิศวกรรม - การออกแบบสถาปัตยกรรมและวิศวกรรม, การก่อสร้างทั่วไปและงานตกแต่งภายใน, ระบบ HVAC และ MEP, อาคารสีเขียวและการปรับปรุงอาคาร, งานผลิตเฉพาะทาง
+
+---
+
+我们在三个主要领域提供全面的解决方案：
+
+1. AI/数字解决方案 - AI聊天机器人开发、软件开发和机器学习应用
+2. 可持续技术解决方案 - 楼宇管理系统（BMS）、智能楼宇控制、自动化、节能解决方案和可再生能源（太阳能、风能、电动车充电）
+3. 建筑与工程 - 建筑和工程设计、一般建筑和室内装修、暖通空调和机电管道系统、绿色建筑和建筑改造、专业制造"""
+    },
+    "who_are_you": {
+        "keywords": ["who are you", "who is cblue", "about cblue", "คุณคือใคร", "cblue คือใคร", "เกี่ยวกับ cblue", "你是谁", "cblue是谁", "关于cblue", "你们是谁"],
+        "content": """We are Cblue Thailand, a leading provider of green building, smart automation, and AI/Chatbot solutions and services across Thailand. We specialize in sustainable technology solutions and construction engineering, combining cutting-edge technology with environmental responsibility. Our expertise allows us to deliver projects of any size successfully throughout Thailand, always on time, on budget, with safety and integrity.
+
+---
+
+เราคือ Cblue Thailand ผู้ให้บริการชั้นนำด้านอาคารสีเขียว ระบบอัตโนมัติอัจฉริยะ และโซลูชัน AI/แชทบอทในประเทศไทย เราเชี่ยวชาญด้านโซลูชันเทคโนโลยีที่ยั่งยืนและวิศวกรรมการก่อสร้าง โดยผสมผสานเทคโนโลยีที่ทันสมัยกับความรับผิดชอบต่อสิ่งแวดล้อม ความเชี่ยวชาญของเราช่วยให้เราสามารถส่งมอบโครงการทุกขนาดได้สำเร็จทั่วประเทศไทย ตรงเวลา อยู่ในงบประมาณ ด้วยความปลอดภัยและซื่อสัตย์
+
+---
+
+我们是Cblue Thailand，是泰国领先的绿色建筑、智能自动化和AI/聊天机器人解决方案和服务提供商。我们专注于可持续技术解决方案和建筑工程，将尖端技术与环境责任相结合。我们的专业知识使我们能够在泰国各地成功交付任何规模的项目，始终按时、按预算、安全可靠。"""
+    },
+    "what_are_you_doing": {
+        "keywords": ["what are you doing", "what do you do", "what does cblue do", "คุณทำอะไร", "cblue ทำอะไร", "คุณทำงานอะไร", "你在做什么", "你们做什么", "cblue做什么"],
+        "content": """We provide specialized green building, smart automation, and AI/Chatbot solutions and services across Thailand. Our work includes:
+
+- Developing AI chatbots and software solutions
+- Implementing smart building automation and energy management systems
+- Installing renewable energy systems (solar, wind, EV charging)
+- Designing and constructing green buildings
+- Providing HVAC, MEP, and building retrofit services
+- Creating sustainable architectural and engineering solutions
+
+---
+
+เราให้บริการด้านอาคารสีเขียว ระบบอัตโนมัติอัจฉริยะ และโซลูชัน AI/แชทบอทเฉพาะทางทั่วประเทศไทย งานของเรารวมถึง:
+
+- พัฒนาแชทบอต AI และโซลูชันซอฟต์แวร์
+- ติดตั้งระบบอัตโนมัติอาคารอัจฉริยะและระบบจัดการพลังงาน
+- ติดตั้งระบบพลังงานทดแทน (แสงอาทิตย์, ลม, ชาร์จรถไฟฟ้า)
+- ออกแบบและก่อสร้างอาคารสีเขียว
+- ให้บริการ HVAC, MEP และการปรับปรุงอาคาร
+- สร้างโซลูชันสถาปัตยกรรมและวิศวกรรมที่ยั่งยืน
+
+---
+
+我们在泰国各地提供专业的绿色建筑、智能自动化和AI/聊天机器人解决方案和服务。我们的工作包括：
+
+- 开发AI聊天机器人和软件解决方案
+- 实施智能楼宇自动化和能源管理系统
+- 安装可再生能源系统（太阳能、风能、电动车充电）
+- 设计和建造绿色建筑
+- 提供暖通空调、机电管道和建筑改造服务
+- 创造可持续的建筑和工程解决方案"""
+    },
+    "what_do_you_offer": {
+        "keywords": ["what do you offer", "what can you offer", "your offerings", "คุณเสนออะไร", "คุณมีอะไรเสนอ", "บริการของคุณ", "你们提供什么", "你们能提供什么", "你们的服务"],
+        "content": """We offer a comprehensive suite of services focused on:
+
+**AI/Digital Solutions:**
+- AI chatbot development and deployment
+- Custom software development
+- Machine learning applications
+
+**Smart Technology & Automation:**
+- Building Management Systems (BMS)
+- Smart building controls and automation
+- Energy-saving solutions
+- Security systems and access control
+
+**Renewable Energy & EV Solutions:**
+- Solar power systems
+- Wind turbines
+- EV charging stations
+
+**Design & Engineering:**
+- Architectural, interior, and landscape design
+- Detailed engineering design
+- Green building consultation
+
+**Construction Services:**
+- General construction management
+- Project management and training
+- Fit-out and renovation
+- HVAC and MEP systems
+- Vertical garden installations
+- Specialized fabrication (metal, steel, aluminium, glass)
+
+---
+
+เรามีบริการครบวงจรที่มุ่งเน้น:
+
+**โซลูชันด้าน AI/ดิจิทัล:**
+- พัฒนาและติดตั้งแชทบอต AI
+- พัฒนาซอฟต์แวร์ตามความต้องการ
+- การประยุกต์ใช้การเรียนรู้ของเครื่อง
+
+**เทคโนโลยีอัจฉริยะและระบบอัตโนมัติ:**
+- ระบบจัดการอาคาร (BMS)
+- ระบบควบคุมอาคารอัจฉริยะและระบบอัตโนมัติ
+- โซลูชันประหยัดพลังงาน
+- ระบบรักษาความปลอดภัยและระบบควบคุมการเข้าถึง
+
+**พลังงานทดแทนและโซลูชัน EV:**
+- ระบบพลังงานแสงอาทิตย์
+- กังหันลม
+- สถานีชาร์จรถยนต์ไฟฟ้า
+
+**การออกแบบและวิศวกรรม:**
+- การออกแบบสถาปัตยกรรม ภายใน และภูมิทัศน์
+- การออกแบบวิศวกรรมโดยละเอียด
+- คำปรึกษาอาคารสีเขียว
+
+**บริการก่อสร้าง:**
+- การบริหารโครงการก่อสร้างทั่วไป
+- การบริหารโครงการและการฝึกอบรม
+- งานตกแต่งภายในและการปรับปรุง
+- ระบบ HVAC และ MEP
+- การติดตั้งสวนแนวตั้ง
+- งานผลิตเฉพาะทาง (โลหะ, เหล็ก, อลูมิเนียม, กระจก)
+
+---
+
+我们提供全面的服务套件，专注于：
+
+**AI/数字解决方案：**
+- AI聊天机器人开发和部署
+- 定制软件开发
+- 机器学习应用
+
+**智能技术与自动化：**
+- 楼宇管理系统（BMS）
+- 智能楼宇控制和自动化
+- 节能解决方案
+- 安全系统和门禁控制
+
+**可再生能源和电动车解决方案：**
+- 太阳能系统
+- 风力涡轮机
+- 电动车充电站
+
+**设计与工程：**
+- 建筑、室内和景观设计
+- 详细工程设计
+- 绿色建筑咨询
+
+**建筑服务：**
+- 一般建筑管理
+- 项目管理和培训
+- 室内装修和翻新
+- 暖通空调和机电管道系统
+- 垂直花园安装
+- 专业制造（金属、钢材、铝材、玻璃）"""
+    },
+    "what_solutions_do_you_offer": {
+        "keywords": ["what solutions do you offer", "what solutions", "available solutions", "คุณเสนอโซลูชันอะไรบ้าง", "มีโซลูชันอะไรบ้าง", "โซลูชันที่มี", "你们提供什么解决方案", "有什么解决方案", "可用的解决方案"],
+        "content": """We offer three main categories of solutions:
+
+**1. AI/Digital Solutions**
+- AI chatbot development for customer service automation
+- Custom software development for business needs
+- Machine learning applications for data analysis and predictions
+
+**2. Sustainable Technology Solutions**
+- Building Management Systems (BMS) for efficient building operations
+- Smart building controls and automation systems
+- Energy-saving solutions to reduce costs and environmental impact
+- Renewable energy systems: solar panels, wind turbines, EV charging stations
+
+**3. Construction & Engineering Solutions**
+- Green building design and construction
+- HVAC (Heating, Ventilation, Air Conditioning) systems
+- MEP (Mechanical, Electrical, Plumbing) systems
+- Building retrofit and renovation services
+- Vertical garden installations
+- Security systems and access control
+- Specialized fabrication services
+
+---
+
+เรามีโซลูชัน 3 ประเภทหลัก:
+
+**1. โซลูชันด้าน AI/ดิจิทัล**
+- พัฒนาแชทบอต AI สำหรับระบบบริการลูกค้าอัตโนมัติ
+- พัฒนาซอฟต์แวร์ตามความต้องการทางธุรกิจ
+- การประยุกต์ใช้การเรียนรู้ของเครื่องสำหรับการวิเคราะห์ข้อมูลและการคาดการณ์
+
+**2. โซลูชันเทคโนโลยีที่ยั่งยืน**
+- ระบบจัดการอาคาร (BMS) สำหรับการดำเนินงานอาคารที่มีประสิทธิภาพ
+- ระบบควบคุมอาคารอัจฉริยะและระบบอัตโนมัติ
+- โซลูชันประหยัดพลังงานเพื่อลดต้นทุนและผลกระทบต่อสิ่งแวดล้อม
+- ระบบพลังงานทดแทน: แผงโซลาร์เซลล์, กังหันลม, สถานีชาร์จรถยนต์ไฟฟ้า
+
+**3. โซลูชันการก่อสร้างและวิศวกรรม**
+- การออกแบบและก่อสร้างอาคารสีเขียว
+- ระบบ HVAC (ระบบทำความร้อน ระบายอากาศ และปรับอากาศ)
+- ระบบ MEP (ระบบเครื่องกล ไฟฟ้า และประปา)
+- บริการปรับปรุงและรีโนเวทอาคาร
+- การติดตั้งสวนแนวตั้ง
+- ระบบรักษาความปลอดภัยและระบบควบคุมการเข้าถึง
+- บริการผลิตเฉพาะทาง
+
+---
+
+我们提供三大类解决方案：
+
+**1. AI/数字解决方案**
+- AI聊天机器人开发用于客户服务自动化
+- 定制软件开发满足业务需求
+- 机器学习应用用于数据分析和预测
+
+**2. 可持续技术解决方案**
+- 楼宇管理系统（BMS）用于高效的建筑运营
+- 智能楼宇控制和自动化系统
+- 节能解决方案以降低成本和环境影响
+- 可再生能源系统：太阳能电池板、风力涡轮机、电动车充电站
+
+**3. 建筑与工程解决方案**
+- 绿色建筑设计和施工
+- 暖通空调系统
+- 机电管道系统
+- 建筑改造和翻新服务
+- 垂直花园安装
+- 安全系统和门禁控制
+- 专业制造服务"""
+    },
+    "what_do_you_sell": {
+        "keywords": ["what do you sell", "what are you selling", "your products", "คุณขายอะไร", "คุณขายอะไรบ้าง", "สินค้าของคุณ", "你们卖什么", "你们销售什么", "你们的产品"],
+        "content": """We provide services and solutions rather than selling products. Our offerings include:
+
+**Services:**
+- AI chatbot development and deployment services
+- Software development services
+- Building automation and smart building implementation
+- Energy management consulting
+- Construction and engineering services
+- Project management and training
+
+**Solutions & Systems:**
+- Building Management Systems (BMS)
+- Solar energy systems
+- EV charging station installations
+- HVAC and MEP systems
+- Security and access control systems
+- Green building and retrofit solutions
+
+We focus on delivering complete, integrated solutions tailored to your specific needs, combining technology, engineering, and construction expertise.
+
+---
+
+เรามีบริการและโซลูชันมากกว่าการขายสินค้า สิ่งที่เรานำเสนอรวมถึง:
+
+**บริการ:**
+- บริการพัฒนาและติดตั้งแชทบอต AI
+- บริการพัฒนาซอฟต์แวร์
+- การติดตั้งระบบอัตโนมัติและอาคารอัจฉริยะ
+- คำปรึกษาการจัดการพลังงาน
+- บริการก่อสร้างและวิศวกรรม
+- การบริหารโครงการและการฝึกอบรม
+
+**โซลูชันและระบบ:**
+- ระบบจัดการอาคาร (BMS)
+- ระบบพลังงานแสงอาทิตย์
+- การติดตั้งสถานีชาร์จรถยนต์ไฟฟ้า
+- ระบบ HVAC และ MEP
+- ระบบรักษาความปลอดภัยและระบบควบคุมการเข้าถึง
+- โซลูชันอาคารสีเขียวและการปรับปรุงอาคาร
+
+เรามุ่งเน้นการส่งมอบโซลูชันที่สมบูรณ์และบูรณาการตามความต้องการเฉพาะของคุณ โดยผสมผสานความเชี่ยวชาญด้านเทคโนโลยี วิศวกรรม และการก่อสร้าง
+
+---
+
+我们提供服务和解决方案而不是销售产品。我们的服务包括：
+
+**服务：**
+- AI聊天机器人开发和部署服务
+- 软件开发服务
+- 楼宇自动化和智能建筑实施
+- 能源管理咨询
+- 建筑和工程服务
+- 项目管理和培训
+
+**解决方案和系统：**
+- 楼宇管理系统（BMS）
+- 太阳能系统
+- 电动车充电站安装
+- 暖通空调和机电管道系统
+- 安全和门禁控制系统
+- 绿色建筑和改造解决方案
+
+我们专注于提供完整的、集成的解决方案，根据您的具体需求量身定制，结合技术、工程和建筑专业知识。"""
+    },
+    "what_are_your_offers": {
+        "keywords": ["what are your offers", "your offers", "special offers", "ข้อเสนอของคุณคืออะไร", "คุณมีข้อเสนออะไรบ้าง", "ข้อเสนอพิเศษ", "你们的优惠是什么", "你们有什么优惠", "特别优惠"],
+        "content": """We offer comprehensive solutions and services in:
+
+**AI & Digital Transformation:**
+- AI chatbot development for 24/7 customer service
+- Custom software solutions for business automation
+- Machine learning integration for smart decision-making
+
+**Smart Building & Automation:**
+- Building Management Systems (BMS) for centralized control
+- Energy monitoring and optimization systems
+- Smart lighting, HVAC, and security automation
+
+**Renewable Energy Solutions:**
+- Solar panel installation and maintenance
+- Wind energy systems
+- EV charging infrastructure
+
+**Green Construction & Engineering:**
+- Sustainable building design and construction
+- HVAC and MEP system installation
+- Building retrofit and energy efficiency upgrades
+- Vertical garden and green space installations
+
+**Professional Services:**
+- Architectural and engineering design
+- Project management and construction supervision
+- Training and technical support
+- Maintenance and after-sales service
+
+Contact us for customized solutions tailored to your specific needs!
+
+---
+
+เรามีโซลูชันและบริการครบวงจรใน:
+
+**AI และการเปลี่ยนแปลงทางดิจิทัล:**
+- พัฒนาแชทบอต AI สำหรับบริการลูกค้า 24/7
+- โซลูชันซอฟต์แวร์ตามความต้องการสำหรับระบบอัตโนมัติทางธุรกิจ
+- การบูรณาการการเรียนรู้ของเครื่องสำหรับการตัดสินใจอัจฉริยะ
+
+**อาคารอัจฉริยะและระบบอัตโนมัติ:**
+- ระบบจัดการอาคาร (BMS) สำหรับการควบคุมแบบรวมศูนย์
+- ระบบตรวจสอบและเพิ่มประสิทธิภาพพลังงาน
+- ระบบอัตโนมัติสำหรับแสงสว่าง HVAC และความปลอดภัย
+
+**โซลูชันพลังงานทดแทน:**
+- การติดตั้งและบำรุงรักษาแผงโซลาร์เซลล์
+- ระบบพลังงานลม
+- โครงสร้างพื้นฐานสำหรับชาร์จรถยนต์ไฟฟ้า
+
+**การก่อสร้างสีเขียวและวิศวกรรม:**
+- การออกแบบและก่อสร้างอาคารที่ยั่งยืน
+- การติดตั้งระบบ HVAC และ MEP
+- การปรับปรุงอาคารและเพิ่มประสิทธิภาพพลังงาน
+- การติดตั้งสวนแนวตั้งและพื้นที่สีเขียว
+
+**บริการมืออาชีพ:**
+- การออกแบบสถาปัตยกรรมและวิศวกรรม
+- การบริหารโครงการและการควบคุมงานก่อสร้าง
+- การฝึกอบรมและการสนับสนุนทางเทคนิค
+- การบำรุงรักษาและบริการหลังการขาย
+
+ติดต่อเราเพื่อรับโซลูชันที่ปรับแต่งตามความต้องการเฉพาะของคุณ!
+
+---
+
+我们在以下领域提供全面的解决方案和服务：
+
+**AI与数字化转型：**
+- AI聊天机器人开发用于24/7客户服务
+- 定制软件解决方案用于业务自动化
+- 机器学习集成用于智能决策
+
+**智能建筑与自动化：**
+- 楼宇管理系统（BMS）用于集中控制
+- 能源监控和优化系统
+- 智能照明、暖通空调和安全自动化
+
+**可再生能源解决方案：**
+- 太阳能电池板安装和维护
+- 风能系统
+- 电动车充电基础设施
+
+**绿色建筑与工程：**
+- 可持续建筑设计和施工
+- 暖通空调和机电管道系统安装
+- 建筑改造和能效升级
+- 垂直花园和绿色空间安装
+
+**专业服务：**
+- 建筑和工程设计
+- 项目管理和施工监督
+- 培训和技术支持
+- 维护和售后服务
+
+联系我们获取根据您的具体需求定制的解决方案！"""
     }
 }
 
