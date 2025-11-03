@@ -28,3 +28,7 @@ Thumbs.db
 # Project specific
 node_modules/
 *.sock
+
+
+# Stuff I just don't want to add
+*.md

@@ -2746,6 +2746,86 @@ Contact us for customized solutions tailored to your specific needs!
 - 维护和售后服务
 
 联系我们获取根据您的具体需求定制的解决方案！"""
+    },
+    "about_organization": {
+        "keywords": ["tell me about your organization", "about your organization", "about cblue", "who is cblue", "cblue thailand"],
+        "content": """Cblue Thailand is a group of experienced and highly skilled professionals who design, engineer and construct leading-edge facilities and related infrastructure for residential buildings, industries and public civil works. We have the flexibility and strength to deliver large or small projects successfully anywhere in Thailand.
+We offer a comprehensive suite of services focused on AI/Digital Solutions, sustainable technology solutions, and construction engineering. Our mission is to provide the best, state-of-the-art green solutions and services on time, on budget and with safety and integrity."""
+    },
+    "company_specialization": {
+        "keywords": ["what does your company specialize in", "company specialization", "what do you specialize in", "specialties"],
+        "content": """Cblue Thailand specializes in:
+- **Digital Solutions**: AI chatbot development, software development, and machine learning
+- **Smart Technology & Automation**: Building Management Systems (BMS), smart building controls, automation, and energy-saving solutions
+- **Renewable Energy & EV Solutions**: Solar power, wind turbines, and EV charging stations
+- **Design & Engineering**: Full architectural, interior, landscape, and detailed engineering design
+- **Construction & Specialized Trades**: General construction, fit-outs, HVAC, MEP systems, retrofitting, and green building (including vertical gardens)
+- **Specialized Fabrication**: Metal sheet, steel structure, aluminium, and glass work
+- **Consulting & Strategy**: Market research, economic evaluations, feasibility studies, and project management"""
+    },
+    "business_type": {
+        "keywords": ["what kind of business are you in", "what business are you in", "type of business", "business sector"],
+        "content": """We are in the green building, smart automation, and AI/chatbot solutions business. We operate across multiple sectors including construction, engineering, renewable energy, smart technology, and digital solutions, serving residential buildings, industries, and public civil works throughout Thailand."""
+    },
+    "company_description": {
+        "keywords": ["how would you describe your company", "describe your company", "company description", "what is your company"],
+        "content": """Cblue Thailand is a comprehensive solutions provider that bridges traditional construction and engineering with cutting-edge technology. We focus on sustainable, environmentally-friendly approaches while integrating smart automation and AI solutions to create buildings and systems that are not only functional but also contribute to a carbon-neutral future."""
+    },
+    "organization_activities": {
+        "keywords": ["tell me more about what your organization do", "what does your organization do", "organization activities", "what do you do"],
+        "content": """Our organization transforms the built environment through sustainable practices and innovative technology. We design and construct eco-friendly buildings that harmonize with nature, implement smart building systems for energy efficiency, develop AI chatbots and software solutions, and provide renewable energy installations like solar panels and EV charging stations. We also specialize in vertical gardens, building automation systems, and comprehensive project management from concept to completion."""
+    },
+    "company_offerings": {
+        "keywords": ["what does your company provide", "what do you provide", "company offerings", "what can you provide"],
+        "content": """We provide:
+- AI chatbot development and software solutions
+- Green architecture and sustainable building design
+- Solar energy systems and EV charging stations
+- HVAC, MEP systems, and building retrofits
+- Smart building controls and automation (BAS/BMS)
+- Environmental services and energy-saving solutions
+- Security systems and access control
+- Construction management and fit-out services
+- Vertical garden installations
+- Smart home and smart farming solutions
+- Website development"""
+    },
+    "core_services": {
+        "keywords": ["core services", "core products", "main services", "primary services", "key services"],
+        "content": """Our core services include:
+1. **AI & Digital Solutions**: Chatbot development, machine learning, software development
+2. **Green Building Solutions**: Sustainable architecture, green construction, vertical gardens
+3. **Smart Technology**: Building automation, smart homes, IoT solutions
+4. **Renewable Energy**: Solar panels, EV chargers, energy-saving systems
+5. **Construction & Engineering**: HVAC, MEP, retrofitting, project management
+6. **Security Solutions**: Access control, security systems
+7. **Specialized Services**: Smart farming, website development"""
+    },
+    "company_mission": {
+        "keywords": ["company mission", "company purpose", "mission statement", "your mission", "your purpose"],
+        "content": """Our mission is to provide the best, state-of-the-art green solutions and services on time, on budget and with safety and integrity. We are committed to creating a sustainable future by transforming the built environment into a force for environmental restoration and sustainability, using innovative technology and a commitment to a carbon-free future."""
+    },
+    "solution_types": {
+        "keywords": ["what kind of solutions", "solution types", "types of solutions", "solutions you provide"],
+        "content": """We provide comprehensive solutions spanning:
+- **Environmental Solutions**: Green building materials, energy-efficient designs, carbon reduction
+- **Technology Solutions**: AI chatbots, building automation, smart controls, IoT integration
+- **Energy Solutions**: Solar power systems, energy-saving technologies, EV charging infrastructure
+- **Construction Solutions**: Sustainable building practices, retrofitting, MEP systems
+- **Digital Solutions**: Software development, machine learning, website development"""
+    },
+    "what_company_does": {
+        "keywords": ["what does your company do", "what do you do", "company activities", "your work"],
+        "content": """Cblue Thailand designs, engineers, and constructs sustainable buildings and infrastructure while developing AI and smart technology solutions. We create eco-friendly environments that integrate renewable energy, smart automation, and green building practices to minimize environmental impact and maximize efficiency for residential, commercial, and industrial clients across Thailand."""
+    },
+    "contact_customer_service": {
+        "keywords": ["contact customer service", "customer service contact", "how to contact", "contact information", "reach customer service"],
+        "content": """**Email**: cblue.thailand@gmail.com  
+**Phone**: +66 (0)81 854 4291"""
+    },
+    "business_hours": {
+        "keywords": ["business hours", "working hours", "office hours", "what time open", "when are you open"],
+        "content": """We work from 9AM to 5PM."""
     }
 }
 
