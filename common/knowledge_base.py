@@ -2826,6 +2826,390 @@ We offer a comprehensive suite of services focused on AI/Digital Solutions, sust
     "business_hours": {
         "keywords": ["business hours", "working hours", "office hours", "what time open", "when are you open"],
         "content": """We work from 9AM to 5PM."""
+    },
+    "house_sales_rental": {
+        "keywords": ["do you sell houses", "do you rent houses", "sell houses", "rent houses", "คุณขายบ้านด้วยเหรอ", "คุณขายบ้านหรือไม่", "คุณให้เช่าบ้าน", "คุณใครบ้าน", "คุณให้ชาวบ้าน", "你们卖房子吗", "你们租房子吗", "你们出售房屋吗", "你们出租房屋吗", "คุณขายหรือให้เช่าบ้านหรือไม่", "你们出售或出租房屋吗"],
+        "content": """We do not sell or rent houses directly. However, we provide comprehensive services for residential building projects including:
+- Green building design and construction
+- Smart home automation systems
+- Solar panel installation for homes
+- HVAC and MEP systems
+- Energy-efficient retrofitting
+- Building management systems
+
+We can help you build, renovate, or upgrade your residential property with sustainable and smart technology solutions.
+
+---
+
+เราไม่ได้ขายหรือให้เช่าบ้านโดยตรง แต่เราให้บริการที่ครอบคลุมสำหรับโครงการอาคารที่พักอาศัย ได้แก่:
+- การออกแบบและก่อสร้างอาคารสีเขียว
+- ระบบบ้านอัจฉริยะอัตโนมัติ
+- การติดตั้งแผงโซลาร์เซลล์สำหรับบ้าน
+- ระบบ HVAC และ MEP
+- การปรับปรุงอาคารเพื่อประหยัดพลังงาน
+- ระบบบริหารจัดการอาคาร
+
+เราสามารถช่วยคุณสร้าง ปรับปรุง หรืออัพเกรดอสังหาริมทรัพย์ที่พักอาศัยของคุณด้วยโซลูชันเทคโนโลยีที่ยั่งยืนและอัจฉริยะ
+
+---
+
+我们不直接出售或出租房屋。但是，我们为住宅建筑项目提供全面的服务，包括:
+- 绿色建筑设计和施工
+- 智能家居自动化系统
+- 住宅太阳能电池板安装
+- 暖通空调和机电管道系统
+- 节能改造
+- 楼宇管理系统
+
+我们可以帮助您建造、翻新或升级您的住宅物业，提供可持续和智能技术解决方案。"""
+    },
+    "house_location": {
+        "keywords": ["where are your houses", "house location", "houses for sale location", "houses for rent location", "บ้านที่ขายหรือให้เช่าอยู่ที่ไหน", "บ้านของคุณอยู่ที่ไหน", "你们的房屋在哪里", "房屋位置", "你们的房屋在哪里出售", "你们的房屋在哪里出租"],
+        "content": """We do not sell or rent houses. We are a construction and engineering company that provides building services throughout Thailand. We can help you with:
+- Building new residential properties anywhere in Thailand
+- Renovating existing homes
+- Installing smart home systems
+- Adding solar panels and renewable energy systems
+- Implementing green building solutions
+
+Contact us to discuss your residential project needs!
+
+---
+
+เราไม่ได้ขายหรือให้เช่าบ้าน เราเป็นบริษัทก่อสร้างและวิศวกรรมที่ให้บริการก่อสร้างทั่วประเทศไทย เราสามารถช่วยคุณได้ด้วย:
+- สร้างอสังหาริมทรัพย์ที่พักอาศัยใหม่ทุกที่ในประเทศไทย
+- ปรับปรุงบ้านที่มีอยู่
+- ติดตั้งระบบบ้านอัจฉริยะ
+- เพิ่มแผงโซลาร์เซลล์และระบบพลังงานหมุนเวียน
+- ใช้โซลูชันอาคารสีเขียว
+
+ติดต่อเราเพื่อหารือเกี่ยวกับความต้องการโครงการที่พักอาศัยของคุณ!
+
+---
+
+我们不出售或出租房屋。我们是一家建筑和工程公司，在泰国各地提供建筑服务。我们可以帮助您:
+- 在泰国任何地方建造新的住宅物业
+- 翻新现有房屋
+- 安装智能家居系统
+- 添加太阳能电池板和可再生能源系统
+- 实施绿色建筑解决方案
+
+联系我们讨论您的住宅项目需求!"""
+    },
+    "house_price": {
+        "keywords": ["house price", "how much house", "price of house", "ราคาบ้าน", "ราคาเท่าไหร่", "บ้านราคาเท่าไร", "房价", "房屋价格", "价格是多少", "房子多少钱"],
+        "content": """We do not sell houses, so we don't have house prices. However, we can provide you with cost estimates for:
+- Building a new green home
+- Smart home automation installation
+- Solar panel system installation
+- HVAC and MEP systems
+- Building renovation and retrofitting
+- Energy-efficient upgrades
+
+The cost depends on your specific requirements, project size, and location. Contact us for a customized quote!
+
+---
+
+เราไม่ได้ขายบ้าน ดังนั้นเราจึงไม่มีราคาบ้าน อย่างไรก็ตาม เราสามารถให้ประมาณการค่าใช้จ่ายสำหรับ:
+- สร้างบ้านสีเขียวใหม่
+- ติดตั้งระบบบ้านอัจฉริยะอัตโนมัติ
+- ติดตั้งระบบแผงโซลาร์เซลล์
+- ระบบ HVAC และ MEP
+- การปรับปรุงและรีโนเวทอาคาร
+- การอัพเกรดเพื่อประหยัดพลังงาน
+
+ค่าใช้จ่ายขึ้นอยู่กับความต้องการเฉพาะของคุณ ขนาดโครงการ และสถานที่ ติดต่อเราเพื่อขอใบเสนอราคาที่ปรับแต่งได้!
+
+---
+
+我们不出售房屋，所以没有房价。但是，我们可以为您提供以下费用估算:
+- 建造新的绿色住宅
+- 智能家居自动化安装
+- 太阳能电池板系统安装
+- 暖通空调和机电管道系统
+- 建筑翻新和改造
+- 节能升级
+
+费用取决于您的具体要求、项目规模和位置。联系我们获取定制报价!"""
+    },
+    "house_types": {
+        "keywords": ["what kind of house", "house types", "types of houses", "คุณขายบ้านประเภทไหน", "บ้านประเภทไหน", "ประเภทของบ้าน", "你们出售什么类型的房屋", "房屋类型", "什么类型的房子"],
+        "content": """We don't sell houses, but we can design and build various types of residential properties including:
+- Single-family homes
+- Multi-family residential buildings
+- Eco-friendly green homes
+- Smart homes with automation
+- Energy-efficient homes with solar panels
+- Modern sustainable villas
+- Residential condominiums
+
+All our projects incorporate green building practices, smart technology, and energy-efficient solutions tailored to your needs.
+
+---
+
+เราไม่ได้ขายบ้าน แต่เราสามารถออกแบบและสร้างอสังหาริมทรัพย์ที่พักอาศัยประเภทต่างๆ ได้แก่:
+- บ้านเดี่ยว
+- อาคารที่พักอาศัยหลายครอบครัว
+- บ้านสีเขียวที่เป็นมิตรต่อสิ่งแวดล้อม
+- บ้านอัจฉริยะพร้อมระบบอัตโนมัติ
+- บ้านประหยัดพลังงานพร้อมแผงโซลาร์เซลล์
+- วิลล่าที่ยั่งยืนสมัยใหม่
+- คอนโดมิเนียมที่พักอาศัย
+
+โครงการทั้งหมดของเรารวมแนวปฏิบัติการก่อสร้างสีเขียว เทคโนโลยีอัจฉริยะ และโซลูชันประหยัดพลังงานที่ปรับแต่งตามความต้องการของคุณ
+
+---
+
+我们不出售房屋，但我们可以设计和建造各种类型的住宅物业，包括:
+- 独栋住宅
+- 多户住宅楼
+- 环保绿色住宅
+- 带自动化的智能住宅
+- 带太阳能电池板的节能住宅
+- 现代可持续别墅
+- 住宅公寓
+
+我们所有的项目都融入了绿色建筑实践、智能技术和根据您的需求定制的节能解决方案。"""
+    },
+    "solar_panel_types": {
+        "keywords": ["solar panel types", "types of solar panels", "solar panels types", "แผงโซลาร์เซลล์มีประเภทไหนบ้าง", "ประเภทแผงโซลาร์เซลล์", "太阳能电池板类型", "太阳能电池板有哪些类型", "太阳能板种类"],
+        "content": """We work with various types of solar panels including:
+
+**1. Monocrystalline Solar Panels**
+- Highest efficiency (15-22%)
+- Best for limited space
+- Longer lifespan (25-30 years)
+- Higher cost but better performance
+
+**2. Polycrystalline Solar Panels**
+- Good efficiency (13-16%)
+- More affordable option
+- Suitable for larger installations
+- Good value for money
+
+**3. Thin-Film Solar Panels**
+- Flexible and lightweight
+- Lower efficiency but works in low light
+- Good for specific applications
+- Most affordable option
+
+We can recommend the best type based on your budget, space, and energy needs.
+
+---
+
+เราทำงานกับแผงโซลาร์เซลล์หลายประเภท ได้แก่:
+
+**1. แผงโซลาร์เซลล์โมโนคริสตัลไลน์**
+- ประสิทธิภาพสูงสุด (15-22%)
+- เหมาะสำหรับพื้นที่จำกัด
+- อายุการใช้งานยาวนาน (25-30 ปี)
+- ราคาสูงกว่าแต่ประสิทธิภาพดีกว่า
+
+**2. แผงโซลาร์เซลล์โพลีคริสตัลไลน์**
+- ประสิทธิภาพดี (13-16%)
+- ตัวเลือกที่ราคาไม่แพง
+- เหมาะสำหรับการติดตั้งขนาดใหญ่
+- คุ้มค่ากับเงิน
+
+**3. แผงโซลาร์เซลล์ฟิล์มบาง**
+- ยืดหยุ่นและน้ำหนักเบา
+- ประสิทธิภาพต่ำกว่าแต่ทำงานได้ในแสงน้อย
+- เหมาะสำหรับการใช้งานเฉพาะ
+- ตัวเลือกที่ราคาถูกที่สุด
+
+เราสามารถแนะนำประเภทที่ดีที่สุดตามงบประมาณ พื้นที่ และความต้องการพลังงานของคุณ
+
+---
+
+我们使用各种类型的太阳能电池板，包括:
+
+**1. 单晶硅太阳能电池板**
+- 效率最高 (15-22%)
+- 最适合有限空间
+- 使用寿命更长 (25-30年)
+- 成本较高但性能更好
+
+**2. 多晶硅太阳能电池板**
+- 效率良好 (13-16%)
+- 更实惠的选择
+- 适合大型安装
+- 性价比高
+
+**3. 薄膜太阳能电池板**
+- 灵活轻便
+- 效率较低但在弱光下工作
+- 适合特定应用
+- 最实惠的选择
+
+我们可以根据您的预算、空间和能源需求推荐最佳类型。"""
+    },
+    "solar_equipment": {
+        "keywords": ["solar panel equipment", "solar equipment", "solar panels equipment", "อุปกรณ์แผงโซลาร์เซลล์", "อุปกรณ์โซลาร์เซลล์", "太阳能设备", "太阳能电池板设备", "太阳能板设备有哪些"],
+        "content": """A complete solar panel system includes:
+
+**Main Components:**
+- Solar Panels (PV modules)
+- Solar Inverter (converts DC to AC power)
+- Mounting Structure/Racking System
+- Battery Storage System (optional)
+- Charge Controller
+- Electrical Wiring and Connectors
+
+**Monitoring & Protection:**
+- Monitoring System
+- Circuit Breakers
+- Surge Protection Devices
+- Junction Boxes
+- Grounding Equipment
+
+**Additional Equipment:**
+- Meter (for grid-tied systems)
+- Combiner Box
+- Disconnect Switches
+- Cable Management Systems
+
+We provide complete installation including all necessary equipment and can customize the system based on your energy requirements.
+
+---
+
+ระบบแผงโซลาร์เซลล์ที่สมบูรณ์ประกอบด้วย:
+
+**ส่วนประกอบหลัก:**
+- แผงโซลาร์เซลล์ (โมดูล PV)
+- อินเวอร์เตอร์โซลาร์เซลล์ (แปลง DC เป็น AC)
+- โครงสร้างติดตั้ง/ระบบแร็ค
+- ระบบแบตเตอรี่สำรอง (ตัวเลือก)
+- ตัวควบคุมการชาร์จ
+- สายไฟฟ้าและตัวเชื่อมต่อ
+
+**การตรวจสอบและป้องกัน:**
+- ระบบตรวจสอบ
+- เซอร์กิตเบรกเกอร์
+- อุปกรณ์ป้องกันไฟกระชาก
+- กล่องแยกสาย
+- อุปกรณ์ต่อสายดิน
+
+**อุปกรณ์เพิ่มเติม:**
+- มิเตอร์ (สำหรับระบบเชื่อมต่อกริด)
+- กล่องรวมสาย
+- สวิตช์ตัดการเชื่อมต่อ
+- ระบบจัดการสายเคเบิล
+
+เราให้บริการติดตั้งที่สมบูรณ์รวมถึงอุปกรณ์ที่จำเป็นทั้งหมด และสามารถปรับแต่งระบบตามความต้องการพลังงานของคุณ
+
+---
+
+完整的太阳能电池板系统包括:
+
+**主要组件:**
+- 太阳能电池板 (光伏组件)
+- 太阳能逆变器 (将直流电转换为交流电)
+- 安装结构/支架系统
+- 电池储能系统 (可选)
+- 充电控制器
+- 电气布线和连接器
+
+**监控与保护:**
+- 监控系统
+- 断路器
+- 浪涌保护装置
+- 接线盒
+- 接地设备
+
+**附加设备:**
+- 电表 (用于并网系统)
+- 汇流箱
+- 断开开关
+- 电缆管理系统
+
+我们提供包括所有必要设备的完整安装，并可根据您的能源需求定制系统。"""
+    },
+    "solar_farms": {
+        "keywords": ["solar farm", "solar farms", "what is solar farm", "ฟาร์มโซลาร์เซลล์", "ฟาร์มพลังงานแสงอาทิตย์", "什么是太阳能农场", "太阳能农场", "太阳能发电场"],
+        "content": """A solar farm (also called solar park or solar power plant) is a large-scale solar installation that generates electricity from sunlight using many solar panels across a large area of land.
+
+**Key Features:**
+- Large-scale renewable energy generation
+- Hundreds to thousands of solar panels
+- Connected to the electrical grid
+- Commercial electricity production
+- Typically 1 MW to hundreds of MW capacity
+
+**Benefits:**
+- Clean, renewable energy source
+- Reduces carbon emissions
+- Low operating costs after installation
+- Long-term energy production (25+ years)
+- Can be built on unused land
+
+**Our Services:**
+We can design, engineer, and construct solar farms including:
+- Site assessment and feasibility studies
+- Complete system design
+- Installation and commissioning
+- Grid connection
+- Monitoring systems
+- Maintenance services
+
+Contact us to discuss your solar farm project!
+
+---
+
+ฟาร์มโซลาร์เซลล์ (เรียกอีกอย่างว่าสวนโซลาร์หรือโรงไฟฟ้าพลังงานแสงอาทิตย์) คือการติดตั้งโซลาร์เซลล์ขนาดใหญ่ที่ผลิตไฟฟ้าจากแสงอาทิตย์โดยใช้แผงโซลาร์เซลล์จำนวนมากในพื้นที่ขนาดใหญ่
+
+**คุณสมบัติหลัก:**
+- การผลิตพลังงานหมุนเวียนขนาดใหญ่
+- แผงโซลาร์เซลล์หลายร้อยถึงหลายพันแผง
+- เชื่อมต่อกับโครงข่ายไฟฟ้า
+- การผลิตไฟฟ้าเชิงพาณิชย์
+- ความจุโดยทั่วไป 1 เมกะวัตต์ถึงหลายร้อยเมกะวัตต์
+
+**ประโยชน์:**
+- แหล่งพลังงานหมุนเวียนที่สะอาด
+- ลดการปล่อยคาร์บอน
+- ต้นทุนการดำเนินงานต่ำหลังการติดตั้ง
+- การผลิตพลังงานระยะยาว (25+ ปี)
+- สามารถสร้างบนที่ดินที่ไม่ได้ใช้งาน
+
+**บริการของเรา:**
+เราสามารถออกแบบ วิศวกรรม และสร้างฟาร์มโซลาร์เซลล์ รวมถึง:
+- การประเมินสถานที่และการศึกษาความเป็นไปได้
+- การออกแบบระบบที่สมบูรณ์
+- การติดตั้งและการเริ่มใช้งาน
+- การเชื่อมต่อกริด
+- ระบบตรวจสอบ
+- บริการบำรุงรักษา
+
+ติดต่อเราเพื่อหารือเกี่ยวกับโครงการฟาร์มโซลาร์เซลล์ของคุณ!
+
+---
+
+太阳能农场（也称为太阳能公园或太阳能发电厂）是一个大规模的太阳能装置，使用大面积土地上的许多太阳能电池板从阳光中发电。
+
+**主要特点:**
+- 大规模可再生能源发电
+- 数百到数千块太阳能电池板
+- 连接到电网
+- 商业发电
+- 通常容量为1兆瓦到数百兆瓦
+
+**优势:**
+- 清洁的可再生能源
+- 减少碳排放
+- 安装后运营成本低
+- 长期能源生产 (25年以上)
+- 可以建在未使用的土地上
+
+**我们的服务:**
+我们可以设计、工程和建造太阳能农场，包括:
+- 场地评估和可行性研究
+- 完整的系统设计
+- 安装和调试
+- 电网连接
+- 监控系统
+- 维护服务
+
+联系我们讨论您的太阳能农场项目!"""
     }
 }
 
