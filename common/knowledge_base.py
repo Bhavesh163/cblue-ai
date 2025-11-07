@@ -3210,6 +3210,66 @@ Contact us to discuss your solar farm project!
 - 维护服务
 
 联系我们讨论您的太阳能农场项目!"""
+    },
+    "house_sales_rental_inquiry": {
+        "keywords": ["do you sell houses", "do you rent houses", "sell houses", "rent houses", "คุณขายบ้านด้วยเหรอ", "คุณขายบ้านหรือไม่", "คุณให้เช่าบ้าน", "คุณใครบ้าน", "คุณให้ชาวบ้าน", "你们卖房子吗", "你们租房子吗", "你们出售房屋吗", "你们出租房屋吗", "คุณขายหรือให้เช่าบ้านหรือไม่", "你们出售或出租房屋吗"],
+        "content": """We do not sell or rent houses directly. Our expertise is in construction, renovation, and green building projects. We can build a house for you or renovate an existing one.
+
+---
+
+เราไม่ได้ขายหรือให้เช่าบ้านโดยตรง ความเชี่ยวชาญของเราคือการก่อสร้าง การปรับปรุง และโครงการอาคารสีเขียว เราสามารถสร้างบ้านให้คุณหรือปรับปรุงบ้านที่มีอยู่ได้
+
+---
+
+我们不直接出售或出租房屋。我们的专长是建筑、装修和绿色建筑项目。我们可以为您建造房屋或翻新现有房屋。"""
+    },
+    "house_location_inquiry": {
+        "keywords": ["Where are your houses for sales/rent?", "บ้านสำหรับขาย/เช่าของคุณอยู่ที่ไหน", "你们待售/出租的房子在哪里"],
+        "content": """Since we do not sell or rent houses, we do not have listings. However, we can build or renovate a property for you at your desired location in Thailand.
+
+---
+
+เนื่องจากเราไม่ได้ขายหรือให้เช่าบ้าน เราจึงไม่มีรายการบ้าน อย่างไรก็ตาม เราสามารถสร้างหรือปรับปรุงอสังหาริมทรัพย์ให้คุณได้ตามสถานที่ที่คุณต้องการในประเทศไทย
+
+---
+
+由于我们不销售或出租房屋，因此我们没有房源。但是，我们可以根据您在泰国的要求为您建造或翻新房产。"""
+    },
+    "house_price_inquiry": {
+        "keywords": ["what is the price?", "ราคาเท่าไหร่", "价格是多少"],
+        "content": """The price of our services depends on the project's scope, materials, and location. For a detailed quote on building or renovating a property, please contact us with your specific requirements.
+
+---
+
+ราคาบริการของเราขึ้นอยู่กับขอบเขตของโครงการ วัสดุ และสถานที่ สำหรับใบเสนอราคาโดยละเอียดเกี่ยวกับการสร้างหรือปรับปรุงอสังหาริมทรัพย์ โปรดติดต่อเราพร้อมแจ้งความต้องการเฉพาะของคุณ
+
+---
+
+我们服务的价格取决于项目的范围、材料和位置。有关建筑或翻新房产的详细报价，请联系我们并告知您的具体要求。"""
+    },
+    "house_types_inquiry": {
+        "keywords": ["What kind of house do you sell/rent?", "คุณขาย/ให้เช่าบ้านประเภทไหน", "你们出售/出租什么样的房子"],
+        "content": """We do not sell or rent houses, but we can build any type of house you desire, with a focus on green and sustainable construction, including smart homes and eco-friendly villas.
+
+---
+
+เราไม่ได้ขายหรือให้เช่าบ้าน แต่เราสามารถสร้างบ้านประเภทใดก็ได้ที่คุณต้องการ โดยเน้นที่การก่อสร้างที่เป็นมิตรกับสิ่งแวดล้อมและยั่งยืน รวมถึงบ้านอัจฉริยะและวิลล่าที่เป็นมิตรกับสิ่งแวดล้อม
+
+---
+
+我们不销售或出租房屋，但我们可以建造您想要的任何类型的房屋，重点是绿色和可持续建筑，包括智能家居和环保别墅。"""
+    },
+    "solar_panel_details": {
+        "keywords": ["Solar panels, solar farms? Solar panels types? Solar panels equipment?", "แผงโซลาร์เซลล์, โซลาร์ฟาร์ม? ประเภทของแผงโซลาร์เซลล์? อุปกรณ์แผงโซลาร์เซลล์?", "太阳能电池板，太阳能农场？太阳能电池板的类型？太阳能电池板设备？"],
+        "content": """Yes, we offer comprehensive solar solutions. We design and install solar panel systems for residential and commercial use, as well as large-scale solar farms. We provide various panel types, such as monocrystalline and polycrystalline, along with all necessary equipment like inverters, batteries, and mounting structures. Contact us for a detailed consultation.
+
+---
+
+ใช่ เรามีโซลูชันพลังงานแสงอาทิตย์ที่ครอบคลุม เราออกแบบและติดตั้งระบบแผงโซลาร์เซลล์สำหรับที่อยู่อาศัยและเชิงพาณิชย์ รวมถึงโซลาร์ฟาร์มขนาดใหญ่ เรามีแผงโซลาร์เซลล์หลายประเภท เช่น โมโนคริสตัลไลน์และโพลีคริสตัลไลน์ พร้อมด้วยอุปกรณ์ที่จำเป็นทั้งหมด เช่น อินเวอร์เตอร์ แบตเตอรี่ และโครงสร้างการติดตั้ง ติดต่อเราเพื่อขอคำปรึกษาโดยละเอียด
+
+---
+
+是的，我们提供全面的太阳能解决方案。我们设计和安装用于住宅和商业用途的太阳能电池板系统，以及大型太阳能农场。我们提供各种类型的电池板，例如单晶和多晶，以及所有必要的设备，如逆变器、电池和安装结构。请联系我们进行详细咨询。"""
     }
 }
 
