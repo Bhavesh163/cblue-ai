@@ -1,5 +1,6 @@
 import { useState, FormEvent } from 'react';
 import { motion } from 'framer-motion';
+import ReCAPTCHA from 'react-google-recaptcha';
 import { useLanguage } from '../../hooks/useLanguage';
 import { translations } from '../../data/content';
 import { Mail, Phone, MapPin, Send, User, MessageSquare, AlertCircle, CheckCircle } from 'lucide-react';
@@ -8,21 +9,42 @@ export default function Support() {
     const { t, language } = useLanguage();
     const support = translations.support;
 
-    const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
-    const [status, setStatus] = useState<'idle' | 'sending' | 'success'>('idle');
+    // Form State
+    const [form, setForm] = useState({ name: '', email: '', phone: '', subject: '', message: '' });
+    const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+    const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+    const [errorMessage, setErrorMessage] = useState('');
+
+    // Config
+    const SITE_KEY = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"; // Google Test Key
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
-        if (!form.name || !form.email || !form.message) return;
+
+        // Strict Validation
+        if (!form.name || !form.email || !form.phone || !form.subject || !form.message) {
+            setErrorMessage("Please fill in all fields.");
+            setStatus('error');
+            return;
+        }
+
+        if (!captchaToken) {
+            setErrorMessage("Please complete the reCAPTCHA verification.");
+            setStatus('error');
+            return;
+        }
 
         setStatus('sending');
+        setErrorMessage('');
+
         // Simulate API call
         await new Promise(resolve => setTimeout(resolve, 1500));
 
         setStatus('success');
-        setForm({ name: '', email: '', subject: '', message: '' });
+        setForm({ name: '', email: '', phone: '', subject: '', message: '' });
+        setCaptchaToken(null);
 
-        setTimeout(() => setStatus('idle'), 3000);
+        setTimeout(() => setStatus('idle'), 5000);
     };
 
     return (
@@ -120,17 +142,23 @@ export default function Support() {
                     </div>
 
                     <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
+                        {status === 'error' && (
+                            <div className="p-4 bg-red-50 text-red-600 rounded-xl flex items-center gap-2 text-sm font-medium animate-shake">
+                                <AlertCircle size={18} />
+                                {errorMessage}
+                            </div>
+                        )}
+
                         <div className="grid md:grid-cols-2 gap-6">
                             {/* Name */}
                             <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">Name <span className="text-red-500">*</span></label>
                                 <div className="relative">
                                     <span className="absolute left-3 top-3 text-gray-400">
                                         <User size={18} />
                                     </span>
                                     <input
                                         type="text"
-                                        required
                                         value={form.name}
                                         onChange={(e) => setForm({ ...form, name: e.target.value })}
                                         className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
@@ -141,14 +169,13 @@ export default function Support() {
 
                             {/* Email */}
                             <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">Email <span className="text-red-500">*</span></label>
                                 <div className="relative">
                                     <span className="absolute left-3 top-3 text-gray-400">
                                         <Mail size={18} />
                                     </span>
                                     <input
                                         type="email"
-                                        required
                                         value={form.email}
                                         onChange={(e) => setForm({ ...form, email: e.target.value })}
                                         className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
@@ -158,32 +185,50 @@ export default function Support() {
                             </div>
                         </div>
 
-                        {/* Subject */}
-                        <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-                            <div className="relative">
-                                <span className="absolute left-3 top-3 text-gray-400">
-                                    <AlertCircle size={18} />
-                                </span>
-                                <input
-                                    type="text"
-                                    value={form.subject}
-                                    onChange={(e) => setForm({ ...form, subject: e.target.value })}
-                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
-                                    placeholder="Inquiry Subject"
-                                />
+                        <div className="grid md:grid-cols-2 gap-6">
+                            {/* Phone */}
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number <span className="text-red-500">*</span></label>
+                                <div className="relative">
+                                    <span className="absolute left-3 top-3 text-gray-400">
+                                        <Phone size={18} />
+                                    </span>
+                                    <input
+                                        type="tel"
+                                        value={form.phone}
+                                        onChange={(e) => setForm({ ...form, phone: e.target.value })}
+                                        className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                        placeholder="081 234 5678"
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Subject */}
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">Subject <span className="text-red-500">*</span></label>
+                                <div className="relative">
+                                    <span className="absolute left-3 top-3 text-gray-400">
+                                        <AlertCircle size={18} />
+                                    </span>
+                                    <input
+                                        type="text"
+                                        value={form.subject}
+                                        onChange={(e) => setForm({ ...form, subject: e.target.value })}
+                                        className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                        placeholder="Inquiry Subject"
+                                    />
+                                </div>
                             </div>
                         </div>
 
                         {/* Message */}
                         <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">Message <span className="text-red-500">*</span></label>
                             <div className="relative">
                                 <span className="absolute left-3 top-3 text-gray-400">
                                     <MessageSquare size={18} />
                                 </span>
                                 <textarea
-                                    required
                                     rows={5}
                                     value={form.message}
                                     onChange={(e) => setForm({ ...form, message: e.target.value })}
@@ -193,13 +238,21 @@ export default function Support() {
                             </div>
                         </div>
 
+                        {/* ReCAPTCHA */}
+                        <div className="flex justify-center">
+                            <ReCAPTCHA
+                                sitekey={SITE_KEY}
+                                onChange={(token) => setCaptchaToken(token)}
+                            />
+                        </div>
+
                         <div className="flex justify-center pt-2">
                             <button
                                 type="submit"
-                                disabled={status === 'sending' || status === 'success'}
+                                disabled={status === 'sending' || status === 'success' || status === 'error'}
                                 className={`w-full md:w-1/3 py-3.5 rounded-xl font-bold text-white shadow-lg flex items-center justify-center gap-2 transition-all transform active:scale-95 ${status === 'success'
-                                        ? 'bg-green-500 hover:bg-green-600'
-                                        : 'bg-gradient-to-r from-sky-600 to-blue-800 hover:from-sky-500 hover:to-blue-700'
+                                    ? 'bg-green-500 hover:bg-green-600'
+                                    : 'bg-gradient-to-r from-sky-600 to-blue-800 hover:from-sky-500 hover:to-blue-700'
                                     }`}
                             >
                                 {status === 'sending' ? (

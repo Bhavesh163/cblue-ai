@@ -31,4 +31,4 @@ node_modules/
 
 
 # Stuff I just don't want to add
-*.md
+# *.md (Uncommented to allow documentation)
