@@ -1,19 +1,19 @@
-import {useState} from 'react';
-import {motion, AnimatePresence} from 'framer-motion';
-import {useLanguage} from '../../hooks/useLanguage';
-import {Menu, X, Globe} from 'lucide-react';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useLanguage } from '../../hooks/useLanguage';
+import { Menu, X, Globe } from 'lucide-react';
 
-export default function Navbar({setPage}: {setPage: (page: string) => void}) {
+export default function Navbar({ setPage }: { setPage: (page: string) => void }) {
     const [isOpen, setIsOpen] = useState(false);
     const [langOpen, setLangOpen] = useState(false);
-    const {language, setLanguage, t} = useLanguage();
+    const { language, setLanguage, t } = useLanguage();
 
     const navItems = [
-        {id: 'home', label: 'Home'},
-        {id: 'solutions', label: 'Solutions'},
-        {id: 'reference', label: 'Reference'},
-        {id: 'support', label: 'Support'},
-        {id: 'about', label: 'About Us'},
+        { id: 'home', label: 'Home' },
+        { id: 'solutions', label: 'Solutions' },
+        { id: 'reference', label: 'Reference' },
+        { id: 'support', label: 'Support' },
+        { id: 'about', label: 'About Us' },
     ];
 
     return (
@@ -23,9 +23,11 @@ export default function Navbar({setPage}: {setPage: (page: string) => void}) {
                 <div className="flex justify-between items-center h-20">
                     {/* Logo */}
                     <div className="flex-shrink-0 flex items-center cursor-pointer" onClick={() => setPage('home')}>
-                        <span className="text-2xl font-bold bg-gradient-to-r from-sky-600 to-blue-800 bg-clip-text text-transparent">
-                            Cblue
-                        </span>
+                        <img
+                            src="./images/logo.jpg"
+                            alt="Cblue Logo"
+                            className="h-12 w-auto object-contain"
+                        />
                     </div>
 
                     {/* Desktop Menu */}
@@ -53,9 +55,9 @@ export default function Navbar({setPage}: {setPage: (page: string) => void}) {
                             <AnimatePresence>
                                 {langOpen && (
                                     <motion.div
-                                        initial={{opacity: 0, y: 10}}
-                                        animate={{opacity: 1, y: 0}}
-                                        exit={{opacity: 0, y: 10}}
+                                        initial={{ opacity: 0, y: 10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0, y: 10 }}
                                         className="absolute right-0 mt-2 w-24 bg-white rounded-lg shadow-xl ring-1 ring-black ring-opacity-5 overflow-hidden"
                                     >
                                         {(['en', 'th', 'zh'] as const).map((lang) => (
@@ -94,9 +96,9 @@ export default function Navbar({setPage}: {setPage: (page: string) => void}) {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{height: 0, opacity: 0}}
-                        animate={{height: 'auto', opacity: 1}}
-                        exit={{height: 0, opacity: 0}}
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
                         className="md:hidden bg-white border-t border-sky-100 overflow-hidden"
                     >
                         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">

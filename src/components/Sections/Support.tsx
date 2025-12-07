@@ -2,7 +2,7 @@ import { useState, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { useLanguage } from '../../hooks/useLanguage';
-import { translations } from '../../data/content';
+import { translations, Language } from '../../data/content';
 import {
     Mail, Phone, MapPin, Send, User, MessageSquare,
     AlertCircle, CheckCircle, Briefcase, HelpCircle,
@@ -50,33 +50,22 @@ const INITIAL_FORM: FormData = {
     consent: false
 };
 
-const SERVICE_OPTIONS = [
-    "Web Development",
-    "Mobile App Development",
-    "AI Integration",
-    "Consulting",
-    "Other"
-];
+// Service option keys for translation mapping
+const SERVICE_OPTION_KEYS = ['webDev', 'mobileDev', 'aiIntegration', 'consulting', 'other'] as const;
 
-const BUDGET_OPTIONS = [
-    "Less than $5,000",
-    "$5,000 - $10,000",
-    "$10,000 - $25,000",
-    "$25,000 - $50,000",
-    "$50,000+"
-];
+// Budget option keys for translation mapping
+const BUDGET_OPTION_KEYS = ['under5k', '5kTo10k', '10kTo25k', '25kTo50k', 'above50k'] as const;
 
-const ISSUE_TYPES = [
-    "Technical Issue",
-    "Billing / Payment",
-    "Account Access",
-    "Feature Request",
-    "Other"
-];
+// Issue type keys for translation mapping
+const ISSUE_TYPE_KEYS = ['technical', 'billing', 'accountAccess', 'featureRequest', 'other'] as const;
 
 export default function Support() {
     const { t, language } = useLanguage();
     const support = translations.support;
+    const form_t = translations.supportForm;
+
+    // Helper function to get translated text
+    const getText = (obj: Record<Language, string>) => obj[language] || obj['en'];
 
     // Form State
     const [form, setForm] = useState<FormData>(INITIAL_FORM);
@@ -121,25 +110,21 @@ export default function Support() {
         const missingFields = requiredFields.filter(field => !form[field as keyof FormData]);
 
         if (missingFields.length > 0 || !form.consent) {
-            setErrorMessage("Please fill in all required fields and accept the terms.");
+            setErrorMessage(getText(form_t.errors.requiredFields));
             setStatus('error');
             return;
         }
 
         if (!captchaToken) {
-            setErrorMessage("Please complete the reCAPTCHA verification.");
+            setErrorMessage(getText(form_t.errors.captcha));
             setStatus('error');
             return;
         }
 
-        // Determine Destination Email based on Inquiry Type
-        // TO USER: Replace these with your actual email addresses
-        const GMAIL_ADDRESS = "your-gmail-placeholder@gmail.com";
-        const HOTMAIL_ADDRESS = "your-hotmail-placeholder@hotmail.com";
+        // Destination Email for all inquiries
+        const DESTINATION_EMAIL = "cblue.thailand@gmail.com";
 
-        const destinationEmail = form.inquiryType === 'support'
-            ? HOTMAIL_ADDRESS
-            : GMAIL_ADDRESS;
+        const destinationEmail = DESTINATION_EMAIL;
 
         setStatus('sending');
         setErrorMessage('');
@@ -164,13 +149,57 @@ export default function Support() {
                 setCaptchaToken(null);
                 setTimeout(() => setStatus('idle'), 5000);
             } else {
-                setErrorMessage("Something went wrong. Please try again later.");
+                setErrorMessage(getText(form_t.errors.general));
                 setStatus('error');
             }
         } catch (error) {
-            setErrorMessage("Network error. Please check your connection.");
+            setErrorMessage(getText(form_t.errors.network));
             setStatus('error');
         }
+    };
+
+    // Get translated service options
+    const getServiceOptions = () => {
+        return SERVICE_OPTION_KEYS.map(key => ({
+            key,
+            label: getText(form_t.serviceOptions[key])
+        }));
+    };
+
+    // Get translated budget options
+    const getBudgetOptions = () => {
+        return BUDGET_OPTION_KEYS.map(key => ({
+            key,
+            label: getText(form_t.budgetOptions[key])
+        }));
+    };
+
+    // Get translated issue types
+    const getIssueTypes = () => {
+        return ISSUE_TYPE_KEYS.map(key => ({
+            key,
+            label: getText(form_t.issueTypes[key])
+        }));
+    };
+
+    // Get inquiry type label
+    const getInquiryTypeLabel = (type: InquiryType) => {
+        return getText(form_t.inquiryTypes[type]);
+    };
+
+    // Get message label based on inquiry type
+    const getMessageLabel = () => {
+        return getText(form_t.messageLabels[form.inquiryType]);
+    };
+
+    // Get message placeholder based on inquiry type
+    const getMessagePlaceholder = () => {
+        return getText(form_t.messagePlaceholders[form.inquiryType]);
+    };
+
+    // Get consent message based on inquiry type
+    const getConsentMessage = () => {
+        return getText(form_t.consentMessages[form.inquiryType]);
     };
 
     return (
@@ -202,7 +231,7 @@ export default function Support() {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-sky-900/80 to-transparent flex items-end p-8">
                             <p className="text-white font-medium text-lg italic">
-                                "We are here to help you build the future."
+                                {getText(form_t.heroQuote)}
                             </p>
                         </div>
                     </motion.div>
@@ -215,7 +244,7 @@ export default function Support() {
                         className="bg-white rounded-2xl shadow-xl overflow-hidden p-8 border border-gray-100"
                     >
                         <h3 className="text-2xl font-bold text-gray-800 mb-6 border-b pb-4">
-                            Contact Details
+                            {getText(form_t.contactDetails)}
                         </h3>
                         <div className="space-y-4">
                             {support.items.map((item, index) => (
@@ -239,10 +268,10 @@ export default function Support() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500 font-medium uppercase tracking-wider">
-                                        Location
+                                        {getText(form_t.location)}
                                     </p>
                                     <p className="text-lg font-bold text-gray-900">
-                                        Bangkok, Thailand
+                                        {getText(form_t.locationValue)}
                                     </p>
                                 </div>
                             </div>
@@ -261,9 +290,9 @@ export default function Support() {
 
                         <div className="text-center mb-8">
                             <h3 className="text-3xl font-bold text-gray-800 mb-2 relative z-10">
-                                How can we help?
+                                {getText(form_t.formTitle)}
                             </h3>
-                            <p className="text-gray-500">Select an option below to get started.</p>
+                            <p className="text-gray-500">{getText(form_t.formSubtitle)}</p>
                         </div>
 
                         {/* Inquiry Type Selector - Tabs */}
@@ -282,7 +311,7 @@ export default function Support() {
                                     {type === 'support' && <HelpCircle size={16} />}
                                     {type === 'general' && <MessageSquare size={16} />}
                                     <span className="hidden sm:inline">
-                                        {type === 'service' ? 'Start Project' : type === 'support' ? 'Get Support' : 'General'}
+                                        {getInquiryTypeLabel(type)}
                                     </span>
                                 </button>
                             ))}
@@ -299,7 +328,7 @@ export default function Support() {
                             {/* Common: Contact Info */}
                             <div className="grid md:grid-cols-2 gap-5">
                                 <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.fullName)} *</label>
                                     <div className="relative">
                                         <User className="absolute left-3 top-3 text-gray-400" size={18} />
                                         <input
@@ -308,12 +337,12 @@ export default function Support() {
                                             value={form.name}
                                             onChange={handleInputChange}
                                             className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
-                                            placeholder="John Doe"
+                                            placeholder={getText(form_t.fullNamePlaceholder)}
                                         />
                                     </div>
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">Email Address *</label>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.emailAddress)} *</label>
                                     <div className="relative">
                                         <Mail className="absolute left-3 top-3 text-gray-400" size={18} />
                                         <input
@@ -322,12 +351,12 @@ export default function Support() {
                                             value={form.email}
                                             onChange={handleInputChange}
                                             className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
-                                            placeholder="john@example.com"
+                                            placeholder={getText(form_t.emailPlaceholder)}
                                         />
                                     </div>
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">Phone Number *</label>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.phoneNumber)} *</label>
                                     <div className="relative">
                                         <Phone className="absolute left-3 top-3 text-gray-400" size={18} />
                                         <input
@@ -336,12 +365,12 @@ export default function Support() {
                                             value={form.phone}
                                             onChange={handleInputChange}
                                             className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
-                                            placeholder="+1 (555) 000-0000"
+                                            placeholder={getText(form_t.phonePlaceholder)}
                                         />
                                     </div>
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">Company (Optional)</label>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.company)}</label>
                                     <div className="relative">
                                         <Globe className="absolute left-3 top-3 text-gray-400" size={18} />
                                         <input
@@ -350,7 +379,7 @@ export default function Support() {
                                             value={form.company}
                                             onChange={handleInputChange}
                                             className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
-                                            placeholder="Acme Inc."
+                                            placeholder={getText(form_t.companyPlaceholder)}
                                         />
                                     </div>
                                 </div>
@@ -366,7 +395,7 @@ export default function Support() {
                                         className="grid md:grid-cols-2 gap-5 overflow-hidden"
                                     >
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">Service Interested In *</label>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.serviceInterested)} *</label>
                                             <div className="relative">
                                                 <Briefcase className="absolute left-3 top-3 text-gray-400" size={18} />
                                                 <select
@@ -375,14 +404,14 @@ export default function Support() {
                                                     onChange={handleInputChange}
                                                     className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all appearance-none bg-white"
                                                 >
-                                                    <option value="">Select a service</option>
-                                                    {SERVICE_OPTIONS.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+                                                    <option value="">{getText(form_t.selectService)}</option>
+                                                    {getServiceOptions().map(opt => <option key={opt.key} value={opt.key}>{opt.label}</option>)}
                                                 </select>
                                                 <ChevronDown className="absolute right-3 top-3 text-gray-400 pointer-events-none" size={18} />
                                             </div>
                                         </div>
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">Budget Range *</label>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.budgetRange)} *</label>
                                             <div className="relative">
                                                 <DollarSign className="absolute left-3 top-3 text-gray-400" size={18} />
                                                 <select
@@ -391,14 +420,14 @@ export default function Support() {
                                                     onChange={handleInputChange}
                                                     className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all appearance-none bg-white"
                                                 >
-                                                    <option value="">Select budget</option>
-                                                    {BUDGET_OPTIONS.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+                                                    <option value="">{getText(form_t.selectBudget)}</option>
+                                                    {getBudgetOptions().map(opt => <option key={opt.key} value={opt.key}>{opt.label}</option>)}
                                                 </select>
                                                 <ChevronDown className="absolute right-3 top-3 text-gray-400 pointer-events-none" size={18} />
                                             </div>
                                         </div>
                                         <div className="md:col-span-2">
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">Preferred Start Date *</label>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.startDate)} *</label>
                                             <div className="relative">
                                                 <Calendar className="absolute left-3 top-3 text-gray-400" size={18} />
                                                 <input
@@ -422,7 +451,7 @@ export default function Support() {
                                         className="grid md:grid-cols-2 gap-5 overflow-hidden"
                                     >
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">Type of Issue *</label>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.issueType)} *</label>
                                             <div className="relative">
                                                 <AlertCircle className="absolute left-3 top-3 text-gray-400" size={18} />
                                                 <select
@@ -431,14 +460,14 @@ export default function Support() {
                                                     onChange={handleInputChange}
                                                     className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all appearance-none bg-white"
                                                 >
-                                                    <option value="">Select issue type</option>
-                                                    {ISSUE_TYPES.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+                                                    <option value="">{getText(form_t.selectIssueType)}</option>
+                                                    {getIssueTypes().map(opt => <option key={opt.key} value={opt.key}>{opt.label}</option>)}
                                                 </select>
                                                 <ChevronDown className="absolute right-3 top-3 text-gray-400 pointer-events-none" size={18} />
                                             </div>
                                         </div>
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">Order ID (Optional)</label>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.orderId)}</label>
                                             <div className="relative">
                                                 <Hash className="absolute left-3 top-3 text-gray-400" size={18} />
                                                 <input
@@ -447,7 +476,7 @@ export default function Support() {
                                                     value={form.orderId}
                                                     onChange={handleInputChange}
                                                     className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
-                                                    placeholder="#12345"
+                                                    placeholder={getText(form_t.orderIdPlaceholder)}
                                                 />
                                             </div>
                                         </div>
@@ -462,7 +491,7 @@ export default function Support() {
                                         exit={{ opacity: 0, height: 0 }}
                                     >
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">Subject *</label>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.subject)} *</label>
                                             <div className="relative">
                                                 <MessageSquare className="absolute left-3 top-3 text-gray-400" size={18} />
                                                 <input
@@ -471,7 +500,7 @@ export default function Support() {
                                                     value={form.subject}
                                                     onChange={handleInputChange}
                                                     className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
-                                                    placeholder="Inquiry Subject"
+                                                    placeholder={getText(form_t.subjectPlaceholder)}
                                                 />
                                             </div>
                                         </div>
@@ -482,9 +511,7 @@ export default function Support() {
                             {/* Message */}
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                                    {form.inquiryType === 'service' ? 'Project Details / Requirements *'
-                                        : form.inquiryType === 'support' ? 'Description of Problem *'
-                                            : 'Message *'}
+                                    {getMessageLabel()} *
                                 </label>
                                 <textarea
                                     name="message"
@@ -492,7 +519,7 @@ export default function Support() {
                                     value={form.message}
                                     onChange={handleInputChange}
                                     className="w-full p-4 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all resize-none"
-                                    placeholder={form.inquiryType === 'service' ? 'Tell us about your project goals...' : 'Please describe the issue you are facing...'}
+                                    placeholder={getMessagePlaceholder()}
                                 />
                             </div>
 
@@ -508,11 +535,7 @@ export default function Support() {
                                     />
                                 </div>
                                 <label htmlFor="consent" className="text-sm text-gray-600 cursor-pointer select-none">
-                                    {form.inquiryType === 'service'
-                                        ? "I confirm the information provided is accurate and agree to allow the team to contact me regarding my project."
-                                        : form.inquiryType === 'support'
-                                            ? "I authorize your team to review my request and contact me with updates."
-                                            : "I agree to the privacy policy and authorize you to contact me."}
+                                    {getConsentMessage()}
                                 </label>
                             </div>
 
@@ -538,12 +561,12 @@ export default function Support() {
                                     ) : status === 'success' ? (
                                         <>
                                             <CheckCircle size={20} />
-                                            Request Sent!
+                                            {getText(form_t.buttons.success)}
                                         </>
                                     ) : (
                                         <>
                                             <Send size={18} />
-                                            Submit Request
+                                            {getText(form_t.buttons.submit)}
                                         </>
                                     )}
                                 </button>
@@ -555,4 +578,3 @@ export default function Support() {
         </motion.div>
     );
 }
-

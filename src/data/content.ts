@@ -256,6 +256,125 @@ export const translations = {
         ],
         image: "./images/2.jpg"
     },
+    supportForm: {
+        // Header
+        contactDetails: { en: "Contact Details", th: "รายละเอียดการติดต่อ", zh: "联系方式" },
+        location: { en: "Location", th: "ที่ตั้ง", zh: "位置" },
+        locationValue: { en: "Bangkok, Thailand", th: "กรุงเทพฯ, ประเทศไทย", zh: "泰国曼谷" },
+        heroQuote: { en: "\"We are here to help you build the future.\"", th: "\"เราพร้อมช่วยคุณสร้างอนาคต\"", zh: "\"我们在这里帮助您建设未来。\"" },
+
+        // Form Title
+        formTitle: { en: "How can we help?", th: "เราช่วยอะไรได้บ้าง?", zh: "我们能帮您什么?" },
+        formSubtitle: { en: "Select an option below to get started.", th: "เลือกตัวเลือกด้านล่างเพื่อเริ่มต้น", zh: "请选择以下选项开始。" },
+
+        // Inquiry Types
+        inquiryTypes: {
+            service: { en: "Start Project", th: "เริ่มโปรเจกต์", zh: "开始项目" },
+            support: { en: "Get Support", th: "ขอความช่วยเหลือ", zh: "获取支持" },
+            general: { en: "General", th: "ทั่วไป", zh: "一般咨询" }
+        },
+
+        // Common Fields
+        fullName: { en: "Full Name", th: "ชื่อ-นามสกุล", zh: "全名" },
+        fullNamePlaceholder: { en: "John Doe", th: "ชื่อ นามสกุล", zh: "张三" },
+        emailAddress: { en: "Email Address", th: "อีเมล", zh: "电子邮箱" },
+        emailPlaceholder: { en: "john@example.com", th: "example@email.com", zh: "example@email.com" },
+        phoneNumber: { en: "Phone Number", th: "เบอร์โทรศัพท์", zh: "电话号码" },
+        phonePlaceholder: { en: "+1 (555) 000-0000", th: "+66 XX XXX XXXX", zh: "+86 XXX XXXX XXXX" },
+        company: { en: "Company (Optional)", th: "บริษัท (ไม่บังคับ)", zh: "公司（可选）" },
+        companyPlaceholder: { en: "Acme Inc.", th: "บริษัท จำกัด", zh: "公司名称" },
+        required: { en: "*", th: "*", zh: "*" },
+
+        // Service Fields
+        serviceInterested: { en: "Service Interested In", th: "บริการที่สนใจ", zh: "感兴趣的服务" },
+        selectService: { en: "Select a service", th: "เลือกบริการ", zh: "选择服务" },
+        budgetRange: { en: "Budget Range", th: "งบประมาณ", zh: "预算范围" },
+        selectBudget: { en: "Select budget", th: "เลือกงบประมาณ", zh: "选择预算" },
+        startDate: { en: "Preferred Start Date", th: "วันที่ต้องการเริ่มงาน", zh: "首选开始日期" },
+
+        // Service Options
+        serviceOptions: {
+            webDev: { en: "Web Development", th: "พัฒนาเว็บไซต์", zh: "网站开发" },
+            mobileDev: { en: "Mobile App Development", th: "พัฒนาแอปมือถือ", zh: "移动应用开发" },
+            aiIntegration: { en: "AI Integration", th: "ผสานรวม AI", zh: "AI 集成" },
+            consulting: { en: "Consulting", th: "ที่ปรึกษา", zh: "咨询" },
+            other: { en: "Other", th: "อื่นๆ", zh: "其他" }
+        },
+
+        // Budget Options
+        budgetOptions: {
+            under5k: { en: "Less than $5,000", th: "น้อยกว่า 150,000 บาท", zh: "少于 $5,000" },
+            "5kTo10k": { en: "$5,000 - $10,000", th: "150,000 - 300,000 บาท", zh: "$5,000 - $10,000" },
+            "10kTo25k": { en: "$10,000 - $25,000", th: "300,000 - 750,000 บาท", zh: "$10,000 - $25,000" },
+            "25kTo50k": { en: "$25,000 - $50,000", th: "750,000 - 1,500,000 บาท", zh: "$25,000 - $50,000" },
+            above50k: { en: "$50,000+", th: "1,500,000 บาทขึ้นไป", zh: "$50,000+" }
+        },
+
+        // Support Fields
+        issueType: { en: "Type of Issue", th: "ประเภทปัญหา", zh: "问题类型" },
+        selectIssueType: { en: "Select issue type", th: "เลือกประเภทปัญหา", zh: "选择问题类型" },
+        orderId: { en: "Order ID (Optional)", th: "หมายเลขคำสั่งซื้อ (ไม่บังคับ)", zh: "订单号（可选）" },
+        orderIdPlaceholder: { en: "#12345", th: "#12345", zh: "#12345" },
+
+        // Issue Types
+        issueTypes: {
+            technical: { en: "Technical Issue", th: "ปัญหาทางเทคนิค", zh: "技术问题" },
+            billing: { en: "Billing / Payment", th: "การเรียกเก็บเงิน / การชำระเงิน", zh: "账单/付款" },
+            accountAccess: { en: "Account Access", th: "การเข้าถึงบัญชี", zh: "账户访问" },
+            featureRequest: { en: "Feature Request", th: "ขอคุณสมบัติใหม่", zh: "功能请求" },
+            other: { en: "Other", th: "อื่นๆ", zh: "其他" }
+        },
+
+        // General Fields
+        subject: { en: "Subject", th: "หัวข้อ", zh: "主题" },
+        subjectPlaceholder: { en: "Inquiry Subject", th: "หัวข้อที่ต้องการสอบถาม", zh: "咨询主题" },
+
+        // Message Field
+        messageLabels: {
+            service: { en: "Project Details / Requirements", th: "รายละเอียดโปรเจกต์ / ความต้องการ", zh: "项目详情/需求" },
+            support: { en: "Description of Problem", th: "อธิบายปัญหา", zh: "问题描述" },
+            general: { en: "Message", th: "ข้อความ", zh: "留言" }
+        },
+        messagePlaceholders: {
+            service: { en: "Tell us about your project goals...", th: "บอกเราเกี่ยวกับเป้าหมายโปรเจกต์ของคุณ...", zh: "请告诉我们您的项目目标..." },
+            support: { en: "Please describe the issue you are facing...", th: "กรุณาอธิบายปัญหาที่คุณพบ...", zh: "请描述您遇到的问题..." },
+            general: { en: "Your message here...", th: "ข้อความของคุณที่นี่...", zh: "请在此输入您的留言..." }
+        },
+
+        // Consent Messages
+        consentMessages: {
+            service: {
+                en: "I confirm the information provided is accurate and agree to allow the team to contact me regarding my project.",
+                th: "ข้าพเจ้ายืนยันว่าข้อมูลที่ให้ถูกต้อง และยินยอมให้ทีมงานติดต่อเกี่ยวกับโปรเจกต์ของข้าพเจ้า",
+                zh: "我确认所提供的信息准确无误，并同意团队就我的项目与我联系。"
+            },
+            support: {
+                en: "I authorize your team to review my request and contact me with updates.",
+                th: "ข้าพเจ้าอนุญาตให้ทีมงานตรวจสอบคำขอและติดต่อกลับเพื่อแจ้งความคืบหน้า",
+                zh: "我授权您的团队审核我的请求并与我联系更新情况。"
+            },
+            general: {
+                en: "I agree to the privacy policy and authorize you to contact me.",
+                th: "ข้าพเจ้ายอมรับนโยบายความเป็นส่วนตัวและอนุญาตให้ติดต่อข้าพเจ้า",
+                zh: "我同意隐私政策并授权您与我联系。"
+            }
+        },
+
+        // Button States
+        buttons: {
+            submit: { en: "Submit Request", th: "ส่งคำขอ", zh: "提交请求" },
+            sending: { en: "Sending...", th: "กำลังส่ง...", zh: "发送中..." },
+            success: { en: "Request Sent!", th: "ส่งคำขอสำเร็จ!", zh: "请求已发送!" }
+        },
+
+        // Error Messages
+        errors: {
+            requiredFields: { en: "Please fill in all required fields and accept the terms.", th: "กรุณากรอกข้อมูลที่จำเป็นทั้งหมดและยอมรับเงื่อนไข", zh: "请填写所有必填字段并接受条款。" },
+            captcha: { en: "Please complete the reCAPTCHA verification.", th: "กรุณายืนยันตัวตนด้วย reCAPTCHA", zh: "请完成 reCAPTCHA 验证。" },
+            network: { en: "Network error. Please check your connection.", th: "เกิดข้อผิดพลาดเครือข่าย กรุณาตรวจสอบการเชื่อมต่อ", zh: "网络错误，请检查您的连接。" },
+            general: { en: "Something went wrong. Please try again later.", th: "เกิดข้อผิดพลาด กรุณาลองใหม่ภายหลัง", zh: "出了点问题，请稍后重试。" }
+        }
+    },
     about: {
         intro: {
             title: { en: "Welcome to Cblue", th: "ยินดีต้อนรับสู่ Cblue", zh: "欢迎来到 Cblue" },
