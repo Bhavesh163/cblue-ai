@@ -47,7 +47,7 @@ export default function Home() {
                         className="text-5xl md:text-7xl font-bold mb-8 tracking-tight font-sans"
                     >
                         <span className="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-white">
-                            C Blue
+                            Cblue
                         </span> Thailand
                     </motion.h1>
                     <motion.p

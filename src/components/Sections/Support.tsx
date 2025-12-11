@@ -4,12 +4,12 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import { useLanguage } from '../../hooks/useLanguage';
 import { translations, Language } from '../../data/content';
 import {
-    Mail, Phone, MapPin, Send, User, MessageSquare,
+    Mail, Phone, MapPin, Send, User,
     AlertCircle, CheckCircle, Briefcase, HelpCircle,
-    DollarSign, Calendar, Hash, Globe, ChevronDown
+    Calendar, Hash, Globe, ChevronDown
 } from 'lucide-react';
 
-type InquiryType = 'service' | 'support' | 'general';
+type InquiryType = 'service' | 'support' | 'household';
 
 interface FormData {
     // Common
@@ -23,10 +23,14 @@ interface FormData {
     interestedService: string;
     budgetRange: string;
     startDate: string;
+    location: string;
 
     // Support
     orderId: string;
     issueType: string;
+
+    // Household
+    householdOption: string;
 
     // Common Tail
     subject: string;
@@ -39,29 +43,36 @@ const INITIAL_FORM: FormData = {
     email: '',
     phone: '',
     company: '',
-    inquiryType: 'general',
+    inquiryType: 'service',
     interestedService: '',
     budgetRange: '',
     startDate: '',
+    location: '',
     orderId: '',
     issueType: '',
+    householdOption: '',
     subject: '',
     message: '',
     consent: false
 };
 
 // Service option keys for translation mapping
-const SERVICE_OPTION_KEYS = ['webDev', 'mobileDev', 'aiIntegration', 'consulting', 'other'] as const;
+const SERVICE_OPTION_KEYS = [
+    'webDev', 'mobileDev', 'aiIntegration', 'consulting',
+    'chatbot', 'software', 'machineLearning', 'solar', 'evCharger',
+    'greenArch', 'hvacMep', 'automation', 'envServices',
+    'security', 'accessControl', 'greenConst', 'smartHome', 'smartFarming',
+    'other'
+] as const;
 
-// Budget option keys for translation mapping
-const BUDGET_OPTION_KEYS = ['under5k', '5kTo10k', '10kTo25k', '25kTo50k', 'above50k'] as const;
+// Household option keys
+const HOUSEHOLD_OPTION_KEYS = ['plumbing', 'electrical', 'acRepair', 'cleaning', 'pestControl', 'gardening', 'other'] as const;
 
 // Issue type keys for translation mapping
 const ISSUE_TYPE_KEYS = ['technical', 'billing', 'accountAccess', 'featureRequest', 'other'] as const;
 
 export default function Support() {
     const { t, language } = useLanguage();
-    const support = translations.support;
     const form_t = translations.supportForm;
 
     // Helper function to get translated text
@@ -89,20 +100,25 @@ export default function Support() {
             interestedService: '',
             budgetRange: '',
             startDate: '',
+            location: '',
             orderId: '',
-            issueType: ''
+            issueType: '',
+            householdOption: ''
         }));
     };
 
     const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
 
+
         // Strict Validation
-        const requiredFields = ['name', 'email', 'phone', 'message'];
+        const requiredFields = ['name', 'email', 'phone', 'company', 'message'];
         if (form.inquiryType === 'service') {
-            requiredFields.push('interestedService', 'budgetRange', 'startDate');
+            requiredFields.push('interestedService', 'startDate', 'location');
         } else if (form.inquiryType === 'support') {
-            requiredFields.push('issueType');
+            requiredFields.push('issueType', 'orderId');
+        } else if (form.inquiryType === 'household') {
+            requiredFields.push('householdOption');
         } else {
             requiredFields.push('subject');
         }
@@ -122,7 +138,7 @@ export default function Support() {
         }
 
         // Destination Email for all inquiries
-        const DESTINATION_EMAIL = "cblue.thailand@gmail.com";
+        const DESTINATION_EMAIL = "d95d5f9d747a3a0986f2e325dfe592a7";
 
         const destinationEmail = DESTINATION_EMAIL;
 
@@ -166,11 +182,11 @@ export default function Support() {
         }));
     };
 
-    // Get translated budget options
-    const getBudgetOptions = () => {
-        return BUDGET_OPTION_KEYS.map(key => ({
+    // Get translated household options
+    const getHouseholdOptions = () => {
+        return HOUSEHOLD_OPTION_KEYS.map(key => ({
             key,
-            label: getText(form_t.budgetOptions[key])
+            label: getText(form_t.householdOptions[key])
         }));
     };
 
@@ -214,163 +230,121 @@ export default function Support() {
                 <div className="w-24 h-1 bg-sky-500 mx-auto rounded-full"></div>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12 items-start">
-                {/* Visual / Contact Info Side */}
-                <div className="space-y-8">
-                    {/* Image */}
-                    <motion.div
-                        initial={{ x: -30, opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        transition={{ delay: 0.2 }}
-                        className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-2xl"
-                    >
-                        <img
-                            src={support.image}
-                            alt="Contact support"
-                            className="w-full h-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-sky-900/80 to-transparent flex items-end p-8">
-                            <p className="text-white font-medium text-lg italic">
-                                {getText(form_t.heroQuote)}
-                            </p>
-                        </div>
-                    </motion.div>
+            {/* Hero Image Section */}
+            <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                className="max-w-4xl mx-auto mb-12"
+            >
+                <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden shadow-2xl">
+                    <img
+                        src="./images/2.jpg"
+                        alt="Support"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-sky-900/70 to-transparent flex items-end p-8">
+                        <p className="text-white font-medium text-lg md:text-xl italic">
+                            {getText(form_t.heroQuote)}
+                        </p>
+                    </div>
+                </div>
+            </motion.div>
 
-                    {/* Contact Cards */}
-                    <motion.div
-                        initial={{ x: -30, opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        transition={{ delay: 0.4 }}
-                        className="bg-white rounded-2xl shadow-xl overflow-hidden p-8 border border-gray-100"
-                    >
-                        <h3 className="text-2xl font-bold text-gray-800 mb-6 border-b pb-4">
-                            {getText(form_t.contactDetails)}
+            {/* Smart Form Section - Centered */}
+            <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                className="max-w-3xl mx-auto"
+            >
+                <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 relative overflow-hidden">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-sky-100 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none"></div>
+
+                    <div className="text-center mb-8">
+                        <h3 className="text-3xl font-bold text-gray-800 mb-2 relative z-10">
+                            {getText(form_t.formTitle)}
                         </h3>
-                        <div className="space-y-4">
-                            {support.items.map((item, index) => (
-                                <div key={index} className="flex items-center space-x-4 p-4 bg-slate-50 rounded-xl hover:bg-sky-50 transition-colors duration-300">
-                                    <div className="bg-white p-3 rounded-full shadow-sm text-sky-600">
-                                        {item.label['en'] === 'Email' ? <Mail /> : <Phone />}
-                                    </div>
-                                    <div>
-                                        <p className="text-sm text-gray-500 font-medium uppercase tracking-wider">
-                                            {item.label[language] || item.label['en']}
-                                        </p>
-                                        <p className="text-lg font-bold text-gray-900">
-                                            {item.value}
-                                        </p>
-                                    </div>
-                                </div>
-                            ))}
-                            <div className="flex items-center space-x-4 p-4 bg-slate-50 rounded-xl hover:bg-sky-50 transition-colors duration-300">
-                                <div className="bg-white p-3 rounded-full shadow-sm text-sky-600">
-                                    <MapPin />
-                                </div>
-                                <div>
-                                    <p className="text-sm text-gray-500 font-medium uppercase tracking-wider">
-                                        {getText(form_t.location)}
-                                    </p>
-                                    <p className="text-lg font-bold text-gray-900">
-                                        {getText(form_t.locationValue)}
-                                    </p>
+                        <p className="text-gray-500">{getText(form_t.formSubtitle)}</p>
+                    </div>
+
+                    {/* Inquiry Type Selector - Tabs */}
+                    <div className="grid grid-cols-3 gap-2 mb-8 p-1 bg-slate-100 rounded-xl z-10 relative">
+                        {(['service', 'household', 'support'] as InquiryType[]).map((type) => (
+                            <button
+                                key={type}
+                                type="button"
+                                onClick={() => handleTypeChange(type)}
+                                className={`py-2 px-1 rounded-lg text-sm font-semibold transition-all duration-300 capitalize flex items-center justify-center gap-2 ${form.inquiryType === type
+                                    ? 'bg-white text-sky-600 shadow-md'
+                                    : 'text-gray-500 hover:bg-white/50'
+                                    }`}
+                            >
+                                {type === 'service' && <Briefcase size={16} />}
+                                {type === 'support' && <HelpCircle size={16} />}
+                                {type === 'household' && <User size={16} />}
+                                <span className="hidden sm:inline">
+                                    {getInquiryTypeLabel(type)}
+                                </span>
+                            </button>
+                        ))}
+                    </div>
+
+                    <form onSubmit={handleSubmit} className="space-y-5 relative z-10">
+                        {status === 'error' && (
+                            <div className="p-4 bg-red-50 text-red-600 rounded-xl flex items-center gap-2 text-sm font-medium animate-shake">
+                                <AlertCircle size={18} />
+                                {errorMessage}
+                            </div>
+                        )}
+
+                        {/* Common: Contact Info */}
+                        <div className="grid md:grid-cols-2 gap-5">
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.fullName)} *</label>
+                                <div className="relative">
+                                    <User className="absolute left-3 top-3 text-gray-400" size={18} />
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        value={form.name}
+                                        onChange={handleInputChange}
+                                        className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                        placeholder={getText(form_t.fullNamePlaceholder)}
+                                    />
                                 </div>
                             </div>
-                        </div>
-                    </motion.div>
-                </div>
-
-                {/* Smart Form Section */}
-                <motion.div
-                    initial={{ x: 30, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: 0.6 }}
-                >
-                    <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 relative overflow-hidden">
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-sky-100 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none"></div>
-
-                        <div className="text-center mb-8">
-                            <h3 className="text-3xl font-bold text-gray-800 mb-2 relative z-10">
-                                {getText(form_t.formTitle)}
-                            </h3>
-                            <p className="text-gray-500">{getText(form_t.formSubtitle)}</p>
-                        </div>
-
-                        {/* Inquiry Type Selector - Tabs */}
-                        <div className="grid grid-cols-3 gap-2 mb-8 p-1 bg-slate-100 rounded-xl z-10 relative">
-                            {(['service', 'support', 'general'] as InquiryType[]).map((type) => (
-                                <button
-                                    key={type}
-                                    type="button"
-                                    onClick={() => handleTypeChange(type)}
-                                    className={`py-2 px-1 rounded-lg text-sm font-semibold transition-all duration-300 capitalize flex items-center justify-center gap-2 ${form.inquiryType === type
-                                        ? 'bg-white text-sky-600 shadow-md'
-                                        : 'text-gray-500 hover:bg-white/50'
-                                        }`}
-                                >
-                                    {type === 'service' && <Briefcase size={16} />}
-                                    {type === 'support' && <HelpCircle size={16} />}
-                                    {type === 'general' && <MessageSquare size={16} />}
-                                    <span className="hidden sm:inline">
-                                        {getInquiryTypeLabel(type)}
-                                    </span>
-                                </button>
-                            ))}
-                        </div>
-
-                        <form onSubmit={handleSubmit} className="space-y-5 relative z-10">
-                            {status === 'error' && (
-                                <div className="p-4 bg-red-50 text-red-600 rounded-xl flex items-center gap-2 text-sm font-medium animate-shake">
-                                    <AlertCircle size={18} />
-                                    {errorMessage}
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.emailAddress)} *</label>
+                                <div className="relative">
+                                    <Mail className="absolute left-3 top-3 text-gray-400" size={18} />
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        value={form.email}
+                                        onChange={handleInputChange}
+                                        className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                        placeholder={getText(form_t.emailPlaceholder)}
+                                    />
                                 </div>
-                            )}
-
-                            {/* Common: Contact Info */}
-                            <div className="grid md:grid-cols-2 gap-5">
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.fullName)} *</label>
-                                    <div className="relative">
-                                        <User className="absolute left-3 top-3 text-gray-400" size={18} />
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            value={form.name}
-                                            onChange={handleInputChange}
-                                            className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
-                                            placeholder={getText(form_t.fullNamePlaceholder)}
-                                        />
-                                    </div>
+                            </div>
+                            <div>
+                                <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.phoneNumber)} *</label>
+                                <div className="relative">
+                                    <Phone className="absolute left-3 top-3 text-gray-400" size={18} />
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        value={form.phone}
+                                        onChange={handleInputChange}
+                                        className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                        placeholder={getText(form_t.phonePlaceholder)}
+                                    />
                                 </div>
+                            </div>
+                            <div>
                                 <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.emailAddress)} *</label>
-                                    <div className="relative">
-                                        <Mail className="absolute left-3 top-3 text-gray-400" size={18} />
-                                        <input
-                                            type="email"
-                                            name="email"
-                                            value={form.email}
-                                            onChange={handleInputChange}
-                                            className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
-                                            placeholder={getText(form_t.emailPlaceholder)}
-                                        />
-                                    </div>
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.phoneNumber)} *</label>
-                                    <div className="relative">
-                                        <Phone className="absolute left-3 top-3 text-gray-400" size={18} />
-                                        <input
-                                            type="tel"
-                                            name="phone"
-                                            value={form.phone}
-                                            onChange={handleInputChange}
-                                            className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
-                                            placeholder={getText(form_t.phonePlaceholder)}
-                                        />
-                                    </div>
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.company)}</label>
+                                    <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.company)} *</label>
                                     <div className="relative">
                                         <Globe className="absolute left-3 top-3 text-gray-400" size={18} />
                                         <input
@@ -411,22 +385,6 @@ export default function Support() {
                                             </div>
                                         </div>
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.budgetRange)} *</label>
-                                            <div className="relative">
-                                                <DollarSign className="absolute left-3 top-3 text-gray-400" size={18} />
-                                                <select
-                                                    name="budgetRange"
-                                                    value={form.budgetRange}
-                                                    onChange={handleInputChange}
-                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all appearance-none bg-white"
-                                                >
-                                                    <option value="">{getText(form_t.selectBudget)}</option>
-                                                    {getBudgetOptions().map(opt => <option key={opt.key} value={opt.key}>{opt.label}</option>)}
-                                                </select>
-                                                <ChevronDown className="absolute right-3 top-3 text-gray-400 pointer-events-none" size={18} />
-                                            </div>
-                                        </div>
-                                        <div className="md:col-span-2">
                                             <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.startDate)} *</label>
                                             <div className="relative">
                                                 <Calendar className="absolute left-3 top-3 text-gray-400" size={18} />
@@ -436,6 +394,20 @@ export default function Support() {
                                                     value={form.startDate}
                                                     onChange={handleInputChange}
                                                     className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.locationLabel)} *</label>
+                                            <div className="relative">
+                                                <MapPin className="absolute left-3 top-3 text-gray-400" size={18} />
+                                                <input
+                                                    type="text"
+                                                    name="location"
+                                                    value={form.location}
+                                                    onChange={handleInputChange}
+                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                                    placeholder={getText(form_t.locationValue)}
                                                 />
                                             </div>
                                         </div>
@@ -467,7 +439,7 @@ export default function Support() {
                                             </div>
                                         </div>
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.orderId)}</label>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.orderId)} *</label>
                                             <div className="relative">
                                                 <Hash className="absolute left-3 top-3 text-gray-400" size={18} />
                                                 <input
@@ -483,25 +455,28 @@ export default function Support() {
                                     </motion.div>
                                 )}
 
-                                {form.inquiryType === 'general' && (
+                                {form.inquiryType === 'household' && (
                                     <motion.div
-                                        key="general-fields"
+                                        key="household-fields"
                                         initial={{ opacity: 0, height: 0 }}
                                         animate={{ opacity: 1, height: 'auto' }}
                                         exit={{ opacity: 0, height: 0 }}
+                                        className="grid md:grid-cols-2 gap-5" // Added gap for consistency
                                     >
-                                        <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.subject)} *</label>
+                                        <div className="md:col-span-2">
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.serviceInterested)} *</label>
                                             <div className="relative">
-                                                <MessageSquare className="absolute left-3 top-3 text-gray-400" size={18} />
-                                                <input
-                                                    type="text"
-                                                    name="subject"
-                                                    value={form.subject}
+                                                <Briefcase className="absolute left-3 top-3 text-gray-400" size={18} />
+                                                <select
+                                                    name="householdOption"
+                                                    value={form.householdOption}
                                                     onChange={handleInputChange}
-                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
-                                                    placeholder={getText(form_t.subjectPlaceholder)}
-                                                />
+                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all appearance-none bg-white"
+                                                >
+                                                    <option value="">{getText(form_t.selectService)}</option>
+                                                    {getHouseholdOptions().map(opt => <option key={opt.key} value={opt.key}>{opt.label}</option>)}
+                                                </select>
+                                                <ChevronDown className="absolute right-3 top-3 text-gray-400 pointer-events-none" size={18} />
                                             </div>
                                         </div>
                                     </motion.div>
@@ -571,10 +546,10 @@ export default function Support() {
                                     )}
                                 </button>
                             </div>
-                        </form>
-                    </div>
-                </motion.div>
-            </div>
-        </motion.div>
+                        </div>
+                    </form>
+                </div>
+            </motion.div >
+        </motion.div >
     );
 }

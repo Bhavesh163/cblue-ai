@@ -3,8 +3,8 @@ export type Language = 'en' | 'th' | 'zh';
 export const translations = {
     nav: {
         home: { en: 'Home', th: 'หน้าแรก', zh: '首页' },
-        solutions: { en: 'Solutions', th: 'รับเหมา', zh: '解决方案' },
-        reference: { en: 'Real Estate Services', th: 'บริการอื่น', zh: '参考' },
+        solutions: { en: 'Solutions', th: 'บริการ', zh: '解决方案' },
+        reference: { en: 'Real Estate Services', th: 'ซื้อ/เช่า', zh: '参考' },
         support: { en: 'Support', th: 'หาช่าง', zh: '支持' },
         about: { en: 'About Us', th: 'เกี่ยวกับเรา', zh: '关于我们' },
     },
@@ -260,6 +260,7 @@ export const translations = {
         // Header
         contactDetails: { en: "Contact Details", th: "รายละเอียดการติดต่อ", zh: "联系方式" },
         location: { en: "Location", th: "ที่ตั้ง", zh: "位置" },
+        locationLabel: { en: "Project Location", th: "สถานที่ตั้งโครงการ", zh: "项目地点" },
         locationValue: { en: "Bangkok, Thailand", th: "กรุงเทพฯ, ประเทศไทย", zh: "泰国曼谷" },
         heroQuote: { en: "\"We are here to help you build the future.\"", th: "\"เราพร้อมช่วยคุณสร้างอนาคต\"", zh: "\"我们在这里帮助您建设未来。\"" },
 
@@ -269,9 +270,9 @@ export const translations = {
 
         // Inquiry Types
         inquiryTypes: {
-            service: { en: "Start Project", th: "เริ่มโปรเจกต์", zh: "开始项目" },
+            service: { en: "Project", th: "โปรเจกต์", zh: "项目" },
             support: { en: "Get Support", th: "ขอความช่วยเหลือ", zh: "获取支持" },
-            general: { en: "General", th: "ทั่วไป", zh: "一般咨询" }
+            household: { en: "Household", th: "งานบ้าน", zh: "家政服务" }
         },
 
         // Common Fields
@@ -281,7 +282,7 @@ export const translations = {
         emailPlaceholder: { en: "john@example.com", th: "example@email.com", zh: "example@email.com" },
         phoneNumber: { en: "Phone Number", th: "เบอร์โทรศัพท์", zh: "电话号码" },
         phonePlaceholder: { en: "+1 (555) 000-0000", th: "+66 XX XXX XXXX", zh: "+86 XXX XXXX XXXX" },
-        company: { en: "Company (Optional)", th: "บริษัท (ไม่บังคับ)", zh: "公司（可选）" },
+        company: { en: "Company", th: "บริษัท", zh: "公司" },
         companyPlaceholder: { en: "Acme Inc.", th: "บริษัท จำกัด", zh: "公司名称" },
         required: { en: "*", th: "*", zh: "*" },
 
@@ -294,10 +295,38 @@ export const translations = {
 
         // Service Options
         serviceOptions: {
-            webDev: { en: "Web Development", th: "พัฒนาเว็บไซต์", zh: "网站开发" },
+            // Original Options
+            webDev: { en: "Website Development", th: "พัฒนาเว็บไซต์", zh: "网站开发" },
             mobileDev: { en: "Mobile App Development", th: "พัฒนาแอปมือถือ", zh: "移动应用开发" },
             aiIntegration: { en: "AI Integration", th: "ผสานรวม AI", zh: "AI 集成" },
             consulting: { en: "Consulting", th: "ที่ปรึกษา", zh: "咨询" },
+
+            // New Solutions
+            chatbot: { en: "AI Chatbot", th: "แชทบอท AI", zh: "AI聊天机器人" },
+            software: { en: "Software Development", th: "พัฒนาซอฟต์แวร์", zh: "软件开发" },
+            machineLearning: { en: "Machine Learning & AI", th: "ปัญญาประดิษฐ์", zh: "机器学习" },
+            solar: { en: "Solar Panels", th: "แผงโซล่าเซลล์", zh: "太阳能电池板" },
+            evCharger: { en: "EV Charger Installation", th: "ติดตั้งที่ชาร์จรถไฟฟ้า", zh: "电动车充电器安装" },
+            greenArch: { en: "Eco-Friendly Building Design", th: "ออกแบบอาคารประหยัดพลังงาน", zh: "绿色建筑设计" },
+            hvacMep: { en: "Air Conditioning & Plumbing Systems", th: "ระบบปรับอากาศและประปา", zh: "空调与管道系统" },
+            automation: { en: "Smart Building Automation", th: "ระบบอาคารอัจฉริยะ", zh: "智能楼宇自动化" },
+            envServices: { en: "Environmental Services", th: "บริการด้านสิ่งแวดล้อม", zh: "环境服务" },
+            security: { en: "Security & CCTV Systems", th: "ระบบกล้องวงจรปิด", zh: "安防监控系统" },
+            accessControl: { en: "Door & Access Control", th: "ระบบควบคุมประตู", zh: "门禁系统" },
+            greenConst: { en: "Eco-Friendly Construction", th: "ก่อสร้างประหยัดพลังงาน", zh: "绿色施工" },
+            smartHome: { en: "Smart Home", th: "บ้านอัจฉริยะ", zh: "智能家居" },
+            smartFarming: { en: "Smart Farming", th: "ฟาร์มอัจฉริยะ", zh: "智能农业" },
+            other: { en: "Other", th: "อื่นๆ", zh: "其他" }
+        },
+
+        // Household Options
+        householdOptions: {
+            plumbing: { en: "Plumbing", th: "ประปา", zh: "管道" },
+            electrical: { en: "Electrical", th: "ไฟฟ้า", zh: "电气" },
+            acRepair: { en: "A/C Repair", th: "ซ่อมแอร์", zh: "空调维修" },
+            cleaning: { en: "Interior Decoration", th: "ตกแต่งภายใน", zh: "室内装饰" },
+            pestControl: { en: "Landscaping", th: "ทำสวน", zh: "园艺" },
+            gardening: { en: "Cladding/Roofing", th: "วัสดุหุ้มผนัง/วัสดุมุงหลังคา", zh: "外墙/屋顶材料" },
             other: { en: "Other", th: "อื่นๆ", zh: "其他" }
         },
 
@@ -313,7 +342,7 @@ export const translations = {
         // Support Fields
         issueType: { en: "Type of Issue", th: "ประเภทปัญหา", zh: "问题类型" },
         selectIssueType: { en: "Select issue type", th: "เลือกประเภทปัญหา", zh: "选择问题类型" },
-        orderId: { en: "Order ID (Optional)", th: "หมายเลขคำสั่งซื้อ (ไม่บังคับ)", zh: "订单号（可选）" },
+        orderId: { en: "Order ID", th: "หมายเลขคำสั่งซื้อ", zh: "订单号" },
         orderIdPlaceholder: { en: "#12345", th: "#12345", zh: "#12345" },
 
         // Issue Types
@@ -333,12 +362,12 @@ export const translations = {
         messageLabels: {
             service: { en: "Project Details / Requirements", th: "รายละเอียดโปรเจกต์ / ความต้องการ", zh: "项目详情/需求" },
             support: { en: "Description of Problem", th: "อธิบายปัญหา", zh: "问题描述" },
-            general: { en: "Message", th: "ข้อความ", zh: "留言" }
+            household: { en: "Service Details", th: "รายละเอียดบริการ", zh: "服务详情" }
         },
         messagePlaceholders: {
             service: { en: "Tell us about your project goals...", th: "บอกเราเกี่ยวกับเป้าหมายโปรเจกต์ของคุณ...", zh: "请告诉我们您的项目目标..." },
             support: { en: "Please describe the issue you are facing...", th: "กรุณาอธิบายปัญหาที่คุณพบ...", zh: "请描述您遇到的问题..." },
-            general: { en: "Your message here...", th: "ข้อความของคุณที่นี่...", zh: "请在此输入您的留言..." }
+            household: { en: "Describe the service you need...", th: "อธิบายบริการที่คุณต้องการ...", zh: "描述您需要的服务..." }
         },
 
         // Consent Messages
@@ -353,10 +382,10 @@ export const translations = {
                 th: "ข้าพเจ้าอนุญาตให้ทีมงานตรวจสอบคำขอและติดต่อกลับเพื่อแจ้งความคืบหน้า",
                 zh: "我授权您的团队审核我的请求并与我联系更新情况。"
             },
-            general: {
-                en: "I agree to the privacy policy and authorize you to contact me.",
-                th: "ข้าพเจ้ายอมรับนโยบายความเป็นส่วนตัวและอนุญาตให้ติดต่อข้าพเจ้า",
-                zh: "我同意隐私政策并授权您与我联系。"
+            household: {
+                en: "I request this service and authorize the team to contact me for scheduling.",
+                th: "ข้าพเจ้าขอใช้บริการนี้และอนุญาตให้ทีมงานติดต่อเพื่อทำการนัดหมาย",
+                zh: "我请求此服务并授权团队与我联系以进行安排。"
             }
         },
 
