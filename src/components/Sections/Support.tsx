@@ -31,6 +31,7 @@ interface FormData {
 
     // Household
     householdOption: string;
+    householdLocation: string;
 
     // Common Tail
     subject: string;
@@ -51,6 +52,7 @@ const INITIAL_FORM: FormData = {
     orderId: '',
     issueType: '',
     householdOption: '',
+    householdLocation: '',
     subject: '',
     message: '',
     consent: false
@@ -103,7 +105,9 @@ export default function Support() {
             location: '',
             orderId: '',
             issueType: '',
-            householdOption: ''
+
+            householdOption: '',
+            householdLocation: ''
         }));
     };
 
@@ -118,7 +122,7 @@ export default function Support() {
         } else if (form.inquiryType === 'support') {
             requiredFields.push('issueType', 'orderId');
         } else if (form.inquiryType === 'household') {
-            requiredFields.push('householdOption');
+            requiredFields.push('householdOption', 'householdLocation');
         } else {
             requiredFields.push('subject');
         }
@@ -463,7 +467,7 @@ export default function Support() {
                                         exit={{ opacity: 0, height: 0 }}
                                         className="grid md:grid-cols-2 gap-5" // Added gap for consistency
                                     >
-                                        <div className="md:col-span-2">
+                                        <div>
                                             <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.serviceInterested)} *</label>
                                             <div className="relative">
                                                 <Briefcase className="absolute left-3 top-3 text-gray-400" size={18} />
@@ -477,6 +481,20 @@ export default function Support() {
                                                     {getHouseholdOptions().map(opt => <option key={opt.key} value={opt.key}>{opt.label}</option>)}
                                                 </select>
                                                 <ChevronDown className="absolute right-3 top-3 text-gray-400 pointer-events-none" size={18} />
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.householdLocation)} *</label>
+                                            <div className="relative">
+                                                <MapPin className="absolute left-3 top-3 text-gray-400" size={18} />
+                                                <input
+                                                    type="text"
+                                                    name="householdLocation"
+                                                    value={form.householdLocation}
+                                                    onChange={handleInputChange}
+                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                                    placeholder={getText(form_t.householdLocationPlaceholder)}
+                                                />
                                             </div>
                                         </div>
                                     </motion.div>

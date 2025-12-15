@@ -4,8 +4,8 @@ export const translations = {
     nav: {
         home: { en: 'Home', th: 'หน้าแรก', zh: '首页' },
         solutions: { en: 'Solutions', th: 'บริการ', zh: '解决方案' },
-        reference: { en: 'Real Estate Services', th: 'ซื้อ/เช่า', zh: '参考' },
-        support: { en: 'Support', th: 'หาช่าง', zh: '支持' },
+        reference: { en: 'Real Estate Services', th: 'ซื้อ/เช่าบ้าน', zh: '参考' },
+        support: { en: 'Get Project Team/Support', th: 'หาช่าง/ติดต่อเรา', zh: '项目团队/支持' },
         about: { en: 'About Us', th: 'เกี่ยวกับเรา', zh: '关于我们' },
     },
     home: {
@@ -262,6 +262,8 @@ export const translations = {
         location: { en: "Location", th: "ที่ตั้ง", zh: "位置" },
         locationLabel: { en: "Project Location", th: "สถานที่ตั้งโครงการ", zh: "项目地点" },
         locationValue: { en: "Bangkok, Thailand", th: "กรุงเทพฯ, ประเทศไทย", zh: "泰国曼谷" },
+        householdLocation: { en: "House Location", th: "สถานที่ตั้งบ้าน", zh: "房屋位置" },
+        householdLocationPlaceholder: { en: "Bangkok, Thailand", th: "กรุงเทพฯ, ประเทศไทย", zh: "泰国曼谷" },
         heroQuote: { en: "\"We are here to help you build the future.\"", th: "\"เราพร้อมช่วยคุณสร้างอนาคต\"", zh: "\"我们在这里帮助您建设未来。\"" },
 
         // Form Title

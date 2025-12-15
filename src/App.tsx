@@ -1,4 +1,4 @@
-import {LanguageProvider} from './hooks/useLanguage';
+import { LanguageProvider } from './hooks/useLanguage';
 import Navbar from './components/Layout/Navbar';
 import Home from './components/Sections/Home';
 import Products from './components/Sections/Products';
@@ -6,8 +6,8 @@ import Reference from './components/Sections/Reference';
 import Support from './components/Sections/Support';
 import About from './components/Sections/About';
 import Chatbot from './components/Features/Chatbot';
-import {useState} from 'react';
-import {AnimatePresence} from 'framer-motion';
+import { useState } from 'react';
+import { AnimatePresence } from 'framer-motion';
 
 function AppContent() {
     const [page, setPage] = useState('home');
@@ -21,7 +21,7 @@ function AppContent() {
                     {page === 'home' && <Home key="home" />}
                     {page === 'solutions' && <Products key="products" />}
                     {page === 'reference' && <Reference key="reference" />}
-                    {page === 'support' && <Support key="support" />}
+                    {page === 'support' && <Support key="Get Project Team" />}
                     {page === 'about' && <About key="about" />}
                 </AnimatePresence>
             </main>
