@@ -287,7 +287,7 @@ export default function Support() {
                                 {type === 'service' && <Briefcase size={16} />}
                                 {type === 'support' && <HelpCircle size={16} />}
                                 {type === 'household' && <User size={16} />}
-                                <span className="hidden sm:inline">
+                                <span>
                                     {getInquiryTypeLabel(type)}
                                 </span>
                             </button>

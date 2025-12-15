@@ -60,7 +60,7 @@ export default function Navbar({ setPage }: { setPage: (page: string) => void })
                                         exit={{ opacity: 0, y: 10 }}
                                         className="absolute right-0 mt-2 w-24 bg-white rounded-lg shadow-xl ring-1 ring-black ring-opacity-5 overflow-hidden"
                                     >
-                                        {(['en', 'th', 'zh'] as const).map((lang) => (
+                                        {[language, ...(['en', 'th', 'zh'] as const).filter(l => l !== language)].map((lang) => (
                                             <button
                                                 key={lang}
                                                 onClick={() => {

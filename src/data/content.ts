@@ -54,7 +54,7 @@ export const translations = {
                 content: {
                     en: "Building Automation Systems (BAS) will play a pivotal role in the smart home revolution. With the rise of IoT, homes and buildings will become increasingly autonomous, optimizing energy use, comfort, and security.\n\nSmart homes will leverage technologies like:\n• Intelligent lighting systems that adjust based on occupancy.\n• Smart thermostats that analyze weather patterns to minimize energy use.\n• Real-time monitoring systems for enhanced safety and security.\n\nAs automation technology evolves, homes will become more intuitive, incorporating voice control, gesture recognition, and biometric authentication for seamless interaction.",
                     th: "ระบบอัตโนมัติในอาคาร (BAS) มีบทบาทสำคัญในการปฏิวัติบ้านอัจฉริยะ เมื่อ IoT แพร่หลาย อาคารและบ้านจะกลายเป็นระบบที่สามารถทำงานอัตโนมัติได้มากขึ้น ควบคุมการใช้พลังงาน ความสะดวกสบาย และความปลอดภัย\n\nบ้านอัจฉริยะจะใช้เทคโนโลยีเช่น:\n• ระบบไฟฟ้าอัจฉริยะที่ปรับแสงตามการใช้งาน\n• เทอร์โมสตัทอัจฉริยะที่วิเคราะห์รูปแบบสภาพอากาศเพื่อประหยัดพลังงาน\n• ระบบตรวจสอบเรียลไทม์เพื่อความปลอดภัย ป้องกันปัญหาเช่น การรั่วไหลของแก๊ส หรือไฟฟ้าลัดวงจร",
-                    zh: "楼宇自动化系统（BAS）将在塑造建筑的未来方面发挥关键作用和住房。随着技术越来越多地融入我们的日常生活，智能住宅和智能建筑将变得更加普遍。\n\n这些系统将优化供暖、通风、照明和安全的运行，减少能源消耗并提供更高水平的舒适度和便利性。BAS 的核心是物联网 （IoT），它使建筑物内的设备能够相互通信并自主运行。"
+                    zh: "楼宇自动化系统（BAS）将在智能家居革命中发挥关键作用。随着物联网的兴起，家庭和建筑物将变得越来越自主，从而优化能源使用、舒适度和安全性。\n\n智能家居将利用以下技术：\n• 根据占用情况进行调整的智能照明系统。\n• 分析天气模式以最大限度地减少能源使用的智能恒温器。\n• 用于增强安全性的实时监控系统。\n\n随着自动化技术的发展，家庭将变得更加直观，结合语音控制、手势识别和生物识别认证，以此实现无缝交互。"
                 }
             },
             {
@@ -101,30 +101,30 @@ export const translations = {
             }
         },
         {
-            title: { en: "Solar Solutions", th: "พลังงานแสงอาทิตย์", zh: "太阳能解决方案" },
-            image: "./images/solar panel.jpg",
+            title: { en: "Smart home", th: "บ้านอัจฉริยะ", zh: "智能家居" },
+            image: "./images/smart home.jpg",
             description: {
-                en: "Harness the power of the sun with our cutting-edge solar technologies.",
-                th: "ควบคุมพลังของดวงอาทิตย์ด้วยเทคโนโลยีพลังงานแสงอาทิตย์ที่ล้ําสมัยของเรา",
-                zh: "利用我们尖端的太阳能技术利用太阳能。"
+                en: "Controls functions such as lighting, temperature, and security remotely for convenience, energy efficiency, and enhanced security.",
+                th: "ควบคุมฟังก์ชันต่าง ๆ เช่น แสงสว่าง อุณหภูมิ และระบบรักษาความปลอดภัยจากระยะไกล เพื่อความสะดวกสบายและประหยัดพลังงาน",
+                zh: "远程控制照明、温度和安保系统等功能，以提高便利性、能源效率和增强安全性。"
             }
         },
         {
-            title: { en: "EV charger", th: "เครื่องชาร์จรถยนต์ไฟฟ้า", zh: "电动汽车充电器" },
-            image: "./images/ev charger.jpg",
+            title: { en: "Smart farming", th: "การทำฟาร์มอัจฉริยะ", zh: "智能农业" },
+            image: "./images/smart farming.jpg",
             description: {
-                en: "Fast, smart charging with features like Wi-Fi connectivity, adjustable power output, and universal compatibility, providing up to 30-50 miles of range per hour. Weatherproof, safe, and integrates with renewable energy systems.",
-                th: "การชาร์จที่รวดเร็วและชาญฉลาดพร้อมคุณสมบัติต่างๆ เช่น การเชื่อมต่อ Wi-Fi และความเข้ากันได้สากล ให้ระยะทางสูงสุด 30-50 ไมล์ต่อชั่วโมง ทนทานต่อสภาพอากาศ ปลอดภัย และผสานรวมกับระบบพลังงานหมุนเวียน",
-                zh: "具有 Wi-Fi 连接、可调节功率输出和通用兼容性等功能的快速智能充电。它防风雨、安全，并与可再生能源系统集成，确保为所有 EV 车型提供高效、环保的充电。"
+                en: "Uses IoT, sensors, and data analytics to optimize agricultural processes like crop monitoring and irrigation. Improves efficiency and sustainability.",
+                th: "ใช้ IoT และเซนเซอร์เพื่อเพิ่มประสิทธิภาพกระบวนการเกษตร เช่น การติดตามพืชและการชลประทาน ช่วยลดต้นทุนและเสริมความยั่งยืน",
+                zh: "使用物联网（IoT）、传感器和数据分析来优化农业过程，如作物监测和灌溉。提高效率并增强可持续性。"
             }
         },
         {
-            title: { en: "Green Architecture", th: "สถาปัตยกรรมสีเขียว", zh: "绿色建筑" },
-            image: "./images/GREEN.jpg",
+            title: { en: "Website development", th: "การพัฒนาเว็บไซต์", zh: "网站开发" },
+            image: "./images/website development.jpg",
             description: {
-                en: "Designing eco-friendly buildings that harmonize with nature (Architectural, Interior, Landscape and detailed engineering design).",
-                th: "ออกแบบอาคารที่เป็นมิตรกับสิ่งแวดล้อมที่กลมกลืนกับธรรมชาติ (การออกแบบสถาปัตยกรรม ภายใน และภูมิทัศน์ รวมถึงการตกแต่งและ วิศวกรรมรายละเอียด)",
-                zh: "设计与自然和谐相处的环保建筑 (建筑、室内和景观设计以及装修/施工)。"
+                en: "Creating, designing, and maintaining user-friendly, responsive websites optimized for performance (SEO).",
+                th: "การสร้าง ออกแบบ และดูแลเว็บไซต์ที่ใช้งานง่าย รองรับการใช้งานได้ดี และถูกปรับแต่งให้เหมาะสม (SEO)",
+                zh: "创建、设计和维护用户友好、响应迅速并针对性能（SEO）优化的网站。"
             }
         },
         {
@@ -182,30 +182,30 @@ export const translations = {
             }
         },
         {
-            title: { en: "Smart home", th: "บ้านอัจฉริยะ", zh: "智能家居" },
-            image: "./images/smart home.jpg",
+            title: { en: "Solar Solutions", th: "พลังงานแสงอาทิตย์", zh: "太阳能解决方案" },
+            image: "./images/solar panel.jpg",
             description: {
-                en: "Controls functions such as lighting, temperature, and security remotely for convenience, energy efficiency, and enhanced security.",
-                th: "ควบคุมฟังก์ชันต่าง ๆ เช่น แสงสว่าง อุณหภูมิ และระบบรักษาความปลอดภัยจากระยะไกล เพื่อความสะดวกสบายและประหยัดพลังงาน",
-                zh: "远程控制照明、温度和安保系统等功能，以提高便利性、能源效率和增强安全性。"
+                en: "Harness the power of the sun with our cutting-edge solar technologies.",
+                th: "ควบคุมพลังของดวงอาทิตย์ด้วยเทคโนโลยีพลังงานแสงอาทิตย์ที่ล้ําสมัยของเรา",
+                zh: "利用我们尖端的太阳能技术利用太阳能。"
             }
         },
         {
-            title: { en: "Smart farming", th: "การทำฟาร์มอัจฉริยะ", zh: "智能农业" },
-            image: "./images/smart farming.jpg",
+            title: { en: "EV charger", th: "เครื่องชาร์จรถยนต์ไฟฟ้า", zh: "电动汽车充电器" },
+            image: "./images/ev charger.jpg",
             description: {
-                en: "Uses IoT, sensors, and data analytics to optimize agricultural processes like crop monitoring and irrigation. Improves efficiency and sustainability.",
-                th: "ใช้ IoT และเซนเซอร์เพื่อเพิ่มประสิทธิภาพกระบวนการเกษตร เช่น การติดตามพืชและการชลประทาน ช่วยลดต้นทุนและเสริมความยั่งยืน",
-                zh: "使用物联网（IoT）、传感器和数据分析来优化农业过程，如作物监测和灌溉。提高效率并增强可持续性。"
+                en: "Fast, smart charging with features like Wi-Fi connectivity, adjustable power output, and universal compatibility, providing up to 30-50 miles of range per hour. Weatherproof, safe, and integrates with renewable energy systems.",
+                th: "การชาร์จที่รวดเร็วและชาญฉลาดพร้อมคุณสมบัติต่างๆ เช่น การเชื่อมต่อ Wi-Fi และความเข้ากันได้สากล ให้ระยะทางสูงสุด 30-50 ไมล์ต่อชั่วโมง ทนทานต่อสภาพอากาศ ปลอดภัย และผสานรวมกับระบบพลังงานหมุนเวียน",
+                zh: "具有 Wi-Fi 连接、可调节功率输出和通用兼容性等功能的快速智能充电。它防风雨、安全，并与可再生能源系统集成，确保为所有 EV 车型提供高效、环保的充电。"
             }
         },
         {
-            title: { en: "Website development", th: "การพัฒนาเว็บไซต์", zh: "网站开发" },
-            image: "./images/website development.jpg",
+            title: { en: "Green Architecture", th: "สถาปัตยกรรมสีเขียว", zh: "绿色建筑" },
+            image: "./images/GREEN.jpg",
             description: {
-                en: "Creating, designing, and maintaining user-friendly, responsive websites optimized for performance (SEO).",
-                th: "การสร้าง ออกแบบ และดูแลเว็บไซต์ที่ใช้งานง่าย รองรับการใช้งานได้ดี และถูกปรับแต่งให้เหมาะสม (SEO)",
-                zh: "创建、设计和维护用户友好、响应迅速并针对性能（SEO）优化的网站。"
+                en: "Designing eco-friendly buildings that harmonize with nature (Architectural, Interior, Landscape and detailed engineering design).",
+                th: "ออกแบบอาคารที่เป็นมิตรกับสิ่งแวดล้อมที่กลมกลืนกับธรรมชาติ (การออกแบบสถาปัตยกรรม ภายใน และภูมิทัศน์ รวมถึงการตกแต่งและ วิศวกรรมรายละเอียด)",
+                zh: "设计与自然和谐相处的环保建筑 (建筑、室内和景观设计以及装修/施工)。"
             }
         }
     ],
@@ -272,7 +272,7 @@ export const translations = {
 
         // Inquiry Types
         inquiryTypes: {
-            service: { en: "Project", th: "โปรเจกต์", zh: "项目" },
+            service: { en: "Project", th: "โครงการ", zh: "项目" },
             support: { en: "Get Support", th: "ขอความช่วยเหลือ", zh: "获取支持" },
             household: { en: "Household", th: "งานบ้าน", zh: "家政服务" }
         },
@@ -411,8 +411,8 @@ export const translations = {
             title: { en: "Welcome to Cblue", th: "ยินดีต้อนรับสู่ Cblue", zh: "欢迎来到 Cblue" },
             text: {
                 en: "As a group of experienced and highly skilled professionals, we design, engineer and construct leading-edge facilities and related infrastructure for residential buildings, industries and public civil works. We have the flexibility and the strength to deliver large or small projects successfully anywhere in Thailand.\n\nWe offer a comprehensive suite of services focused on AI/Digital Solutions, sustainable technology solutions, and construction engineering.\n\n• Digital Solutions: AI chatbot development, software development, ML.\n• Smart Technology: BMS, smart building controls.\n• Renewable Energy: Solar, wind turbines, EV charging.\n• Design & Engineering: Architectural, interior, landscape.\n• Construction: General construction, fit-outs, HVAC, MEP, retrofitting.\n• Fabrication: Metal sheet, steel structure, aluminium, glass.\n• Consulting: Market research, feasibility studies.",
-                th: "ในฐานะกลุ่มผู้เชี่ยวชาญที่มีประสบการณ์และความสามารถสูงเราออกแบบ วิศวกรรม และก่อสร้างสิ่งอำนวยความสะดวกอันทันสมัย... เรามีบริการที่ครอบคลุมโดยมุ่งเน้นโซลูชันด้าน AI/ดิจิทัล โซลูชันเทคโนโลยีที่ยั่งยืนและการก่อสร้างทางวิศวกรรม",
-                zh: "作为一群经验丰富且技术精湛的专业人士，我们设计、工程并建造领先的设施及相关基础设施... 我们提供全面的服务，专注于AI/数字解决方案、可持续技术解决方案以及建筑工程。"
+                th: "ในฐานะกลุ่มผู้เชี่ยวชาญที่มีประสบการณ์และทักษะสูง เราออกแบบ วางระบบวิศวกรรม และก่อสร้างสิ่งอำนวยความสะดวกที่ล้ำสมัยและโครงสร้างพื้นฐานที่เกี่ยวข้องสำหรับอาคารที่พักอาศัย อุตสาหกรรม และงานโยธาสาธารณะ เรามีความยืดหยุ่นและศักยภาพที่จะส่งมอบโครงการทั้งขนาดใหญ่และขนาดเล็กให้ประสบความสำเร็จได้ทุกที่ในประเทศไทย\n\nเรานำเสนอบริการที่ครบวงจรโดยมุ่งเน้นที่โซลูชัน AI/ดิจิทัล เทคโนโลยีที่ยั่งยืน และวิศวกรรมการก่อสร้าง\n\n• โซลูชันดิจิทัล: การพัฒนาแชทบอท AI, การพัฒนาซอฟต์แวร์, Machine Learning\n• เทคโนโลยีอัจฉริยะ: BMS, ระบบควบคุมอาคารอัจฉริยะ\n• พลังงานหมุนเวียน: พลังงานแสงอาทิตย์, กังหันลม, การชาร์จรถยนต์ไฟฟ้า\n• การออกแบบและวิศวกรรม: สถาปัตยกรรม, ภายใน, ภูมิทัศน์\n• การก่อสร้าง: การก่อสร้างทั่วไป, การตกแต่งภายใน, HVAC, งานระบบ MEP, การปรับปรุงอาคาร\n• งานประกอบ: แผ่นโลหะ, โครงสร้างเหล็ก, อลูมิเนียม, กระจก\n• ที่ปรึกษา: การวิจัยตลาด, การศึกษาความเป็นไปได้",
+                zh: "作为一群经验丰富且技术精湛的专业人士，我们设计、工程并建造最先进的设施及住宅楼、工业和公共土建工程的相关基础设施。我们拥有灵活性和实力，可以在泰国任何地方成功交付大型或小型项目。\n\n我们提供全方位的服务，专注于 AI/数字解决方案、可持续技术解决方案和建筑工程。\n\n• 数字解决方案：AI 聊天机器人开发、软件开发、机器学习。\n• 智能技术：BMS、智能建筑控制。\n• 可再生能源：太阳能、风力涡轮机、电动汽车充电。\n• 设计与工程：建筑、室内、景观。\n• 施工：一般施工、装修、HVAC、MEP、改造。\n• 制造：钣金、钢结构、铝材、玻璃。\n• 咨询：市场研究、可行性研究。"
             },
             image: "./images/beach.png"
         },
@@ -420,8 +420,8 @@ export const translations = {
             title: { en: "Our Mission", th: "ภารกิจของเรา", zh: "我们的使命" },
             text: {
                 en: "The future of our habitat will be defined by an urgent need for sustainability and resilience... Our mission is to provide the best, state-of-the-art green solutions and services on time, on budget and with safety and integrity.",
-                th: "อนาคตของที่อยู่อาศัยจะถูกกำหนดโดยความต้องการที่เร่งด่วนด้านความยั่งยืน... ภารกิจของเรา คือเรามุ่งมั่นนำเสนอโซลูชั่นสีเขียวที่ล้ำสมัยและบริการด้านสิ่งแวดล้อมที่ดีที่สุด",
-                zh: "我们栖息地的未来将由对可持续性和达观... 我们的使命是按时提供最佳、最先进的绿色解决方案和服务，在预算范围内安全可靠。"
+                th: "อนาคตของที่อยู่อาศัยของพวกเราจะถูกกำหนดโดยความต้องการเร่งด่วนสำหรับความยั่งยืนและความยืดหยุ่น... ภารกิจของเราคือการมอบโซลูชันและบริการสีเขียวที่ล้ำสมัยที่สุด ตรงเวลา ภายใต้งบประมาณที่กำหนด และด้วยความปลอดภัยและความซื่อสัตย์",
+                zh: "我们栖息地的未来将由对可持续性和韧性的迫切需求所定义……我们的使命是按时、在预算内、安全且诚信地提供最好、最先进的绿色解决方案和服务。"
             },
             image: "./images/1.jpg"
         }
