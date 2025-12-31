@@ -87,7 +87,7 @@ export default function Support() {
     const [errorMessage, setErrorMessage] = useState('');
 
     // Config
-    const SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";
+    const SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY || "6LeU4jssAAAAALFfpTQ4rKbVtxZzNPJ9j_Vvkj9A";
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         const { name, value } = e.target;
@@ -159,6 +159,7 @@ export default function Support() {
                 body: JSON.stringify({
                     _subject: `New ${form.inquiryType.toUpperCase()} Inquiry from ${form.name}`,
                     _template: 'table', // FormSubmit's clean table layout
+                    _captcha: "false", // We handle captcha on the client side
                     ...form
                 })
             });
