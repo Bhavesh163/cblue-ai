@@ -357,6 +357,7 @@ export const translations = {
         },
 
         // General Fields
+        pleaseSpecify: { en: "Please specify...", th: "โปรดระบุ...", zh: "请注明..." },
         subject: { en: "Subject", th: "หัวข้อ", zh: "主题" },
         subjectPlaceholder: { en: "Inquiry Subject", th: "หัวข้อที่ต้องการสอบถาม", zh: "咨询主题" },
 

@@ -37,6 +37,7 @@ interface FormData {
     subject: string;
     message: string;
     consent: boolean;
+    otherDetails: string;
 }
 
 const INITIAL_FORM: FormData = {
@@ -55,7 +56,8 @@ const INITIAL_FORM: FormData = {
     householdLocation: '',
     subject: '',
     message: '',
-    consent: false
+    consent: false,
+    otherDetails: ''
 };
 
 // Service option keys for translation mapping
@@ -107,7 +109,8 @@ export default function Support() {
             issueType: '',
 
             householdOption: '',
-            householdLocation: ''
+            householdLocation: '',
+            otherDetails: ''
         }));
     };
 
@@ -149,6 +152,34 @@ export default function Support() {
         setStatus('sending');
         setErrorMessage('');
 
+        // Filter Data Based on Inquiry Type
+        const payload: Record<string, any> = {
+            _subject: `New ${form.inquiryType.toUpperCase()} Inquiry from ${form.name}`,
+            _template: 'table',
+            _captcha: "false",
+            name: form.name,
+            email: form.email,
+            phone: form.phone,
+            company: form.company,
+            message: form.message,
+            consent: form.consent ? 'Yes' : 'No'
+        };
+
+        if (form.inquiryType === 'service') {
+            payload['Desired Service'] = form.interestedService === 'other' ? `Other: ${form.otherDetails}` : getText(form_t.serviceOptions[form.interestedService as keyof typeof form_t.serviceOptions]);
+            payload['Detailed Location'] = form.location;
+            payload['Budget Range'] = form.budgetRange; // Note: You might want to translate this too if it's a key
+            payload['Start Date'] = form.startDate;
+        } else if (form.inquiryType === 'support') {
+            payload['Issue Type'] = form.issueType === 'other' ? `Other: ${form.otherDetails}` : getText(form_t.issueTypes[form.issueType as keyof typeof form_t.issueTypes]);
+            payload['Order ID'] = form.orderId;
+        } else if (form.inquiryType === 'household') {
+            payload['Household Service'] = form.householdOption === 'other' ? `Other: ${form.otherDetails}` : getText(form_t.householdOptions[form.householdOption as keyof typeof form_t.householdOptions]);
+            payload['Household Location'] = form.householdLocation;
+        } else {
+            payload['Subject'] = form.subject;
+        }
+
         try {
             const response = await fetch(`https://formsubmit.co/ajax/${destinationEmail}`, {
                 method: "POST",
@@ -156,12 +187,7 @@ export default function Support() {
                     'Content-Type': 'application/json',
                     'Accept': 'application/json'
                 },
-                body: JSON.stringify({
-                    _subject: `New ${form.inquiryType.toUpperCase()} Inquiry from ${form.name}`,
-                    _template: 'table', // FormSubmit's clean table layout
-                    _captcha: "false", // We handle captcha on the client side
-                    ...form
-                })
+                body: JSON.stringify(payload)
             });
 
             if (response.ok) {
@@ -388,6 +414,18 @@ export default function Support() {
                                                 </select>
                                                 <ChevronDown className="absolute right-3 top-3 text-gray-400 pointer-events-none" size={18} />
                                             </div>
+                                            {form.interestedService === 'other' && (
+                                                <div className="mt-2 animate-fadeIn">
+                                                    <input
+                                                        type="text"
+                                                        name="otherDetails"
+                                                        value={form.otherDetails}
+                                                        onChange={handleInputChange}
+                                                        className="w-full pl-4 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all bg-gray-50"
+                                                        placeholder={getText(form_t.pleaseSpecify)}
+                                                    />
+                                                </div>
+                                            )}
                                         </div>
                                         <div>
                                             <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.startDate)} *</label>
@@ -442,6 +480,18 @@ export default function Support() {
                                                 </select>
                                                 <ChevronDown className="absolute right-3 top-3 text-gray-400 pointer-events-none" size={18} />
                                             </div>
+                                            {form.issueType === 'other' && (
+                                                <div className="mt-2 animate-fadeIn">
+                                                    <input
+                                                        type="text"
+                                                        name="otherDetails"
+                                                        value={form.otherDetails}
+                                                        onChange={handleInputChange}
+                                                        className="w-full pl-4 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all bg-gray-50"
+                                                        placeholder={getText(form_t.pleaseSpecify)}
+                                                    />
+                                                </div>
+                                            )}
                                         </div>
                                         <div>
                                             <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.orderId)} *</label>
@@ -483,6 +533,18 @@ export default function Support() {
                                                 </select>
                                                 <ChevronDown className="absolute right-3 top-3 text-gray-400 pointer-events-none" size={18} />
                                             </div>
+                                            {form.householdOption === 'other' && (
+                                                <div className="mt-2 animate-fadeIn">
+                                                    <input
+                                                        type="text"
+                                                        name="otherDetails"
+                                                        value={form.otherDetails}
+                                                        onChange={handleInputChange}
+                                                        className="w-full pl-4 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all bg-gray-50"
+                                                        placeholder={getText(form_t.pleaseSpecify)}
+                                                    />
+                                                </div>
+                                            )}
                                         </div>
                                         <div>
                                             <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.householdLocation)} *</label>
