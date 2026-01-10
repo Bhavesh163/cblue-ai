@@ -332,7 +332,7 @@ export default function Support() {
                         {/* Common: Contact Info */}
                         <div className="grid md:grid-cols-2 gap-5">
                             <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.fullName)} *</label>
+                                <label className="block text-sm font-bold text-gray-700 mb-1">{getText(form_t.fullName)} *</label>
                                 <div className="relative">
                                     <User className="absolute left-3 top-3 text-gray-400" size={18} />
                                     <input
@@ -340,13 +340,13 @@ export default function Support() {
                                         name="name"
                                         value={form.name}
                                         onChange={handleInputChange}
-                                        className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                        className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all placeholder:font-normal placeholder:text-sm"
                                         placeholder={getText(form_t.fullNamePlaceholder)}
                                     />
                                 </div>
                             </div>
                             <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.emailAddress)} *</label>
+                                <label className="block text-sm font-bold text-gray-700 mb-1">{getText(form_t.emailAddress)} *</label>
                                 <div className="relative">
                                     <Mail className="absolute left-3 top-3 text-gray-400" size={18} />
                                     <input
@@ -354,13 +354,13 @@ export default function Support() {
                                         name="email"
                                         value={form.email}
                                         onChange={handleInputChange}
-                                        className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                        className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all placeholder:font-normal placeholder:text-sm"
                                         placeholder={getText(form_t.emailPlaceholder)}
                                     />
                                 </div>
                             </div>
                             <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.phoneNumber)} *</label>
+                                <label className="block text-sm font-bold text-gray-700 mb-1">{getText(form_t.phoneNumber)} *</label>
                                 <div className="relative">
                                     <Phone className="absolute left-3 top-3 text-gray-400" size={18} />
                                     <input
@@ -368,14 +368,14 @@ export default function Support() {
                                         name="phone"
                                         value={form.phone}
                                         onChange={handleInputChange}
-                                        className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                        className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all placeholder:font-normal placeholder:text-sm"
                                         placeholder={getText(form_t.phonePlaceholder)}
                                     />
                                 </div>
                             </div>
                             <div>
                                 <div>
-                                    <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.company)} *</label>
+                                    <label className="block text-sm font-bold text-gray-700 mb-1">{getText(form_t.company)} *</label>
                                     <div className="relative">
                                         <Globe className="absolute left-3 top-3 text-gray-400" size={18} />
                                         <input
@@ -383,7 +383,7 @@ export default function Support() {
                                             name="company"
                                             value={form.company}
                                             onChange={handleInputChange}
-                                            className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                            className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all placeholder:font-normal placeholder:text-sm"
                                             placeholder={getText(form_t.companyPlaceholder)}
                                         />
                                     </div>
@@ -400,14 +400,14 @@ export default function Support() {
                                         className="grid md:grid-cols-2 gap-5 overflow-hidden"
                                     >
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.serviceInterested)} *</label>
+                                            <label className="block text-sm font-bold text-gray-700 mb-1">{getText(form_t.serviceInterested)} *</label>
                                             <div className="relative">
                                                 <Briefcase className="absolute left-3 top-3 text-gray-400" size={18} />
                                                 <select
                                                     name="interestedService"
                                                     value={form.interestedService}
                                                     onChange={handleInputChange}
-                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all appearance-none bg-white"
+                                                    className={`w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all appearance-none bg-white ${form.interestedService === '' ? 'text-gray-400 text-sm' : 'text-gray-900'}`}
                                                 >
                                                     <option value="">{getText(form_t.selectService)}</option>
                                                     {getServiceOptions().map(opt => <option key={opt.key} value={opt.key}>{opt.label}</option>)}
@@ -421,14 +421,14 @@ export default function Support() {
                                                         name="otherDetails"
                                                         value={form.otherDetails}
                                                         onChange={handleInputChange}
-                                                        className="w-full pl-4 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all bg-gray-50"
+                                                        className="w-full pl-4 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all bg-gray-50 placeholder:font-normal placeholder:text-sm"
                                                         placeholder={getText(form_t.pleaseSpecify)}
                                                     />
                                                 </div>
                                             )}
                                         </div>
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.startDate)} *</label>
+                                            <label className="block text-sm font-bold text-gray-700 mb-1">{getText(form_t.startDate)} *</label>
                                             <div className="relative">
                                                 <Calendar className="absolute left-3 top-3 text-gray-400" size={18} />
                                                 <input
@@ -436,12 +436,12 @@ export default function Support() {
                                                     name="startDate"
                                                     value={form.startDate}
                                                     onChange={handleInputChange}
-                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all placeholder:font-normal placeholder:text-sm"
                                                 />
                                             </div>
                                         </div>
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.locationLabel)} *</label>
+                                            <label className="block text-sm font-bold text-gray-700 mb-1">{getText(form_t.locationLabel)} *</label>
                                             <div className="relative">
                                                 <MapPin className="absolute left-3 top-3 text-gray-400" size={18} />
                                                 <input
@@ -449,7 +449,7 @@ export default function Support() {
                                                     name="location"
                                                     value={form.location}
                                                     onChange={handleInputChange}
-                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all placeholder:font-normal placeholder:text-sm"
                                                     placeholder={getText(form_t.locationValue)}
                                                 />
                                             </div>
@@ -466,14 +466,14 @@ export default function Support() {
                                         className="grid md:grid-cols-2 gap-5 overflow-hidden"
                                     >
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.issueType)} *</label>
+                                            <label className="block text-sm font-bold text-gray-700 mb-1">{getText(form_t.issueType)} *</label>
                                             <div className="relative">
                                                 <AlertCircle className="absolute left-3 top-3 text-gray-400" size={18} />
                                                 <select
                                                     name="issueType"
                                                     value={form.issueType}
                                                     onChange={handleInputChange}
-                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all appearance-none bg-white"
+                                                    className={`w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all appearance-none bg-white ${form.issueType === '' ? 'text-gray-400 text-sm' : 'text-gray-900'}`}
                                                 >
                                                     <option value="">{getText(form_t.selectIssueType)}</option>
                                                     {getIssueTypes().map(opt => <option key={opt.key} value={opt.key}>{opt.label}</option>)}
@@ -487,14 +487,14 @@ export default function Support() {
                                                         name="otherDetails"
                                                         value={form.otherDetails}
                                                         onChange={handleInputChange}
-                                                        className="w-full pl-4 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all bg-gray-50"
+                                                        className="w-full pl-4 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all bg-gray-50 placeholder:font-normal placeholder:text-sm"
                                                         placeholder={getText(form_t.pleaseSpecify)}
                                                     />
                                                 </div>
                                             )}
                                         </div>
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.orderId)} *</label>
+                                            <label className="block text-sm font-bold text-gray-700 mb-1">{getText(form_t.orderId)} *</label>
                                             <div className="relative">
                                                 <Hash className="absolute left-3 top-3 text-gray-400" size={18} />
                                                 <input
@@ -502,7 +502,7 @@ export default function Support() {
                                                     name="orderId"
                                                     value={form.orderId}
                                                     onChange={handleInputChange}
-                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all placeholder:font-normal placeholder:text-sm"
                                                     placeholder={getText(form_t.orderIdPlaceholder)}
                                                 />
                                             </div>
@@ -519,14 +519,14 @@ export default function Support() {
                                         className="grid md:grid-cols-2 gap-5" // Added gap for consistency
                                     >
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.serviceInterested)} *</label>
+                                            <label className="block text-sm font-bold text-gray-700 mb-1">{getText(form_t.serviceInterested)} *</label>
                                             <div className="relative">
                                                 <Briefcase className="absolute left-3 top-3 text-gray-400" size={18} />
                                                 <select
                                                     name="householdOption"
                                                     value={form.householdOption}
                                                     onChange={handleInputChange}
-                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all appearance-none bg-white"
+                                                    className={`w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all appearance-none bg-white ${form.householdOption === '' ? 'text-gray-400 text-sm' : 'text-gray-900'}`}
                                                 >
                                                     <option value="">{getText(form_t.selectService)}</option>
                                                     {getHouseholdOptions().map(opt => <option key={opt.key} value={opt.key}>{opt.label}</option>)}
@@ -540,14 +540,14 @@ export default function Support() {
                                                         name="otherDetails"
                                                         value={form.otherDetails}
                                                         onChange={handleInputChange}
-                                                        className="w-full pl-4 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all bg-gray-50"
+                                                        className="w-full pl-4 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all bg-gray-50 placeholder:font-normal placeholder:text-sm"
                                                         placeholder={getText(form_t.pleaseSpecify)}
                                                     />
                                                 </div>
                                             )}
                                         </div>
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700 mb-1">{getText(form_t.householdLocation)} *</label>
+                                            <label className="block text-sm font-bold text-gray-700 mb-1">{getText(form_t.householdLocation)} *</label>
                                             <div className="relative">
                                                 <MapPin className="absolute left-3 top-3 text-gray-400" size={18} />
                                                 <input
@@ -555,7 +555,7 @@ export default function Support() {
                                                     name="householdLocation"
                                                     value={form.householdLocation}
                                                     onChange={handleInputChange}
-                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all"
+                                                    className="w-full pl-10 pr-4 py-3 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all placeholder:font-normal placeholder:text-sm"
                                                     placeholder={getText(form_t.householdLocationPlaceholder)}
                                                 />
                                             </div>
@@ -566,7 +566,7 @@ export default function Support() {
 
                             {/* Message */}
                             <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-1">
+                                <label className="block text-sm font-bold text-gray-700 mb-1">
                                     {getMessageLabel()} *
                                 </label>
                                 <textarea
@@ -574,7 +574,7 @@ export default function Support() {
                                     rows={5}
                                     value={form.message}
                                     onChange={handleInputChange}
-                                    className="w-full p-4 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all resize-none"
+                                    className="w-full p-4 rounded-xl border border-gray-200 outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-100 transition-all resize-none placeholder:font-normal placeholder:text-sm"
                                     placeholder={getMessagePlaceholder()}
                                 />
                             </div>
